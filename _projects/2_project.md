@@ -1,25 +1,18 @@
 ---
 layout: page
-title: project 2
+title: International Student Car Competition-Autonomous Driving
 description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+img: assets/img/zero.jpg
 importance: 2
 category: work
 giscus_comments: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+I participated in the Autonomous Driving Car category of the International Student Autonomous Vehicle Competition organized by the Ministry of Land, Infrastructure and Transport, as a member of the SNU ZERO autonomous driving club at Seoul National University. The competition involved performing tasks such as driving, parking, delivery, and obstacle detection using the ERP-42 platform.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Within the SNU ZERO team, we divided our efforts into three teams: Path Planning, Vision, and Sensor Fusion. I belonged to the Sensor Fusion team, where I was responsible for handling GPS, IMU, Lidar, and camera sensors using the ROS1 framework. This involved tasks such as recognizing the car's orientation, movement, and understanding the surrounding environment. Additionally, I collaborated closely with other teams to discuss improved path planning algorithms, considering sensor-specific errors. We optimized data structures for the RRT* algorithm and engaged in detailed collaboration with other teams.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+The competition took place at K-City, the world's largest test bed for autonomous vehicles, under the Ministry of Land, Infrastructure and Transport. For six months, we worked tirelessly at the Future Mobility Testing Center (FMTC) located at Seoul National University's Siheung campus, and during vacations, we commuted daily to prepare. We accomplished a variety of tasks, including recognizing and clustering cones using Lidar and cameras for cone navigation, avoiding dynamic and static obstacles, and lane recognition to correct heading orientation errors. As a result, we secured the first place in the preliminary cone navigation round and ultimately achieved a gold medal. You can watch our team's driving video in the link below.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">

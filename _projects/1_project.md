@@ -1,8 +1,8 @@
 ---
 layout: page
-title: project 1
+title: Modeling Multimodal Sensor system for Long-term Localization
 description: a project with a background image
-img: assets/img/12.jpg
+img: assets/img/handheld_real.jpg
 importance: 1
 category: work
 related_publications: einstein1956investigations, einstein1950meaning
@@ -58,10 +58,6 @@ Based on the ROS1 framework, I connected various sensors to test the functionali
 <div class="caption">
     This image can also have a caption. It's like magic.
 </div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
 
 
 <div class="row justify-content-sm-center">
