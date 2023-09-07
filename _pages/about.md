@@ -6,22 +6,31 @@ subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: hojune.jpg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>hojjunekim@snu.ac.kr</p>
+    <p>(+82) 10-5424-7269</p>
+    <p>Seoul, South Korea</p>
 
-news: true  # includes a list of news items
-latest_posts: true  # includes a list of the newest posts
-selected_papers: true # includes a list of papers marked as "selected={true}"
+news: false  # includes a list of news items
+latest_posts: false  # includes a list of the newest posts
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hi, my name is Hojune Kim. Nice to meet you.
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hello, I’m Hojune Kim,
+Eager Engineer focused on Robotic perception and control.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I am an undergraduate student at **[Seoul National University](http://snu.ac.kr)**, studying **[Mechanical Aerospace Engineering](http://aerospace.snu.ac.kr)**.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I’m interested in Robotics, where I mainly focused on localization and mapping on 3D world. Also I love attempting a new technology to solve problems. The intellectual sense of accomplishment motivates me, and I can't stand it without doing what I want to do.
+
+The future I dream of is feasible to digitalize spatial information and able to customize it freely. Maybe it can be the way for the AR/VR’s start, or the new media source for people’s interactions.
+
+## Research Interests
+My research interests are based on **Sensor Fusion**, **Hardware** and **DL/ML**. Studying robotic perception by image processing and sensing. Synthetically, my current interested topic is Simultaneous Localization and Mapping(**SLAM**).
+
+Also, **startup** is in my interest too. I had prepared two startups before. It’s not my soon goal, but I have it in my heart to provide the new technology what I gained through my research life.
+
+`SLAM` `Sensor Fusion` `DL/ML` `HW`
