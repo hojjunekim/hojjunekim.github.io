@@ -48,8 +48,17 @@ Based on the ROS1 framework, I connected various sensors to test the functionali
         {% include figure.html path="assets/img/handheld/handheld_real.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-
 <div class="caption">
     Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
 </div>
 
+You can see the demo video.
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include video.html path="assets/img/handheld/handheld_demo.mov" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+    </div>
+</div>
+<div class="caption">
+    A simple, elegant caption looks good between video rows, after each row, or doesn't have to be there at all.
+</div>

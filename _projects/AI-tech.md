@@ -2,7 +2,7 @@
 layout: page
 title: Autonomous Driving RC-car making
 description: a project that redirects to another website
-img: assets/img/AI-tech/rc_car.png
+img: assets/img/AI-tech/car.png
 # redirect: https://unsplash.com
 importance: 3
 category: work
@@ -21,7 +21,7 @@ As a result, the Autonomous Driving Mini Car AI Coding Experience and Competitio
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/AI-tech/rc_car.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/AI-tech/car.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/AI-tech/poster.pdf" title="example image" class="img-fluid rounded z-depth-1" %}

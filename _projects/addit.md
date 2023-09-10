@@ -12,20 +12,45 @@ I am also deeply interested in entrepreneurship. Drawing inspiration from the se
 
 In addition, I developed a Chrome Extension based on Vanilla JS, enabling anyone to easily source news, products, and more as content topics and share them on community websites. This extension aimed to democratize content creation and make it accessible to a wider audience. As a result of these efforts, I received an Outstanding Award and the Minister of National Defense Award in the Ministry of National Defense Startup Challenge. Currently, I am in the process of patent application related to this project.
 
-https://www.youtube.com/watch?v=0j_DjlN8-C4
+[ADDIT(애딧) - 블로그 · 커뮤니티를 위한 사이트 스크랩 도구](https://chrome.google.com/webstore/detail/addit애딧-블로그-·-커뮤니티를-위한-사이/pmibcdohhlbplkedgkapoodgfaejcbcp?hl=ko)
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/addit/patent.png" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/addit/usage.png" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/addit/block.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
     Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
 </div>
 
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/addit/block.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/addit/block_demo.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/addit/patent.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+</div>
+
+You can see demo video.
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include video.html path="assets/img/addit/video.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+    </div>
+</div>
+<div class="caption">
+    A simple, elegant caption looks good between video rows, after each row, or doesn't have to be there at all.
+</div>

@@ -22,3 +22,21 @@ The competition took place at K-City, the world's largest test bed for autonomou
 <div class="caption">
     This image can also have a caption. It's like magic.
 </div>
+
+You can see demo video.
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include video.html path="assets/img/snuzero/zero_cone.MP4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+    </div>
+</div>
+<div class="caption">
+    A simple, elegant caption looks good between video rows, after each row, or doesn't have to be there at all.
+</div>
+
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include video.html path="https://youtu.be/o3ppXvRwUdw?t=3977" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
