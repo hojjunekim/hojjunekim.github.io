@@ -8,72 +8,158 @@
     - name: Languages
       value: English, Korean
 
+- title: Academic Interests
+  type: nested_list
+  contents:
+    - title: Perception.
+      items: 
+        - SLAM.
+        - Description 2.
+    - title: Control.
+      items:
+        - nonlinear control.
+        - quadcopter.
+
 - title: Education
   type: time_table
   contents:
-    - title: BSc in Aerospace Engineering
-      institution: Seoul National University, Seoul, South Korea
-      year: 2019 - 
+    - title: Seoul National University, Seoul, South Korea
+      institution: BSc in Aerospace Engineering
+      year: 2019.03 - 
       description:
-        - Advisor. Prof. Dr. Ayoung Kim
+        - GPA 4.07/4.3(cumulative) 4.24/4.3(major)
+    - title: Gyeonggi Science High School for the Gifted
+      institution: Suwon, South Korea
+      year: 2016.03 - 2019.02
+      description:
+        - Research topic. Star exploration
+
 
 - title: Research Experience
   type: time_table
   contents:
-    - title: Undergraduate research assistant
-      institution: Robust Perception and Mobile Robotics Lab, Seoul National University
+    - title: Robust Perception and Mobile Robotics Lab, Seoul National University
+      institution: Research Intern
       year: 2023.01 - 
       description:
-        - Research topic. state estimation algorithm for multi-robot cooperative systems. 
-    - title: Undergraduate research assistant
-      institution: Satellite Geophysics Lab, Seoul National University
+        - Advisor. Prof. Ayoung Kim
+        - Research topic. Modeling Multimodal Sensor system for Long-term Localization
+        - 3D printed the handheld system for multi sensor fusion
+        - Applied Thermal-LiDAR direct odometry SLAM(DSO) under ROS1
+    - title: Satellite Geophysics Lab, Seoul National University
+      institution: Research Assistant
       year: 2020.08 - 2021.06
       description:
-        - Research topic. online flood monitoring semantic segmentation with SAR satellite
+        - Advisor. Prof. Duck Jin Kim
+        - Research topic. Real-time flood monitoring system by water segmentation using Sentinel-1 satellite SAR image
+        - Trained flood segmentation model based on DeepLab V3+ with SAR image
+        - Automized real-time system of train data achieve and labeling from land cover map
 
 - title: Technical Experience
   type: time_table
   contents:
-    - title: SLAM researcher
-      institution: SNUZERO, Seoul National University
+    - title: SNUZERO, VDCL Lab. Seoul National University
+      institution: Sensor Fusion team
       year: 2021.03 - 2021.10
       description:
-        - Contest. SLAM researcher.
-    - title: Hardware Team Leader
-      institution: AI Tech Play, Seoul National University
+        - autonomous driving algorithm academic club
+        - Advisor. Prof. Kyeong Su Lee
+        - Real time SLAM using LiDAR YOLO fusion
+        - Dynamic avoidance with cone clustering
+    - title: AI Tech Play, Seoul National University
+      institution: KAIT foundation, Non-Profit Organization for AI education
       year: 2021.02 - 2021.08
       description:
-        - Contest. designed autonomous driving RC car
-    
-# - title: Open Source Projects
-#   type: time_table
-#   contents:
-#     - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-#       year: 2015-now
-#       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+        - Serve as Organizer, organize "The 1st Autonomous Driving Mini Car Coding and Contest"
+        - Serve as Hardware Leader, remodeled AI driven RC car for education
+
+- title: Technical Skills
+  type: time_table
+  contents:
+    - title: Language
+      description:
+        - C/C++, python, javascript
+     - title: Frameworks
+      description:
+        - ROS1/2, OpenCV, Tensorflow
+     - title: Tools
+      description:
+        - Matlab, Solidworks, Bash, QGIS
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 2021.10
+    - title: Kwanjeong Undergraduate Scholarship
+      institution: Kwanjeong Educational Foundation
+      year: 2023.03
       items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
+        - Full coverage of junior and senior tuition & stipend
+    - title: Gold Prize, International Student Car Competition
+      institution: Ministry of Land, Infrastructure and Transport
+      year: 2023.10
       items: 
-        - Max Planck Medal
+        - Autonomous driving sector
+    - title: Excellence Prize, Ministry of Defense Startup Competition
+      institution: Ministry of National Defense
+      year: 2023.12
+      items: 
+        - Ministry of National Defense Award
+    - title: Final Selected, Star-Exploration Startup Support Project
+      institution: Korea Aerospace Reasearch Institute(KARI)
+      year: 2021.02
+    - title: Certificate of Appreciation(AI Tech Play)
+      institution: Dean, college of Engineering, Seoul National University
+      year: 2021.06
 
-# - title: Academic Interests
-#   type: nested_list
-#   contents:
-#     - title: Topic 1.
-#       items: 
-#         - Description 1.
-#         - Description 2.
-#     - title: Topic 2.
-#       items:
-#         - Description 1.
-#         - Description 2.
+- title: Teaching Experience
+  type: time_table
+  contents:
+    - title: Teaching Assistant, Basic of Robot Programming and Mechanical System Design
+      institution: Seoul National University
+      year: 2023 Spring
+      items: 
+        - Developed propeller lift scale hardware kit for class competition
+    - title: Teaching Tutor, Dynamics and Engineering Mathmatics
+      institution: Seoul National University
+      year: 2023 Fall
+
+- title: Projects
+  type: time_table
+  contents:
+    - title: Autonomous Flight Control in Quadcopter system
+      year: 2023
+      description:
+        - Path planning via b ́ezier curve, auto landing in simulation and real flight
+    - title: Fault Tolerant Control of Quadrotor
+      year: 2023
+      description:
+        - Design Controller via Feedback Linearization, Sliding Mode and Backstepping
+    - title: Display a Virtual Object on My Desk
+      year: 2023
+      description:
+        - Feature matching and 3D Reconstruction with images on SE(3)
+    - title: Web Scrapper Extension for blog and community editor
+      year: 2022
+      description:
+        - Develop chrome extension under vanilla JS
+
+- title: Patent
+  type: time_table
+  contents:
+    - title: Parking Location Tracking System, KR102291377B1
+      year: 2021
+      description:
+        - <b>H.J. Kim</b>, T.I. Kim, J.H. Na, J.Y. Lee, S.H. Jeong
+
+- title: Extra Curricular
+  type: time_table
+  contents:
+    - title: CH-47 Helicopter Flight Attendant
+      institution: ROKA, Republic of Korea Army
+      year: 2021.08 - 2023.02
+      description:
+        - mandatory of military service
+        - Put on the forest fire extinguish mission(Uljin, Young-dok)
 
 - title: Other Interests
   type: list
