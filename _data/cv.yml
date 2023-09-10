@@ -73,18 +73,18 @@
         - Serve as Organizer, organize "The 1st Autonomous Driving Mini Car Coding and Contest"
         - Serve as Hardware Leader, remodeled AI driven RC car for education
 
-- title: Technical Skills
-  type: time_table
-  contents:
-    - title: Language
-      description:
-        - C/C++, python, javascript
-     - title: Frameworks
-      description:
-        - ROS1/2, OpenCV, Tensorflow
-     - title: Tools
-      description:
-        - Matlab, Solidworks, Bash, QGIS
+# - title: Technical Skills
+#   type: time_table
+#   contents:
+#     - title: Language
+#       description:
+#         - C/C++, python, javascript
+#      - title: Frameworks
+#       description:
+#         - ROS1/2, OpenCV, Tensorflow
+#      - title: Tools
+#       description:
+#         - Matlab, Solidworks, Bash, QGIS
 
 - title: Honors and Awards
   type: time_table
