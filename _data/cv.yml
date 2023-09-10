@@ -8,17 +8,17 @@
     - name: Languages
       value: English, Korean
 
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Perception.
-      items: 
-        - SLAM.
-        - Description 2.
-    - title: Control.
-      items:
-        - nonlinear control.
-        - quadcopter.
+# - title: Academic Interests
+#   type: nested_list
+#   contents:
+#     - title: Perception.
+#       items: 
+#         - SLAM.
+#         - Description 2.
+#     - title: Control.
+#       items:
+#         - nonlinear control.
+#         - quadcopter.
 
 - title: Education
   type: time_table
@@ -31,8 +31,6 @@
     - title: Gyeonggi Science High School for the Gifted
       institution: Suwon, South Korea
       year: 2016.03 - 2019.02
-      description:
-        - Research topic. Star exploration
 
 
 - title: Research Experience
@@ -164,4 +162,4 @@
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Locking Dance, EDM, etc.
+    - Locking Dance, EDM, etc.
