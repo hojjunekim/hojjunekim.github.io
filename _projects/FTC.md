@@ -2,7 +2,7 @@
 layout: page
 title: Fault Tolerant Control of Quadrotor
 description: a project that redirects to another website
-img: assets/img/7.jpg
+img: assets/img/FTC/3dplot.jpg
 importance: 3
 category: fun
 ---
@@ -17,7 +17,7 @@ In this paper, the feedback linearization, sliding mode and backstepping control
         {% include figure.html path="assets/img/FTC/error.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/FTC/3Dplot.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/FTC/3dplot.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">

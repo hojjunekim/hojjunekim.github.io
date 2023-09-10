@@ -4,7 +4,7 @@ title: Real-time flood monitoring system by water detection using Sentinel-1 sat
 description: another without an image
 img: assets/img/satgeo/all_result.png
 importance: 4
-category: fun
+category: work
 ---
 
 During my time as an undergraduate research intern at the Earth and Planetary Physics Laboratory, Seoul National University, under the guidance of Professor Deokjin Kim, I conducted a comprehensive study for a duration of 11 months focused on establishing a real-time disaster monitoring system. The primary objective was to create a system that utilizes periodically acquired satellite imagery to enable nationwide real-time monitoring, particularly for disaster events like floods and wildfires.

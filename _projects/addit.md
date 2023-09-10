@@ -5,7 +5,7 @@ description: a project that redirects to another website
 img: assets/img/addit/usage.png
 # redirect: https://unsplash.com
 importance: 3
-category: work
+category: fun
 ---
 
 I am also deeply interested in entrepreneurship. Drawing inspiration from the search functionality of social media platforms and the sleek design of Notion, I embarked on a journey to conceptualize the next-generation web editor. My idea was to integrate the seamless search experience found in prominent search engines into an open-source web editor. I envisioned a platform where users could effortlessly incorporate diverse content topics, ranging from stocks to polls, expanding beyond the confines of images and videos. To materialize this vision, I leveraged Figma and Framer front-end design tools to create a service demonstration video.
