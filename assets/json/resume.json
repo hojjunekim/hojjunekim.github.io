@@ -1,18 +1,18 @@
 {
   "basics": {
-    "name": "Albert Einstein",
+    "name": "Hojune Kim",
     "label": "Scientist",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "hojjunekim@snu.ac.kr",
+    "phone": "(+82) 10-5424-7269",
+    "url": "https://hojjunekim.github.io/",
+    "summary": "Hi, I'm Hojune Kim",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "Seoul, South Korea",
+      "postalCode": "12345",
+      "city": "Seoul",
+      "countryCode": "KR",
+      "region": "Seoul city"
     },
     "profiles": [
       {
