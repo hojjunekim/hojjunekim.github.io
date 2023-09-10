@@ -2,7 +2,7 @@
 layout: page
 title: Modeling Multimodal Sensor system for Long-term Localization
 description: a project with a background image
-img: assets/img/handheld_real.jpg
+img: assets/img/handheld_real.png
 importance: 1
 category: work
 related_publications: einstein1956investigations, einstein1950meaning
