@@ -24,7 +24,7 @@ As a result, the Autonomous Driving Mini Car AI Coding Experience and Competitio
         {% include figure.html path="assets/img/AI-tech/car.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/AI-tech/poster.pdf" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/AI-tech/poster.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/AI-tech/map.png" title="example image" class="img-fluid rounded z-depth-1" %}
