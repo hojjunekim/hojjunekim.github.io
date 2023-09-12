@@ -25,7 +25,7 @@ You can see the demo videos.
         {% include video.html path="assets/img/landing/simul.mp4" class="img-fluid rounded z-depth-1" controls=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include video.html path="assets/img/landing/landing.MOV" class="img-fluid rounded z-depth-1" controls=true %}
+        {% include video.html path="assets/img/landing/landing.mp4" class="img-fluid rounded z-depth-1" controls=true %}
     </div>
 </div>
 <div class="caption">

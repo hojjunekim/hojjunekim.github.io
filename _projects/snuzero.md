@@ -27,7 +27,7 @@ You can see demo video.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include video.html path="assets/img/snuzero/zero_cone.MP4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+        {% include video.html path="assets/img/snuzero/zero_cone.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
     </div>
 </div>
 <div class="caption">
