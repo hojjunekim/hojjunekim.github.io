@@ -2,7 +2,7 @@
 layout: page
 title: Thermal camera & Lidar extrinsic calibration
 description: a project that redirects to another website
-img: assets/img/TLslam/result.png
+img: assets/img/TLcalib/tag.jpg
 importance: 3
 category: work
 ---
