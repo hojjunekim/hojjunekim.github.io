@@ -127,7 +127,7 @@ permalink: /blog/:year/:title/
 
 # Pagination
 pagination:
-  enabled: false
+  enabled: true
 
 related_blog_posts:
   enabled: false
@@ -262,7 +262,7 @@ jekyll-archives:
     tag: '/blog/tag/:name/'
     category: '/blog/category/:name/'
 
-display_tags: ['images','math', 'code'] # these tags will be displayed on the front page of your blog
+display_tags: ['images','study', 'life'] # these tags will be displayed on the front page of your blog
 display_categories: # ['blockquotes'] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
