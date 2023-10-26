@@ -20,7 +20,7 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 Hello, I’m Hojune Kim,
-Eager Engineer focused on Robotic perception and control.
+eager engineer focused on robotic perception and control.
 
 I am an undergraduate student at **[Seoul National University](http://snu.ac.kr)**, studying **[Mechanical Aerospace Engineering](http://aerospace.snu.ac.kr)**.
 
