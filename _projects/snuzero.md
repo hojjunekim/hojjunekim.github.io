@@ -1,7 +1,7 @@
 ---
 layout: page
-title: International Student Car Competition-Autonomous Driving
-description: a project with a background image and giscus comments
+title: International Autonomous Driving Car Competition
+description: path planning, RRT*, SLAM, ROS1
 img: assets/img/snuzero/zero.jpg
 importance: 2
 category: work
@@ -19,9 +19,6 @@ The competition took place at K-City, the world's largest test bed for autonomou
         {% include figure.html path="assets/img/snuzero/zero.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
 
 You can see demo video.
 
@@ -29,9 +26,6 @@ You can see demo video.
     <div class="col-sm mt-3 mt-md-0">
         {% include video.html path="assets/img/snuzero/zero_cone.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
     </div>
-</div>
-<div class="caption">
-    A simple, elegant caption looks good between video rows, after each row, or doesn't have to be there at all.
 </div>
 
 

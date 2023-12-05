@@ -1,13 +1,13 @@
 ---
 layout: page
 title: Display Virtual Cubes on Your Desk!
-description: a project that redirects to another website
+description: SE3, optical flow, RANSAC
 img: assets/img/ARcube/demo.png
 importance: 3
 category: fun
 ---
 
-Developed path planning algorithm via bezier curve, and auto landing with April Tag in simulation and off-board flight. Jetson-Xavier and PX4 pix hawk are used. You can see the landing videos below.
+Developed a program to display a 3D cube on a desk. You can click a point to place the cubes, and the cube will be placed on your video. RANSAC, SE3 explanation, Newton's method optimization and optical flow techniques are used. Developed with C++ and codes are uploaded in github.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -21,7 +21,7 @@ Developed path planning algorithm via bezier curve, and auto landing with April 
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    plane detection via RANSAC
 </div>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -40,5 +40,5 @@ You can see demo video.
     </div>
 </div>
 <div class="caption">
-    A simple, elegant caption looks good between video rows, after each row, or doesn't have to be there at all.
+    Demo video
 </div>

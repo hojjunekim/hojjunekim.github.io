@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Autonomous Driving RC-car making
-description: a project that redirects to another website
+title: Autonomous Driving RC-car design and making
+description: Organizing AI comopetition for students
 img: assets/img/AI-tech/car.png
 # redirect: https://unsplash.com
 importance: 3
@@ -30,7 +30,3 @@ As a result, the Autonomous Driving Mini Car AI Coding Experience and Competitio
         {% include figure.html path="assets/img/AI-tech/map.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-
