@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Real-time flood monitoring system by water detection using Sentinel-1 satellite image
+title: Real-time flood monitoring system by satellite image
 description: Semantic Segmentation, data achieve automizing
 img: assets/img/satgeo/all_result.png
-importance: 4
+importance: 2
 category: work
 ---
 
