@@ -2,7 +2,7 @@
 layout: page
 title: Autonomous Driving RC-car design and making
 description: Organizing AI comopetition for students
-img: assets/img/AI-tech/car.png
+img: /assets/img/projects/AI-tech/car.png
 # redirect: https://unsplash.com
 importance: 3
 category: work
@@ -21,12 +21,12 @@ As a result, the Autonomous Driving Mini Car AI Coding Experience and Competitio
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/AI-tech/car.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="/assets/img/projects/AI-tech/car.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/AI-tech/poster.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="/assets/img/projects/AI-tech/poster.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/AI-tech/map.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="/assets/img/projects/AI-tech/map.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>

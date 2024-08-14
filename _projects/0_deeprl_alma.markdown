@@ -17,7 +17,7 @@ The competition took place at K-City, the world's largest test bed for autonomou
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/snuzero/zero.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="/assets/img/projects/snuzero/zero.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -25,7 +25,7 @@ You can see demo video.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include video.html path="assets/img/snuzero/zero_cone.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+        {% include video.html path="/assets/img/projects/snuzero/zero_cone.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
     </div>
 </div>
 
