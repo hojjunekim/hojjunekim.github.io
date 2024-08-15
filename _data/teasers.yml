@@ -1,35 +1,35 @@
 mmwave:
   img: teasers/mmwave.pdf
 
-landing:
-  img: teasers/landing.png
+# landing:
+#   img: teasers/landing.png
 
-miscalib:
-  img: teasers/miscalib.png
+# miscalib:
+#   img: teasers/miscalib.png
 
-vision_uav:
-  img: teasers/vision_uav.png
+# vision_uav:
+#   img: teasers/vision_uav.png
 
-lyap_mpc:
-  img: teasers/lyap_mpc.png
+# lyap_mpc:
+#   img: teasers/lyap_mpc.png
 
-articulated_mm:
-  img: teasers/alma_dishwasher.gif
+# articulated_mm:
+#   img: teasers/alma_dishwasher.gif
 
-trifinger:
-  img: teasers/trifinger.gif
+# trifinger:
+#   img: teasers/trifinger.gif
 
-alma_self_collision:
-  img: teasers/alma_self.gif
+# alma_self_collision:
+#   img: teasers/alma_self.gif
 
-orbit:
-  img: teasers/orbit.jpg
+# orbit:
+#   img: teasers/orbit.jpg
 
-pedipulate:
-  img: teasers/pedipulate.gif
+# pedipulate:
+#   img: teasers/pedipulate.gif
 
-viplanner:
-  img: teasers/viplanner.gif
+# viplanner:
+#   img: teasers/viplanner.gif
 
-symmetry:
-  img: teasers/symmetry.gif
+# symmetry:
+#   img: teasers/symmetry.gif

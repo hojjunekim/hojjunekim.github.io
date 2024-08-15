@@ -9,7 +9,7 @@ profile:
   image: profile.JPG
   address: #mention address
 
-news: true
+news: false
 social: true
 years: [2024, 2023, 2022, 2021, 2020, 2019, 2018]
 ---
@@ -40,18 +40,18 @@ If you have questions or would like to discuss ideas, feel free to reach out thr
 <!-- _Shameless promotion:_  
 For undergrad/graduate students at [ETH Zurich](https://ethz.ch/en.html): In case you are looking for semester projects or master thesis, please check [here](https://rsl.ethz.ch/education-students.html) for available projects with me and other amazing people in our group! -->
 
-<!-- <div class="post">
+<div class="post">
 
   {% if page.news %}
     {% include news.html %}
   {% endif %}
 
-</div> -->
+</div>
 
 ---
 
 {: #publications}
-## __publications__
+## __Publications__
 
 {% for y in page.years %}
   {% bibliography -f papers -q @*[year={{y}}]* %}

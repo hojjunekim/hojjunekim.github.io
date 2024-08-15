@@ -6,5 +6,5 @@ group :jekyll_plugins do
     gem 'jekyll-scholar'
     gem 'jemoji'
     gem 'unicode_utils'
-    gem 'faraday-retry'
+    # gem 'faraday-retry'
 end
