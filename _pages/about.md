@@ -40,13 +40,13 @@ If you have questions or would like to discuss ideas, feel free to reach out thr
 <!-- _Shameless promotion:_  
 For undergrad/graduate students at [ETH Zurich](https://ethz.ch/en.html): In case you are looking for semester projects or master thesis, please check [here](https://rsl.ethz.ch/education-students.html) for available projects with me and other amazing people in our group! -->
 
-<div class="post">
+<!-- <div class="post">
 
   {% if page.news %}
     {% include news.html %}
   {% endif %}
 
-</div>
+</div> -->
 
 ---
 
