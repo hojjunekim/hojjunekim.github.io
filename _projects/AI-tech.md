@@ -17,16 +17,3 @@ As a result, the Autonomous Driving Mini Car AI Coding Experience and Competitio
 [AI Tech Play](https://www.youtube.com/channel/UCfmSTxHQ6Y43XtHsQ7l_H3Q)
 
 [AI Tech Play](https://www.facebook.com/aitechplay/)
-
-
-<!-- <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/projects/AI-tech/car.png" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/projects/AI-tech/poster.png" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/projects/AI-tech/map.png" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div> -->
