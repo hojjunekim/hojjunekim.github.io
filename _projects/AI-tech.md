@@ -19,7 +19,7 @@ As a result, the Autonomous Driving Mini Car AI Coding Experience and Competitio
 [AI Tech Play](https://www.facebook.com/aitechplay/)
 
 
-<div class="row">
+<!-- <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="/assets/img/projects/AI-tech/car.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
@@ -29,4 +29,4 @@ As a result, the Autonomous Driving Mini Car AI Coding Experience and Competitio
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="/assets/img/projects/AI-tech/map.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
-</div>
+</div> -->
