@@ -2,7 +2,7 @@
 layout: page
 title: Real-time flood monitoring system by satellite image
 description: Semantic Segmentation, data achieve automizing
-img: assets/img/satgeo/all_result.png
+img: /assets/img/projects/satgeo/all_result.png
 importance: 2
 category: work
 ---

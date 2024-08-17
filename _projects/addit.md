@@ -2,7 +2,7 @@
 layout: page
 title: Searchable Dynamic WYSWYG Web Editor
 description: Developing Chrome Extension
-img: assets/img/addit/usage.png
+img: /assets/img/projects/addit/usage.png
 # redirect: https://unsplash.com
 importance: 3
 category: fun

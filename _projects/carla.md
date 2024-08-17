@@ -2,7 +2,7 @@
 layout: page
 title: visual SLAM with carla simulator
 description: DSO & ORB-SLAM2, ROS1
-img: assets/img/carla/sensor.png
+img: /assets/img/projects/carla/sensor.png
 importance: 2
 category: work
 giscus_comments: true

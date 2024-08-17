@@ -2,7 +2,7 @@
 layout: page
 title: Lidar-Inertial Odometry
 description: Faster-LIO & Fast-LIO2, evaluation, ROS1
-img: assets/img/LIO/urban.jpg
+img: /assets/img/projects/LIO/urban.jpg
 importance: 2
 category: work
 giscus_comments: true

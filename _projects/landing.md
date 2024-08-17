@@ -2,7 +2,7 @@
 layout: page
 title: Autonomous Flight Control in Quadrotor system
 description: PX4, Apriltag, calibration, ROS2
-img: assets/img/landing/init.png
+img: /assets/img/projects/landing/init.png
 importance: 2
 category: fun
 ---

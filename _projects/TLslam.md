@@ -2,7 +2,7 @@
 layout: page
 title: Thermal camera & Lidar Direct SLAM 
 description: DSO, visual-lidar SLAM, ROS1
-img: assets/img/TLslam/result.png
+img: /assets/img/projects/TLslam/result.png
 importance: 3
 category: work
 ---

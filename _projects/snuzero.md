@@ -2,7 +2,7 @@
 layout: page
 title: International Autonomous Driving Car Competition
 description: path planning, RRT*, SLAM, ROS1
-img: assets/img/snuzero/zero.jpg
+img: /assets/img/projects/snuzero/zero.jpg
 importance: 2
 category: work
 giscus_comments: true

@@ -2,7 +2,7 @@
 layout: page
 title: Display Virtual Cubes on Your Desk!
 description: SE3, optical flow, RANSAC
-img: assets/img/ARcube/demo.png
+img: /assets/img/projects/ARcube/demo.png
 importance: 3
 category: fun
 ---

@@ -2,7 +2,7 @@
 layout: page
 title: Fault Tolerant Control of Quadrotor
 description: Feedback Linearization, SMC, Backstepping
-img: assets/img/FTC/3dplot.jpg
+img: /assets/img/projects/FTC/3dplot.jpg
 importance: 3
 category: fun
 ---

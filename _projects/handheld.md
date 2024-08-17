@@ -2,7 +2,7 @@
 layout: page
 title: Modeling and making Multimodal Sensor system
 description: CAD, 3D printing
-img: assets/img/handheld/handheld_real.png
+img: /assets/img/projects/handheld/handheld_real.png
 importance: 1
 category: work
 giscus_comments: true

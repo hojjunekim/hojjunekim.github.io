@@ -2,7 +2,7 @@
 layout: page
 title: Teaching Assistant in Robot programming class
 description: Circuit soldering, 3D printing
-img: assets/img/TA/prop.png
+img: /assets/img/projects/TA/prop.png
 importance: 3
 category: fun
 ---
