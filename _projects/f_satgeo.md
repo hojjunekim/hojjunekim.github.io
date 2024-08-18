@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Real-time flood monitoring system by satellite image
-description: Semantic Segmentation, data achieve automizing
+title: Real-time Flood Monitoring System by Satellite Image
+# description: SATGEO Lab
+description: Supervised Learning, Semantic Segmentation, semi-realtime Automization
 img: /assets/img/projects/satgeo/all_result.png
 importance: 2
 category: work

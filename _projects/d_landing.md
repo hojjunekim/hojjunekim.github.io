@@ -1,10 +1,16 @@
 ---
 layout: page
-title: Teaching Assistant in Robot programming class
-description: Circuit soldering, 3D printing
-img: /assets/img/projects/TA/prop.png
-importance: 3
+title: Autonomous Flight Control in Quadrotor system
+# description: drone club Bulnabi
+description: PX4-Autopilot, Auto Landing, ROS2
+img: /assets/img/projects/landing/init.png
+importance: 2
 category: fun
 ---
 
 Developed path planning algorithm via bezier curve, and auto landing with April Tag in simulation and off-board flight. Jetson-Xavier and PX4 pix hawk are used. You can see the landing videos below.
+
+
+
+You can see the demo videos.
+

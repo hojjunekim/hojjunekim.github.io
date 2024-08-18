@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Searchable Dynamic WYSWYG Web Editor
-description: Developing Chrome Extension
+description: JavaScript, Web Programming, Chrome Extension 
+# description: Developing Chrome Extension
 img: /assets/img/projects/addit/usage.png
 # redirect: https://unsplash.com
 importance: 3

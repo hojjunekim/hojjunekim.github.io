@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: page
 title: Predicting Landing Sites from Aerial Images
 description: DAAD Research Internship
@@ -17,4 +17,4 @@ Our algorithm computes costmaps based on several hazard factors including terrai
 
 <div>
     <img class="col three" height="50%" width="50%" src="{{ site.baseurl }}/assets/img/projects/deeplanding/landing_algo.svg" alt="" title="Landing Algorithm"/>
-</div>
+</div> -->

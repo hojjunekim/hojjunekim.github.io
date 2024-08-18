@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: page
 title: Autonomous Underwater Vehicle (AUV)
 description: Funded by DoRD, IIT Kanpur
@@ -43,4 +43,4 @@ The vehicle is powered using Lithium Polymer batteries. I designed a power distr
 
 ### Software Work
 
-The Software Architecture is based on the Robot Operating System (ROS) framework. We dvided the entire software stack into motion planning, controls, navigation and vision layers. I contributed mainly to the controls and navigation aspects of the vehicle. The code is open sourced and can be viewed over [here](https://github.com/auv-iitk/).
+The Software Architecture is based on the Robot Operating System (ROS) framework. We dvided the entire software stack into motion planning, controls, navigation and vision layers. I contributed mainly to the controls and navigation aspects of the vehicle. The code is open sourced and can be viewed over [here](https://github.com/auv-iitk/). -->

@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Modeling and making Multimodal Sensor system
-description: CAD, 3D printing
+title: Modeling and Making Multimodal Sensor system
+# description: RPM Lab
+description: CAD, 3D printing, ROS
 img: /assets/img/projects/handheld/handheld_real.png
 importance: 1
 category: work

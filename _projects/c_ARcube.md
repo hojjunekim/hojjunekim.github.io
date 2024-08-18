@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Display Virtual Cubes on Your Desk!
-description: SE3, optical flow, RANSAC
+description: 3D Vision, Feature Matching, Optical Flow
+# description: Computer Vision Course Project
 img: /assets/img/projects/ARcube/demo.png
 importance: 3
 category: fun

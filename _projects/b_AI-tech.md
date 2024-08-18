@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Autonomous Driving RC-car design and making
-description: Organizing AI comopetition for students
+title: Organized AI RC-car competition
+description: CAD, Laser Cutting, ROS2, Planning Competency
+# description: AI Tech Play
 img: /assets/img/projects/AI-tech/car.png
 # redirect: https://unsplash.com
 importance: 3

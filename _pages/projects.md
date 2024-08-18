@@ -1,6 +1,6 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
 description: A collection of projects during my studies.
 ---
@@ -46,6 +46,8 @@ description: A collection of projects during my studies.
 {% endif %}
 
 {% endfor %}
+
+<div style="clear: both;"></div> <!-- Add this line to clear floats -->
 
 ##### At ETH Zurich
 
