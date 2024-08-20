@@ -15,5 +15,5 @@ Within the SNU ZERO team, we divided our efforts into three teams: Path Planning
 The competition took place at K-City, the world's largest test bed for autonomous vehicles, under the Ministry of Land, Infrastructure and Transport. For six months, we worked tirelessly at the Future Mobility Testing Center (FMTC) located at Seoul National University's Siheung campus, and during vacations, we commuted daily to prepare. We accomplished a variety of tasks, including recognizing and clustering cones using Lidar and cameras for cone navigation, avoiding dynamic and static obstacles, and lane recognition to correct heading orientation errors. As a result, we secured the first place in the preliminary cone navigation round and ultimately achieved a gold medal. You can watch our team's driving video in the link below.
 
 <div>
-    <img class="figure col" src="{{ site.baseurl }}/assets/img/projects/snuzero/zero_cone.mp4" alt="" title="cone planning"/>
+    <img class="figure col" src="{{ site.baseurl }}/assets/img/projects/snuzero/zero_cone.MP4" alt="" title="cone planning"/>
 </div>
