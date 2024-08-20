@@ -14,18 +14,10 @@ I took on the role of the Car Assemble Team Leader, responsible for modifying th
 
 As a result, the Autonomous Driving Mini Car AI Coding Experience and Competition saw the participation of over 200 middle school students from across the nation, successfully concluding the initiative. The competition process can be observed in the YouTube link provided below.
 
-[AI Tech Play](https://www.youtube.com/channel/UCfmSTxHQ6Y43XtHsQ7l_H3Q)
+[**Youtube**](https://www.youtube.com/channel/UCfmSTxHQ6Y43XtHsQ7l_H3Q), [**Facebook**](https://www.facebook.com/aitechplay/)
 
-[AI Tech Play](https://www.facebook.com/aitechplay/)
-
-<!-- <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <img src="{{ site.baseurl }}/assets/img/projects/AI-tech/car.png" alt="" title="RC car"/>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <img src="{{ site.baseurl }}/assets/img/projects/AI-tech/poster.png" alt="" title="poster"/>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <img src="{{ site.baseurl }}/assets/img/projects/AI-tech/map.png" alt="" title="map"/>
-    </div>
-</div> -->
+<div class="row">
+    <img class="one" src="{{ site.baseurl }}/assets/img/projects/AI-tech/car.png" alt="" title="RC car"/>
+    <img class="one" src="{{ site.baseurl }}/assets/img/projects/AI-tech/map.png" alt="" title="map"/>
+    <img class="one" src="{{ site.baseurl }}/assets/img/projects/AI-tech/poster.png" alt="" title="poster"/>
+</div>

@@ -21,7 +21,7 @@ _How can we effectively collaborate on multi sensor data?_
 _How can we go beyond proprioception for robust mobile manipulation?_  
 _What abstractions are necessary to describe multiple tasks?_  -->
 
-To find *some* answers to the above questions, I am an undergraduate student majoring in Aerospace Engineering at [Seoul National University](https://www.snu.ac.kr) advised by [Ayoung Kim](https://ayoungk.github.io). Currently, I am a Guest Researcher at German Aerospace Center [DLR Robotics and Mechatronics](https://www.dlr.de/en/rm).
+To find some answers to the above questions, I am an undergraduate student majoring in Aerospace Engineering at [Seoul National University](https://www.snu.ac.kr) advised by [Ayoung Kim](https://ayoungk.github.io). Currently, I am a Guest Researcher at German Aerospace Center [DLR Robotics and Mechatronics](https://www.dlr.de/en/rm).
 
 Over the span of my career, I have had the opportunity to work with some amazing robotic groups
 on various robotic platforms.

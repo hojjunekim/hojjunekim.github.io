@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Searchable Dynamic WYSWYG Web Editor
-description: Web Programming, Chrome Extension 
+title: Searchable Dynamic Web Editor
+description: Chrome Extension, Web Programming
 # description: Developing Chrome Extension
-img: /assets/img/projects/addit/usage.png
+img: /assets/img/projects/addit/thumb.png
 # redirect: https://unsplash.com
 importance: 3
 category: club
@@ -13,6 +13,8 @@ I am also deeply interested in entrepreneurship. Drawing inspiration from the se
 
 In addition, I developed a Chrome Extension based on Vanilla JS, enabling anyone to easily source news, products, and more as content topics and share them on community websites. This extension aimed to democratize content creation and make it accessible to a wider audience. As a result of these efforts, I received an Outstanding Award and the Minister of National Defense Award in the Ministry of National Defense Startup Challenge. Currently, I am in the process of patent application related to this project.
 
-[ADDIT(애딧) - 블로그 · 커뮤니티를 위한 사이트 스크랩 도구](https://chrome.google.com/webstore/detail/addit애딧-블로그-·-커뮤니티를-위한-사이/pmibcdohhlbplkedgkapoodgfaejcbcp?hl=ko)
+[Chrome Extension](https://chrome.google.com/webstore/detail/addit애딧-블로그-·-커뮤니티를-위한-사이/pmibcdohhlbplkedgkapoodgfaejcbcp?hl=ko)
 
-
+<div class="figure">
+    <img class="three" src="{{ site.baseurl }}/assets/img/projects/addit/video.mp4" alt="" title="demo"/>
+</div>
