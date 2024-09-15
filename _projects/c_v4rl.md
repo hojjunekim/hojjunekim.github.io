@@ -1,10 +1,14 @@
 ---
 layout: page
 title: Gaussian Belief Propagation for Continuus time SLAM
+affiliation: Vision for Robotics Lab. ETH Zürich
+position: Undergraduate Researcher
 description: Graph Optimization, Continuous Time SLAM
-# description: Computer Vision Course Project
+project_year: 2024
 img: /assets/img/projects/v4rl/thumb.png
-importance: 1
+code: https://github.com/VIS4ROB-lab/hyperion
+slides: /assets/img/projects/v4rl/slides.pdf
+pdf: /img/projects/v4rl/report.pdf
 category: eth
 ---
 

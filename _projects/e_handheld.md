@@ -1,12 +1,13 @@
 ---
 layout: page
 title: Modeling and Making Multimodal Sensor system
-# description: RPM Lab
+affiliation: Robust Perception and Mobile Robotics Lab. SNU
+position: Undergraduate Researcher
 description: CAD, Manufacture
+project_year: 2023
 img: /assets/img/projects/handheld/handheld_real.png
-importance: 1
+# video: 
 category: rpm
-giscus_comments: true
 ---
 
 To implement Simultaneous Localization and Mapping (SLAM), a technology that estimates the position and constructs a map of the surrounding environment, various sensors are utilized. These include Stereo Cameras, LiDAR, thermal cameras, IMUs, GPS, among others. While outdoor scenarios can involve attaching these sensors to vehicles or robots for data acquisition, indoor environments pose challenges due to complexity. As a result, I conducted work in Professor Ayoung Kim's RPM Laboratory at Seoul National University's Department of Mechanical Engineering to design and create a handheld multimodal sensor system for Long-term Localization, enabling convenient data acquisition and localization indoors.

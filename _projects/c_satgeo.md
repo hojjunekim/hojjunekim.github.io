@@ -1,10 +1,11 @@
 ---
 layout: page
 title: Real-time Flood Monitoring System by Satellite Image
-# description: SATGEO Lab
+affiliation: Satellite Geophysics Lab. SNU
+position: Undergraduate Researcher
 description: Supervised Learning, Semantic Segmentation
+project_year: 2020
 img: /assets/img/projects/satgeo/all_result.png
-importance: 2
 category: satgeo
 ---
 

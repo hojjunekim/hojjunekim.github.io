@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: page
 title: Teaching Assistant in Robot Programming Class
 description: Circuit Soldering, CAD, Manufacture
@@ -11,4 +11,4 @@ Developed path planning algorithm via bezier curve, and auto landing with April 
 
 <div class="figure">
     <img class="two" src="{{ site.baseurl }}/assets/img/projects/TA/demo.mp4" alt="" title="contest demo"/>
-</div>
+</div> -->

@@ -53,3 +53,18 @@
         }
     }
 }
+
+.project_list{
+    margin: 0;
+    list-style: none;
+
+    li {
+        display: inline-block;
+        // margin: 0 10px 10px 0;
+        
+        span{ display: block;}
+        .title{ font-weight: bold;}
+        .position{ font-style: italic;}
+    }
+
+}

@@ -1,10 +1,13 @@
 ---
 layout: page
 title: Organized AI RC-car competition
+affiliation: AI Tech Play, non-profit organization for AI education
+position: Tech/Assembly Team Leader
 description: CAD, Manufacture
-# description: AI Tech Play
+project_year: 2021
 img: /assets/img/projects/AI-tech/car.png
-importance: 3
+youtube: https://www.youtube.com/channel/UCfmSTxHQ6Y43XtHsQ7l_H3Q
+html: https://outta.ai/en
 category: club
 ---
 

@@ -1,11 +1,13 @@
 ---
 layout: page
 title: International Autonomous Driving Car Competition
-# description: autonomous car club SNU ZERO
+affiliation: SNU ZERO, autonomous driving car club
+position: Sensor Technician
 description: EKF-SLAM, Object Detection, Path Planning
+project_year: 2021
 img: /assets/img/projects/snuzero/zero.jpg
+video: https://www.youtube.com/watch?v=o3ppXvRwUdw&t=3977s
 category: club
-giscus_comments: true
 ---
 
 I participated in the Autonomous Driving Car category of the International Student Autonomous Vehicle Competition organized by the Ministry of Land, Infrastructure and Transport, as a member of the SNU ZERO autonomous driving club at Seoul National University. The competition involved performing tasks such as driving, parking, delivery, and obstacle detection using the ERP-42 platform.

@@ -1,10 +1,11 @@
 ---
 layout: page
 title: Autonomous Flight Control in Quadrotor system
-# description: drone club Bulnabi
+affiliation: Bulnabi, autonomous flight drone club
 description: PX4-Autopilot, Auto Landing
+projecct_year: 2023
 img: /assets/img/projects/landing/thumb.png
-importance: 2
+video: /assets/img/projects/landing/landing.mp4
 category: club
 ---
 

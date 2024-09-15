@@ -1,9 +1,11 @@
 ---
 layout: page
-title: CH-47 Helicopter Flight Attendant
-# description: drone club Bulnabi
+title: CH-47 Helicopter Missions
+affiliation: Republicc of Korea Army
+position: Flight Attendant
+project_year: 2021 - 2023
 description: Wild Fire Extinguishment, Helicopter Maintenance
-img: /assets/img/projects/ch47/thumb.JPG
-importance: 2
+img: /assets/img/projects/ch47/thumb.jpg
+news: https://www.donga.com/news/Society/article/all/20220308/112230105/1
 category: army
 ---

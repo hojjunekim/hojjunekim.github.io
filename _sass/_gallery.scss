@@ -54,8 +54,13 @@ figcaption {
   padding-right: 25px;
 }
 .bibtwo {
-  width:66.66%;
+  width:60%;
   vertical-align: middle;
+}
+.proj_year {
+    width:3%;
+    color: $light-gray;
+    text-align: right;
 }
 .caption {
     height: 100%;

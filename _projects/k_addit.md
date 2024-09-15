@@ -1,11 +1,14 @@
 ---
 layout: page
 title: Searchable Dynamic Web Editor
+affiliation: Addit, Start-up
+position: CTO
 description: Chrome Extension, Web Programming
-# description: Developing Chrome Extension
+project_year: 2022
 img: /assets/img/projects/addit/thumb.png
-# redirect: https://unsplash.com
-importance: 3
+news: https://www.shinailbo.co.kr/news/articleView.html?idxno=1631059
+extension: https://chromewebstore.google.com/detail/addit애딧-블로그-·-커뮤니티를-위한-사이/pmibcdohhlbplkedgkapoodgfaejcbcp?hl=en
+video: https://youtu.be/0Zh1Y5PTz4g
 category: club
 ---
 
