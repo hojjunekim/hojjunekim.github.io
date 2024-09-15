@@ -4,7 +4,8 @@ title: Display Virtual Cubes on Your Desk!
 affiliation: SNU, Computer Vision course project
 description: 3D Vision, Optical Flow
 project_year: 2023
-img: /assets/img/projects/ARcube/demo.png
+img: /assets/img/projects/ARcube/ARcube.gif
+# img: /assets/img/projects/ARcube/demo.png
 code: https://github.com/jjihwan/AR_stereo_vision
 pdf: /img/projects/ARcube/paper.pdf
 video: https://youtu.be/uXtX-wH2clQ
