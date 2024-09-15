@@ -500,7 +500,7 @@ figcaption { font-size: 0.875rem; }
 
 .three { width: 100%; }
 
-.bibone { width: 33.33%; vertical-align: middle; padding-top: 10px; padding-right: 25px; }
+.bibone { width: 33.33%; max-height: 200px; vertical-align: middle; padding-top: 10px; padding-right: 25px; }
 
 .bibtwo { width: 60%; vertical-align: middle; }
 

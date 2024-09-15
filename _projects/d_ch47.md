@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CH-47 Helicopter Missions
+title: CH-47D Tactical Missions
 affiliation: Republicc of Korea Army
 position: Flight Attendant
 project_year: 2021 - 2023

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Fault Tolerant Control of Quadrotor
-affiliation: SNU, Decision Making for Autonomous Aerospace Systems graduate course project
+affiliation: Decision Making graduate course project, SNU
 description: Feedback Linearization, Sliding Mode Control, Backstepping
 project_year: 2023
 img: /assets/img/projects/FTC/3dplot.jpg

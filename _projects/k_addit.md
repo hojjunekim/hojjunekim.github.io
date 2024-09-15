@@ -6,6 +6,7 @@ position: CTO
 description: Chrome Extension, Web Programming
 project_year: 2022
 img: /assets/img/projects/addit/thumb.png
+# img: /assets/img/projects/addit/addit.gif
 news: https://www.shinailbo.co.kr/news/articleView.html?idxno=1631059
 extension: https://chromewebstore.google.com/detail/addit애딧-블로그-·-커뮤니티를-위한-사이/pmibcdohhlbplkedgkapoodgfaejcbcp?hl=en
 video: https://youtu.be/0Zh1Y5PTz4g
