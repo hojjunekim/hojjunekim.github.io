@@ -41,7 +41,7 @@ If you have questions or would like to discuss ideas, don't hesitate to reach ou
 </div> -->
 ---
 
-## __Publication__
+### __Publication__
 
 <!-- #### __International Conference__ -->
 {% for y in page.years %}
@@ -52,7 +52,7 @@ If you have questions or would like to discuss ideas, don't hesitate to reach ou
 
 ---
 
-## __Projects__
+### __Projects__
 
 
 <ol class="project_list">
@@ -79,7 +79,7 @@ If you have questions or would like to discuss ideas, don't hesitate to reach ou
         [<a href="{{ project.html }}" target="_blank">Website</a>]
       {% endif %}
       {% if project.youtube %}
-        [<a href="{{ project.youtube }}" target="_blank">Channel</a>]
+        [<a href="{{ project.youtube }}" target="_blank">Youtube</a>]
       {% endif %}
       {% if project.news %}
         [<a href="{{ project.news }}" target="_blank">News</a>]
@@ -151,4 +151,78 @@ If you have questions or would like to discuss ideas, don't hesitate to reach ou
 </li>
 </ol>
 
-<div style="clear: both;"></div>
+<!-- <div style="clear: both;"></div> -->
+---
+
+{: #activities}
+### __Personal Activties__
+
+
+<ol class="project_list">
+<li>
+{% for personal in site.personals %}
+<div id="{{personal.key}}"  class="col three {% if personal.selected %}yellow-box{% endif %}">
+  <div style="clear: both;">
+    <div style="">
+        <img class="col bibone first"  src="{{ personal.img | prepend: site.baseurl | prepend: site.url }}">
+    </div>
+  </div>
+  <div class="col bibtwo last">
+      <span class="title">{{personal.title}}</span>
+      <span class="affiliation">{{personal.affiliation}}</span>
+      <span class="position">{{personal.position}}</span>
+      <span class="links">
+      {% if personal.video %}
+        [<a href="{{ personal.video }}" target="_blank">Video</a>]
+      {% endif %}
+      {% if personal.news %}
+        [<a href="{{ personal.news }}" target="_blank">News</a>]
+      {% endif %}
+      </span>
+      <span class="description">{{personal.description}}</span>
+  </div>
+  <div class="col proj_year">{{personal.project_year}}</div>
+</div>
+
+
+<!-- {% if project.redirect %}
+<div class="project">
+    <div class="thumbnail">
+        <a href="{{ project.redirect }}" target="_blank">
+        {% if project.img %}
+        <img class="thumbnail" src="{{ project.img | prepend: site.baseurl | prepend: site.url }}"/>
+        {% else %}
+        <div class="thumbnail blankbox"></div>
+        {% endif %}    
+        <span>
+            <h1>{{ project.title }}</h1>
+            <br/>
+            <p>{{ project.description }}</p>
+        </span>
+        </a>
+    </div>
+</div>
+{% else %} -->
+
+<!-- <div class="project ">
+    <div class="thumbnail">
+        <a href="{{ project.url | prepend: site.baseurl | prepend: site.url }}">
+        {% if project.img %}
+        <img class="thumbnail" src="{{ project.img | prepend: site.baseurl | prepend: site.url }}"/>
+        {% else %}
+        <div class="thumbnail blankbox"></div>
+        {% endif %}    
+        <span>
+            <h1>{{ project.title }}</h1>
+            <br/>
+            <p>{{ project.description }}</p>
+        </span>
+        </a>
+    </div>
+</div> -->
+
+{% endif %}
+
+{% endfor %}
+</li>
+</ol>

@@ -3,7 +3,7 @@ layout: page
 title: International Autonomous Driving Car Competition
 affiliation: SNU ZERO, autonomous driving car club
 position: Sensor Technician
-description: EKF-SLAM, Object Detection, Path Planning
+description: EKF-SLAM, Obstacle avoidance, Path Planning
 project_year: 2021
 img: /assets/img/projects/snuzero/snuzero.gif
 # img: /assets/img/projects/snuzero/zero.jpg

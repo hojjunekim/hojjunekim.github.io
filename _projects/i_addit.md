@@ -3,7 +3,7 @@ layout: page
 title: Searchable Dynamic Web Editor
 affiliation: Addit, Start-up
 position: CTO
-description: Chrome Extension, Web Programming
+description: Web Programming, Web Designing, Buisness Model Design
 project_year: 2022
 img: /assets/img/projects/addit/thumb.png
 # img: /assets/img/projects/addit/addit.gif
