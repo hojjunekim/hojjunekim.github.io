@@ -5,7 +5,8 @@ affiliation: Vision for Robotics Lab. ETH Zürich
 position: Undergraduate Researcher
 description: Graph Optimization, Continuous Time SLAM
 project_year: 2024
-img: /assets/img/projects/v4rl/thumb.png
+img: /assets/img/projects/v4rl/gbp.gif
+# img: /assets/img/projects/v4rl/thumb.png
 code: https://github.com/VIS4ROB-lab/hyperion
 slides: /assets/img/projects/v4rl/slides.pdf
 pdf: /img/projects/v4rl/report.pdf
