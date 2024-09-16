@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Organized Nationwide AI RC-car competition for Students
+title: Organized Nationwide AI RC-car competition for 200+ Students
 affiliation: AI Tech Play, non-profit organization for AI education
 position: Tech/Assembly Team Leader
 description: CAD, Laser Cutting, System Design
