@@ -28,10 +28,8 @@ on various robotic platforms.
 I have been an exchange student at [**ETH Zürich**](https://ethz.ch/en.html),
 a research intern at [Vision for Robotics Lab](https://v4rl.com). Additionally, I was a research intern in SNU [Satellite-Geophysics Lab](http://satgeo.snu.ac.kr), and organized Nationwide AI-Education Contest in [AI Tech Play](https://www.youtube.com/channel/UCfmSTxHQ6Y43XtHsQ7l_H3Q). Feel free to look for the projects I did!
 
-If you have questions or would like to discuss ideas, don't hesitate to reach out through
-[email](hojjunekim@snu.ac.kr)!
+I have broad research interests in Robotics, Computer Vision, and Machine Learning. Specifically, my work focuses on robot perception and autonomous navigation with an emphasis on real-world system applications. If you have questions or would like to discuss ideas, don’t hesitate to reach out through [email](hojjunekim@snu.ac.kr)!
 {: #publications}
-
 <!-- <div class="post">
 
   {% if page.news %}
