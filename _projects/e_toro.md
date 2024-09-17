@@ -5,7 +5,7 @@ affiliation: German Aerospace Center DLR
 position: Guest Researcher
 description: On-going Project
 project_year: 2024
-img: /assets/img/projects/toro/thumb.pdf
+img: /assets/img/projects/toro/thumb.png
 # video: 
 category: DLR
 ---
