@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6 { font-family: Helvetica, sans-serif; font-weight: 900; l
 
 p, dl, ol, ul { font-size: 1rem; margin-top: 0; margin-bottom: 1rem; }
 
-ol, ul { padding-left: 1rem; }
+ol, ul { padding-left: 0rem; }
 
 pre, code, samp { font-family: "Source Code Pro", Consolas, monospace; font-size: inherit; }
 
@@ -364,7 +364,7 @@ footer a:hover { color: #00369f; }
 
 .page-heading { font-size: 20px; }
 
-.contacticon { display: block; font-size: 60px; margin: 10px; }
+.contacticon { display: block; font-size: 55px; margin: 10px; }
 .contacticon_profile { display: block; font-size: 50px; }
 
 .center { text-align: center; }
@@ -497,13 +497,25 @@ figcaption { font-size: 0.875rem; }
 
 .one { width: 33.33%; }
 
+@media (max-width: 480px){
+  .one { width: 100%; }
+}
+
 .two { width: 66.66%; }
+
+@media (max-width: 650px){
+  .two { width: 100%; }
+}
 
 .three { width: 100%; }
 
-.bibone { width: 33.33%; max-height: 200px; vertical-align: middle; padding-top: 10px; padding-right: 25px; }
+.bibone { width: 33.33%; min-width: 200px; max-height: 200px; vertical-align: middle; padding-top: 10px; padding-right: 25px; }
 
 .bibtwo { width: 60%; vertical-align: middle; }
+
+@media (max-width: 650px){
+  .bibtwo { width: 100%; }
+}
 
 .proj_year { width: 3%; color: #ccc; text-align: right; }
 
