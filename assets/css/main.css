@@ -511,6 +511,10 @@ figcaption { font-size: 0.875rem; }
 
 .bibone { width: 33.33%; min-width: 200px; max-height: 200px; vertical-align: middle; padding-top: 10px; padding-right: 25px; }
 
+@media (max-width: 550px){
+  .bibone { width: 100%; }
+}
+
 .bibtwo { width: 60%; vertical-align: middle; }
 
 @media (max-width: 650px){
