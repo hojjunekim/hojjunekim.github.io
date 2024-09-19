@@ -2,7 +2,7 @@
 layout: about
 permalink: /
 title: <strong>Hojune</strong> Kim
-description: Guest Researcher | German Aerospace Center DLR
+description: Guest Student Researcher | German Aerospace Center DLR
 
 profile:
   align: right
@@ -17,18 +17,14 @@ years: [2024]
 _How can a robot precisely recognize spatial information, even in a multi-robot system?_  
 _How can we effectively collaborate on multi sensor data?_  
 
-<!-- _How can a robot learn to use its different parts for interactions?_  
-_How can we go beyond proprioception for robust mobile manipulation?_  
-_What abstractions are necessary to describe multiple tasks?_  -->
-
-To explore these challenging questions, I am studying as an undergraduate student majoring in Aerospace Engineering at [**Seoul National University**](https://www.snu.ac.kr) advised by [Prof. Ayoung Kim](https://rpm.snu.ac.kr). Currently, I am a Guest Researcher at [**German Aerospace Center DLR**](https://www.dlr.de/en/rm) in Robotics and Mechatronics Institute advised by [Prof. Jinoh Lee](https://rmc.dlr.de/rm/de/staff/jinoh.lee/).
+To explore these challenging questions, I am studying as an undergraduate student majoring in Aerospace Engineering at [**Seoul National University**](https://www.snu.ac.kr) advised by [Prof. Ayoung Kim](https://rpm.snu.ac.kr). Currently, I am a Guest Student Researcher at [**German Aerospace Center DLR**](https://www.dlr.de/en/rm) in Robotics and Mechatronics Institute advised by [Prof. Jinoh Lee](https://rmc.dlr.de/rm/de/staff/jinoh.lee/).
 
 Over the span of my career, I have had the opportunity to work with some amazing robotic groups
 on various robotic platforms.
 I have been an exchange student at [**ETH Zürich**](https://ethz.ch/en.html),
-a research intern at [Vision for Robotics Lab](https://v4rl.com). Additionally, I was a research intern in SNU [Satellite-Geophysics Lab](http://satgeo.snu.ac.kr), and organized Nationwide AI-Education Contest in [AI Tech Play](https://www.youtube.com/channel/UCfmSTxHQ6Y43XtHsQ7l_H3Q). Feel free to look for the projects I did!
+a project intern at [Vision for Robotics Lab](https://v4rl.com). Additionally, I was a research intern in SNU [Satellite-Geophysics Lab](http://satgeo.snu.ac.kr), and organized Nationwide AI-Education Contest in [AI Tech Play](https://www.youtube.com/channel/UCfmSTxHQ6Y43XtHsQ7l_H3Q). Feel free to look for the projects I did!
 
-I have broad research interests in Robotics, Computer Vision, and Machine Learning. Specifically, my work focuses on robot perception and autonomous navigation with an emphasis on real-world system applications. If you have questions or would like to discuss ideas, don’t hesitate to reach out through [email](hojjunekim@snu.ac.kr)!
+I have broad research interests in Robotics, Computer Vision, and Machine Learning. Specifically, my work focuses on Perception and Autonomy with an emphasis on system designing for real-world applications. If you have questions or would like to discuss ideas, don’t hesitate to reach out through [email](hojjunekim@snu.ac.kr)!
 {: #publications}
 <!-- <div class="post">
 
