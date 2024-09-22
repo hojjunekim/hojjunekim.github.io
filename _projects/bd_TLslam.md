@@ -6,6 +6,7 @@ position: Undergraduate Researcher
 description: Direct SLAM, visual-lidar SLAM
 project_year: 2023
 img: /assets/img/projects/TLslam/result.png
+code: https://github.com/hojjunekim/thermal-lidar-dso
 category: rpm
 ---
 
