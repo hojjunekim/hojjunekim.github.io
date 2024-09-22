@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Gaussian Belief Propagation for Continuos time SLAM
+title: Gaussian Belief Propagation for Continuous time SLAM
 affiliation: Vision for Robotics Lab. ETH Zürich
 position: Undergraduate Researcher
 description: Graph Optimization, Continuous Time SLAM
