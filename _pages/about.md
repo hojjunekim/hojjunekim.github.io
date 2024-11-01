@@ -14,8 +14,8 @@ social: true
 years: [2024]
 ---
 
-_How can a robot precisely recognize spatial information, even in a multi-robot system?_  
-_How can we effectively collaborate on multi sensor data?_  
+_How can a robot effectively optimize the multi sensor data to precisely recognize the environment?_  
+_How can we develop safe autonomy from perception to navigation, and control in a multi-robot system?_  
 
 To explore these challenging questions, I am studying as an undergraduate student majoring in Aerospace Engineering at [**Seoul National University**](https://www.snu.ac.kr) advised by [Prof. Ayoung Kim](https://rpm.snu.ac.kr). Currently, I am a Guest Student Researcher at [**German Aerospace Center DLR**](https://www.dlr.de/en/rm) in Robotics and Mechatronics Institute advised by [Prof. Jinoh Lee](https://rmc.dlr.de/rm/de/staff/jinoh.lee/).
 
