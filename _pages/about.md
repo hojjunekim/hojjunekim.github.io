@@ -14,17 +14,15 @@ social: true
 years: [2024]
 ---
 
-_How can a robot effectively optimize the multi sensor data to precisely recognize the environment?_  
+<!-- _How can a robot effectively optimize the multi sensor data to precisely recognize the environment?_  
 _How can we develop safe autonomy from perception to navigation, and control in a multi-robot system?_  
 
-To explore these challenging questions, I am studying as an undergraduate student majoring in Aerospace Engineering at [**Seoul National University**](https://www.snu.ac.kr) advised by [Prof. Ayoung Kim](https://rpm.snu.ac.kr). Currently, I am a Guest Student Researcher at [**German Aerospace Center DLR**](https://www.dlr.de/en/rm) in Robotics and Mechatronics Institute advised by [Prof. Jinoh Lee](https://rmc.dlr.de/rm/de/staff/jinoh.lee/).
+To explore these challenging questions, -->
+I am currently a Guest Researcher at [**German Aerospace Center DLR**](https://www.dlr.de/en/rm) in Robotics and Mechatronics Institute advised by [Prof. Jinoh Lee](https://rmc.dlr.de/rm/de/staff/jinoh.lee/). I am pursuing my undergraduate degree in Aerospace Engineering at [**Seoul National University**](https://www.snu.ac.kr), where I am advised by [Prof. Ayoung Kim](https://rpm.snu.ac.kr).
 
-Over the span of my career, I have had the opportunity to work with some amazing robotic groups
-on various robotic platforms.
-I have been an exchange student at [**ETH Zürich**](https://ethz.ch/en.html),
-a project intern at [Vision for Robotics Lab](https://v4rl.com). Additionally, I was a research intern in SNU [Satellite-Geophysics Lab](http://satgeo.snu.ac.kr), and organized Nationwide AI-Education Contest in [AI Tech Play](https://www.youtube.com/channel/UCfmSTxHQ6Y43XtHsQ7l_H3Q). Feel free to look for the projects I did!
+My research focuses on perception and secure navigation, supported by an optimization background. I emphasize system design to ensure robust experimental validation. Throughout my career, I have had the opportunity to work with a variety of robotic platforms.
 
-I have broad research interests in Robotics, Computer Vision, and Machine Learning. In particular, my work focuses on Perception and Autonomy, with an emphasis on system design for real-world applications. If you have questions or would like to discuss ideas, don’t hesitate to reach out via [email](hojjunekim@snu.ac.kr)!
+I have been an exchange student at [**ETH Zürich**](https://ethz.ch/en.html), and served as a project intern at [Vision for Robotics Lab](https://v4rl.com). Additionally, I have developed an autonomous car and drone through my involvement in student clubs and participated the international competition. I co-organized a non-profit organization for AI education, [AI Tech Play](https://www.youtube.com/channel/UCfmSTxHQ6Y43XtHsQ7l_H3Q), and hosted an autonomous RC car competition for students nationwide.
 {: #publications}
 <!-- <div class="post">
 
