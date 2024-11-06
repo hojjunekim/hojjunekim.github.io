@@ -22,7 +22,7 @@ I am currently a Guest Researcher at [**German Aerospace Center DLR**](https://w
 
 My research centers on safe autonomy, bridging perception and control through optimization-based approaches. I focus on robustness and reliability, with experimental validation. Throughout my career, I have had the opportunities to work with variety of robotic platforms.
 
-I was a project intern at [**ETH Zürich**](https://ethz.ch/en.html), managing distributed graph optimization. I have also developed an autonomous car and quadcopter through student clubs and participated in the international competition. I co-organized a non-profit organization for AI education, [AI Tech Play](https://www.youtube.com/channel/UCfmSTxHQ6Y43XtHsQ7l_H3Q), and hosted an autonomous RC car competition for students nationwide.
+I was a project intern at [**ETH Zürich**](https://ethz.ch/en.html), managing distributed optimization. I have also developed an autonomous car and quadcopter through student clubs and participated in the international competition. I co-organized a non-profit organization for AI education, [AI Tech Play](https://www.youtube.com/channel/UCfmSTxHQ6Y43XtHsQ7l_H3Q), and hosted an autonomous RC car competition for students nationwide.
 {: #publications}
 <!-- <div class="post">
 

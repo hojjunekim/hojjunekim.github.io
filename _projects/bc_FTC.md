@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Fault Tolerant Control of Quadrotor
+title: Fault Tolerant Control of Quadcopter
 affiliation: Decision Making graduate course project, SNU
 description: Feedback Linearization, Sliding Mode Control, Backstepping Control
 project_year: 2023

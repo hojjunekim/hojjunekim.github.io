@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Organized Nationwide Autonomous RC car competition for 200+ Students
+title: Organized Autonomous RC car competition for 200+ Students Nationwide
 affiliation: AI Tech Play, non-profit organization for AI education
 position: Hardware Team Leader
-description: CAD, Laser Cutting, System Design
+description: System Design and Manufacture, Motor Control, Software Implementation
 project_year: 2021
 img: /assets/img/projects/AI-tech/car.png
 youtube: https://www.youtube.com/channel/UCfmSTxHQ6Y43XtHsQ7l_H3Q

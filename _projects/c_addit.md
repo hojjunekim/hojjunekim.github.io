@@ -2,8 +2,8 @@
 layout: page
 title: Searchable Dynamic Web Editor
 affiliation: Addit, Start-up
-position: CTO
-description: Web Programming, Web Designing, Buisness Model Design
+position: Co-Founder
+description: Web Programming, UI Design, Enterprise
 project_year: 2022
 img: /assets/img/projects/addit/thumb.png
 # img: /assets/img/projects/addit/addit.gif
