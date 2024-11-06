@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Humanoid Navigation via Semantic Mapping with Kinematic aided Visual Odometry
+title: Humanoid Navigation on Unknown Semantic Mapping via Kinematic aided Visual Odometry
 affiliation: German Aerospace Center DLR
 position: Guest Student Researcher
 description: On-going Project
