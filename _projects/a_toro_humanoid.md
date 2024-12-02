@@ -5,6 +5,6 @@ affiliation: German Aerospace Center DLR
 position: Humanoid TORO Team
 description: Divergent Component of Motion, Torque Control
 project_year: 2024
-img: /assets/img/projects/toro/local_mapping.png
+img: /assets/img/projects/toro/demo.gif
 category: DLR
 ---
