@@ -18,11 +18,11 @@ years: [2024]
 _How can we develop safe autonomy from perception to navigation, and control in a multi-robot system?_  
 
 To explore these challenging questions, -->
-I am currently a Guest Researcher at [**German Aerospace Center DLR**](https://www.dlr.de/en/rm), working on humanoid navigation under the supervision of [Prof. Jinoh Lee](https://rmc.dlr.de/rm/de/staff/jinoh.lee/). I am pursuing my undergraduate degree in Aerospace Engineering at [**Seoul National University**](https://www.snu.ac.kr), where I am advised by [Prof. Ayoung Kim](https://rpm.snu.ac.kr) with a focus on perception.
+I am currently a Guest Student Researcher at [**German Aerospace Center DLR**](https://www.dlr.de/en/rm), working on humanoid navigation under the supervision of [Prof. Jinoh Lee](https://rmc.dlr.de/rm/de/staff/jinoh.lee/). I am pursuing my undergraduate degree in Aerospace Engineering at [**Seoul National University**](https://www.snu.ac.kr), where I am advised by [Prof. Ayoung Kim](https://rpm.snu.ac.kr) with a focus on perception.
 
-My research centers on safe autonomy, bridging perception and control through optimization-based approaches. I focus on robustness and reliability, with experimental validation. Throughout my career, I have had the opportunities to work with variety of robotic platforms.
+My research centers on safe autonomy, utilizing optimization-based approaches for perception and control. I focus on thrustworthy and safe-ensured, supported by experimental validation, and aim to expand to cooperative robots that interact with humans.
 
-I was a project intern at [**ETH Zürich**](https://ethz.ch/en.html), managing distributed optimization. I have also developed an autonomous car and quadcopter through student clubs and participated in the international competition. I co-organized a non-profit organization for AI education, [AI Tech Play](https://www.youtube.com/channel/UCfmSTxHQ6Y43XtHsQ7l_H3Q), and hosted an autonomous RC car competition for students nationwide.
+I was a project intern at [**ETH Zürich**](https://ethz.ch/en.html), managing distributed optimization for continuous-time SLAM and crowd navigation with reinforcement learning. I have also developed an autonomous car and quadcopter through student clubs and participated in the international competition. I co-organized a non-profit organization for AI education, [AI Tech Play](https://www.youtube.com/channel/UCfmSTxHQ6Y43XtHsQ7l_H3Q), and hosted a nationwide AI camp with autonomous race car competition for students.
 {: #publications}
 <!-- <div class="post">
 
