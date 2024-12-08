@@ -1,6 +1,6 @@
 ---
 layout: page
-title: IEEE Humanoids 2024 Adelt-sized Biped Walk Competition
+title: IEEE Humanoids 2024 Adult-sized Biped Walk Competition
 affiliation: German Aerospace Center DLR
 position: Humanoid TORO Team
 description: Divergent Component of Motion, Torque Control
