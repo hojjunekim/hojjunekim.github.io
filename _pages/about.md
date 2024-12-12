@@ -18,7 +18,7 @@ years: [2024]
 _How can we develop safe autonomy from perception to navigation, and control in a multi-robot system?_  
 
 To explore these challenging questions, -->
-I am currently a Guest Student Researcher at <a href="https://www.dlr.de/en/rm" target="_blank"><b>German Aerospace Center DLR</b></a>, working on humanoid navigation under the supervision of <a href="https://rmc.dlr.de/rm/de/staff/jinoh.lee/" target="_blank">Prof. Jinoh Lee</a>. I am pursuing my undergraduate degree in Aerospace Engineering at <a href="https://www.snu.ac.kr" target="_blank"><b>Seoul National University</b></a>, where I am advised by <a href="https://rpm.snu.ac.kr" target="_blank">Prof. Ayoung Kim</a> with a focus on perception.
+I am currently a Guest Student Researcher at <a href="https://www.dlr.de/en/rm" target="_blank"><b>German Aerospace Center (DLR)</b></a>, working on humanoid navigation under the supervision of <a href="https://rmc.dlr.de/rm/de/staff/jinoh.lee/" target="_blank">Prof. Jinoh Lee</a>. I am pursuing my undergraduate degree in Aerospace Engineering at <a href="https://www.snu.ac.kr" target="_blank"><b>Seoul National University</b></a>, where I am advised by <a href="https://rpm.snu.ac.kr" target="_blank">Prof. Ayoung Kim</a> with a focus on perception.
 
 My research centers on safe autonomy, utilizing optimization-based approaches for perception and control. I focus on trustworthy and safe-ensured solutions, supported by experimental validation, and aim to expand to cooperative robots that interact with humans.
 
