@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Active Learning Semantic Mapping for Legged Robot Navigation (On-going Project)
+title: Active Learning for Semantic Mapping in Humanoid Navigation via Kinematic-aided Visual Odometry (Ongoing Project)
 affiliation: German Aerospace Center DLR
 position: Guest Student Researcher
 description: Graph Optimization, Lifelong Learning, State Estimation
