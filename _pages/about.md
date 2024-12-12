@@ -42,7 +42,7 @@ I was a project intern at <a href="https://ethz.ch/en.html" target="_blank"><b>E
     <div class="bibtwo" style="float: left; box-sizing: border-box; width: 80%">
       <div style="font-size: 20px;"><strong>Seoul National University (SNU)</strong></div>
       <span style="padding-bottom: 3px;"><i>B.Sc. in Aerospace Engineering, summa cum laude (expected)</i></span>
-      <span style="padding-bottom: 3px;">GPA: <b>4.0/4.0(Major)</b>, 3.9/4.0(Overall)</span>
+      <span style="padding-bottom: 3px;">GPA: <b>4.00/4.00(Major)</b>, 3.91/4.00(Overall)</span>
     </div>
     <div class="col" style="width: 20%; color: #ccc; text-align: right;">2019-Present</div>
   </div>
