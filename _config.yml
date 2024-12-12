@@ -65,8 +65,11 @@ collections:
   personals:
     output: true
     permalink: /personals/:path/
+  awards:
+    output: true
+    permalink: /awards/:path/
 
-news_limit: 5
+news_limit: 4
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
