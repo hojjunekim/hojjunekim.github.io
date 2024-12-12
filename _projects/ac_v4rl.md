@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Distributed Optimization with Gaussian Belief Propagation
+title: Distributed Optimization with Gaussian Belief Propagation for Continuous-time SLAM
 affiliation: Vision for Robotics Lab. ETH Zürich
 position: Undergraduate Researcher
-description: Continuous Time SLAM, Distributed Optimization
+description: Distributed Optimization, Continuous Time SLAM
 project_year: 2024
 img: /assets/img/projects/v4rl/gbp.gif
 # img: /assets/img/projects/v4rl/thumb.png

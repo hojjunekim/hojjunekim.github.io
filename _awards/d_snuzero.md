@@ -3,7 +3,7 @@ layout: page
 title: Gold Prize, International Student Car Competition Autonomous Driving Sector
 affiliation: SNU ZERO, autonomous driving car club
 position: Sensor Technician
-description: EKF-SLAM, LiDAR-Camera Fusion, RRT*
+description: EKF-SLAM, LiDAR-Camera Fusion, Clustering
 project_year: 2021
 img: /assets/img/projects/snuzero/snuzero.gif
 # img: /assets/img/projects/snuzero/zero.jpg

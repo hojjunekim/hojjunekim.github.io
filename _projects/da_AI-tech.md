@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Organized Autonomous RC car competition for 200+ Students Nationwide
+title: Organized AI Camp and Autonomous Race Car Competition for 200+ Nationwide Students
 affiliation: AI Tech Play, non-profit organization for AI education
-position: Hardware Team Leader
-description: System Design and Manufacture, Motor Control, Software Implementation
+position: Co-organizer, Hardware Team Leader
+description: Design and Manufacture, Motor Control, Software Integration
 project_year: 2021
 img: /assets/img/projects/AI-tech/car.png
 youtube: https://www.youtube.com/channel/UCfmSTxHQ6Y43XtHsQ7l_H3Q

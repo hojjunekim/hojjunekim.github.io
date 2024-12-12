@@ -2,7 +2,7 @@
 layout: page
 title: Autonomous Flight Landing in Quadrotor system
 affiliation: Bulnabi, autonomous flight drone club
-description: Pose Estimation, Bézier Curve, PX4-Autopilot
+description: Motion Planning, PX4-Autopilot
 project_year: 2023
 img: /assets/img/projects/landing/landing.gif
 code: https://github.com/Bulnabi-SNU/auto_landing

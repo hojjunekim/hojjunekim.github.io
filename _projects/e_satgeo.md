@@ -1,11 +1,12 @@
 ---
 layout: page
-title: Real-time Flood Monitoring System by Satellite Image
+title: Real-time Flood Monitoring System by SAR Satellite Image
 affiliation: Satellite Geophysics Lab. SNU
 position: Undergraduate Researcher
-description: Supervised Learning, Semantic Segmentation
+description: Semantic Segmentation, System Automation
 project_year: 2020
 img: /assets/img/projects/satgeo/all_result.png
+html: http://scv.snu.ac.kr:3000/
 category: satgeo
 ---
 

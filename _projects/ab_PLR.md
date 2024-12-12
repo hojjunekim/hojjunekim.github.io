@@ -2,7 +2,7 @@
 layout: page
 title: Crowd Navigation with LiDAR via Reinforcement Learning
 affiliation: Perception and Learning for Robotics graduate course project, ETH Zürich
-description: Teacher-Student Policy, LiDAR Encoding, Legged Robot
+description: Teacher-Student RL, LiDAR Encoding
 project_year: 2024
 img: /assets/img/projects/plr/plr.gif
 # img: /assets/img/projects/plr/thumb.png

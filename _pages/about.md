@@ -33,6 +33,30 @@ I was a project intern at <a href="https://ethz.ch/en.html" target="_blank"><b>E
 </div>
 
 ---
+### __Education__
+
+
+<ol class="project_list">
+<li style="width: 100%">
+  <div class="three">
+    <div class="bibtwo" style="float: left; box-sizing: border-box; width: 80%">
+      <div style="font-size: 20px;"><strong>Seoul National University (SNU)</strong></div>
+      <span style="padding-bottom: 3px;"><i>B.Sc. in Aerospace Engineering, summa cum laude (expected)</i></span>
+      <span style="padding-bottom: 3px;">GPA: <b>4.0/4.0(Major)</b>, 3.9/4.0(Overall)</span>
+    </div>
+    <div class="col" style="width: 20%; color: #ccc; text-align: right;">2019-Present</div>
+  </div>
+  <div class="three">
+    <div class="bibtwo" style="float: left; box-sizing: border-box; margin-top: 10px;">
+      <div style="font-size: 20px;"><strong>ETH Zürich</strong></div>
+      <span style="padding-bottom: 3px;"><i>Visiting Student in Mechanical Engineering</i></span>
+    </div>
+    <div class="col" style="width: 40%; color: #ccc; text-align: right;">2024 Spring</div>
+  </div>
+</li>
+</ol>
+
+---
 {: #publications}
 
 ### __Publication__

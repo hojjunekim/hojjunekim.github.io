@@ -3,7 +3,7 @@ layout: page
 title: Thermal camera & Lidar Direct SLAM 
 affiliation: Robust Perception and Mobile Robotics Lab. SNU
 position: Undergraduate Researcher
-description: Direct SLAM, visual-lidar SLAM
+description: Direct SLAM, Visual-LiDAR Fusion
 project_year: 2023
 img: /assets/img/projects/TLslam/result.png
 code: https://github.com/hojjunekim/thermal-lidar-dso

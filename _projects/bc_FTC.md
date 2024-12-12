@@ -2,7 +2,7 @@
 layout: page
 title: Fault Tolerant Control of Quadcopter
 affiliation: Decision Making graduate course project, SNU
-description: Feedback Linearization, Sliding Mode Control, Backstepping Control
+description: Sliding Mode Control, Backstepping Control, Feedback Linearization
 project_year: 2023
 img: /assets/img/projects/FTC/thumb.png
 pdf: /img/projects/FTC/FTCpaper.pdf
