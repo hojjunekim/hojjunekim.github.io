@@ -219,11 +219,12 @@ I was a project intern at <a href="https://ethz.ch/en.html" target="_blank"><b>E
 <ol class="project_list">
 <li style="width: 100%">
   <div class="three {% if personal.selected %}yellow-box{% endif %}">
-    <div class="bibtwo" style="float: left; box-sizing: border-box;">
+    <div class="bibtwo" style="width: 80%; float: left; box-sizing: border-box;">
       <strong>Parking Location Tracking System</strong>
       [<a href="https://patents.google.com/patent/KR102291377B1/en" target="_blank">KR102291377B1</a>]
+      <span><b><u>Hojune Kim</u></b>, Taekin Kim, Jinhwan Na, Jaeyoung Lee, Seunghwan Jeong</span>
     </div>
-    <div class="col" style="width: 40%; color: #ccc; text-align: right;">2021</div>
+    <div class="col" style="width: 20%; color: #ccc; text-align: right;">2021</div>
   </div>
 </li>
 </ol>
