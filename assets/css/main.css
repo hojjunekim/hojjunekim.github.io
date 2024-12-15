@@ -515,13 +515,13 @@ figcaption { font-size: 0.875rem; }
   .bibone { width: 100%; }
 }
 
-.bibtwo { width: 60%; vertical-align: middle; }
+.bibtwo { width: 55%; vertical-align: middle; }
 
 @media (max-width: 650px){
   .bibtwo { width: 100%; }
 }
 
-.proj_year { width: 3%; color: #ccc; text-align: right; }
+.proj_year { width: 11%; color: #ccc; text-align: right; font-size: 14px; padding-left: 0px;}
 
 .caption { height: 100%; color: #aaa; text-align: center; vertical-align: middle; font-size: 12px; }
 

@@ -4,7 +4,7 @@ title: Organized AI Camp and Autonomous Race Car Competition for 200+ Nationwide
 affiliation: AI Tech Play, non-profit organization for AI education
 position: Co-organizer, Hardware Team Leader
 description: Design and Manufacture, Motor Control, Software Integration
-project_year: 2021
+project_year: Feb. 2021 - Aug. 2021
 img: /assets/img/projects/AI-tech/car.png
 youtube: https://www.youtube.com/channel/UCfmSTxHQ6Y43XtHsQ7l_H3Q
 html: https://outta.ai/en

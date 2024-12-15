@@ -4,7 +4,7 @@ title: Modeling and Making Multimodal Sensor system
 affiliation: Robust Perception and Mobile Robotics Lab. SNU
 position: Undergraduate Researcher
 description: Design and Manufacture, Multi-sensor Join Calibration
-project_year: 2023
+project_year: Jan. 2023 - Feb. 2023
 img: /assets/img/projects/handheld/handheld_real.png
 # video: 
 category: rpm

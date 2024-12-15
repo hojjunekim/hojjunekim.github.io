@@ -40,18 +40,25 @@ I was a project intern at <a href="https://ethz.ch/en.html" target="_blank"><b>E
 <li style="width: 100%">
   <div class="three">
     <div class="bibtwo" style="float: left; box-sizing: border-box; width: 80%">
-      <div style="font-size: 20px;"><strong>Seoul National University (SNU)</strong></div>
-      <span style="padding-bottom: 3px;"><i>B.Sc. in Aerospace Engineering, summa cum laude (expected)</i></span>
-      <span style="padding-bottom: 3px;">GPA: <b>4.00/4.00(Major)</b>, 3.91/4.00(Overall)</span>
+      <div style="font-size: 18px;"><strong>Seoul National University (SNU)</strong></div>
+      <span><i>B.Sc. in Aerospace Engineering, summa cum laude (expected)</i></span>
+      <span>GPA: <b>4.00/4.00(Major)</b>, 3.91/4.00(Overall)</span>
     </div>
-    <div class="col" style="width: 20%; color: #ccc; text-align: right;">2019-Present</div>
+    <div class="col proj_year" style="width: 20%;">Mar. 2019 - Present</div>
   </div>
   <div class="three">
-    <div class="bibtwo" style="float: left; box-sizing: border-box; margin-top: 10px;">
-      <div style="font-size: 20px;"><strong>ETH Zürich</strong></div>
-      <span style="padding-bottom: 3px;"><i>Visiting Student in Mechanical Engineering</i></span>
+    <div class="bibtwo" style="float: left; box-sizing: border-box; width: 80%; margin-top: 10px;">
+      <div style="font-size: 18px;"><strong>ETH Zürich</strong></div>
+      <span><i>Visiting Student in Mechanical Engineering</i></span>
     </div>
-    <div class="col" style="width: 40%; color: #ccc; text-align: right;">2024 Spring</div>
+    <div class="col proj_year" style="width: 20%;">Feb. 2024 - Aug. 2024</div>
+  </div>
+  <div class="three">
+    <div class="bibtwo" style="float: left; box-sizing: border-box; width: 80%; margin-top: 10px;">
+      <div style="font-size: 18px;"><strong>Gyeonggi Science High School for the Gifted</strong></div>
+      <span>1-year early admission</span>
+    </div>
+    <div class="col proj_year" style="width: 20%;">Mar. 2016 - Feb. 2019</div>
   </div>
 </li>
 </ol>
@@ -203,35 +210,35 @@ I was a project intern at <a href="https://ethz.ch/en.html" target="_blank"><b>E
       <strong>Korea-Germany Junior Research Fellowship Support</strong>
       <span style="padding-bottom: 3px;"><i>Max Planck POSTECH/KOREA</i></span>
     </div>
-    <div class="col" style="width: 40%; color: #ccc; text-align: right;">2024</div>
+    <div class="col proj_year" style="width: 45%; color: #ccc; text-align: right;">Sept. 2024</div>
   </div>
   <div class="three {% if personal.selected %}yellow-box{% endif %}">
     <div class="bibtwo" style="float: left; box-sizing: border-box;">
       <strong>Global Leadership Program Scholarship</strong>
       <span style="padding-bottom: 3px;"><i>Seoul National University</i></span>
     </div>
-    <div class="col" style="width: 40%; color: #ccc; text-align: right;">2024</div>
+    <div class="col proj_year" style="width: 45%; color: #ccc; text-align: right;">Feb. 2024</div>
   </div>
   <div class="three {% if personal.selected %}yellow-box{% endif %}">
     <div class="bibtwo" style="float: left; box-sizing: border-box;">
       <strong>Certificate of Appreciation (AI Tech Play)</strong>
       <span style="padding-bottom: 3px;"><i>Deans, College of Engineering in Seoul National University</i></span>
     </div>
-    <div class="col" style="width: 40%; color: #ccc; text-align: right;">2021</div>
+    <div class="col proj_year" style="width: 45%; color: #ccc; text-align: right;">Jun. 2021</div>
   </div>
   <div class="three {% if personal.selected %}yellow-box{% endif %}">
     <div class="bibtwo" style="float: left; box-sizing: border-box;">
       <strong>Kwanjeong Undergraduate Scholarship</strong>
       <span style="padding-bottom: 3px;"><i>Kwanjeong Educational Foundation</i></span>
     </div>
-    <div class="col" style="width: 40%; color: #ccc; text-align: right;">2021</div>
+    <div class="col proj_year" style="width: 45%; color: #ccc; text-align: right;">Mar. 2021</div>
   </div>
   <div class="three {% if personal.selected %}yellow-box{% endif %}">
     <div class="bibtwo" style="float: left; box-sizing: border-box;">
       <strong>Undergraduate Research Internship Scholarship</strong>
       <span style="padding-bottom: 3px;"><i>Seoul National University</i></span>
     </div>
-    <div class="col" style="width: 40%; color: #ccc; text-align: right;">2020</div>
+    <div class="col proj_year" style="width: 45%; color: #ccc; text-align: right;">Mar. 2021</div>
   </div>
 </li>
 </ol>
@@ -248,7 +255,7 @@ I was a project intern at <a href="https://ethz.ch/en.html" target="_blank"><b>E
       [<a href="https://patents.google.com/patent/KR102291377B1/en" target="_blank">KR102291377B1</a>]
       <span><b><u>Hojune Kim</u></b>, Taekin Kim, Jinhwan Na, Jaeyoung Lee, Seunghwan Jeong</span>
     </div>
-    <div class="col" style="width: 20%; color: #ccc; text-align: right;">2021</div>
+    <div class="col proj_year" style="width: 20%; color: #ccc; text-align: right;">2021</div>
   </div>
 </li>
 </ol>

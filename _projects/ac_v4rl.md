@@ -4,7 +4,7 @@ title: Distributed Optimization with Gaussian Belief Propagation for Continuous-
 affiliation: Vision for Robotics Lab. ETH Zürich
 position: Undergraduate Researcher
 description: Distributed Optimization, Continuous Time SLAM
-project_year: 2024
+project_year: Feb. 2024 - Aug. 2024
 img: /assets/img/projects/v4rl/gbp.gif
 # img: /assets/img/projects/v4rl/thumb.png
 code: https://github.com/VIS4ROB-lab/hyperion

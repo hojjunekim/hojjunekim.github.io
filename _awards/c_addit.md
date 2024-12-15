@@ -4,7 +4,7 @@ title: Minister of National Defense Award, Minister of Defense Startup Competiti
 affiliation: Addit, Start-up
 position: Co-Founder
 description: Web Programming, UI/UX Design, Enterprise
-project_year: 2022
+project_year: Feb. 2022
 img: /assets/img/projects/addit/thumb.png
 # img: /assets/img/projects/addit/addit.gif
 news: https://www.shinailbo.co.kr/news/articleView.html?idxno=1631059
