@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Active Learning for Semantic Mapping in Humanoid Navigation via Kinematic-aided Visual Odometry
+title: Adaptive Locomotion via Active Learning Semantic SLAM
 affiliation: German Aerospace Center (DLR)
 position: Guest Student Researcher
-description: Graph Optimization, Lifelong Learning, State Estimation
+description: Recursive Estimation, Lifelong Learning, Semantic SLAM
 project_year: Sept. 2024 - Present
 img: /assets/img/projects/toro/TORO.gif
 category: DLR
