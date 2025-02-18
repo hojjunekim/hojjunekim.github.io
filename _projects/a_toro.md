@@ -5,6 +5,6 @@ affiliation: German Aerospace Center (DLR)
 position: Guest Student Researcher
 description: Graph Optimization, Lifelong Learning, State Estimation
 project_year: Sept. 2024 - Present
-img: /assets/img/projects/toro/TORO_test.gif
+img: /assets/img/projects/toro/TORO.gif
 category: DLR
 ---
