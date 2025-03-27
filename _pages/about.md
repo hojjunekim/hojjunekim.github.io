@@ -2,7 +2,7 @@
 layout: about
 permalink: /
 title: <strong>Hojune</strong> Kim
-description: Guest Student Researcher | German Aerospace Center DLR
+description: Incoming Master's Student | Stanford University
 
 profile:
   align: right
@@ -18,9 +18,9 @@ years: [2024]
 _How can we develop safe autonomy from perception to navigation, and control in a multi-robot system?_  
 
 To explore these challenging questions, -->
-I am currently a Guest Student Researcher at <a href="https://www.dlr.de/en/rm" target="_blank"><b>German Aerospace Center (DLR)</b></a>, working on humanoid navigation under the supervision of <a href="https://rmc.dlr.de/rm/de/staff/jinoh.lee/" target="_blank">Prof. Jinoh Lee</a>. I am pursuing my undergraduate degree in Aerospace Engineering at <a href="https://www.snu.ac.kr" target="_blank"><b>Seoul National University</b></a>, where I am advised by <a href="https://rpm.snu.ac.kr" target="_blank">Prof. Ayoung Kim</a> with a focus on perception.
+I am an incoming Master's student at <a href="https://www.stanford.edu/" target="_blank"><b>Stanford University</b></a> in Aeronautics and Astronautics. Previously, I was fortunate to work at <a href="https://www.dlr.de/en/rm" target="_blank"><b>German Aerospace Center (DLR)</b></a> under the supervision of <a href="https://rmc.dlr.de/rm/de/staff/jinoh.lee/" target="_blank">Prof. Jinoh Lee</a>. I am pursuing my undergraduate degree in Aerospace Engineering at <a href="https://www.snu.ac.kr" target="_blank"><b>Seoul National University</b></a>, where I had advised by <a href="https://rpm.snu.ac.kr" target="_blank">Prof. Ayoung Kim</a> with a focus on perception.
 
-My research centers on safe autonomy, utilizing optimization-based approaches for perception and control. I focus on trustworthy and safe-ensured solutions, supported by experimental validation, and aim to expand to cooperative robots that interact with humans.
+My research centers on robot autonomy, utilizing optimization-based approaches for perception and control. I focus on trustworthy and safe-ensured solutions, supported by experimental validation, and aim to expand to cooperative robots that interact with humans.
 
 I was a project intern at <a href="https://ethz.ch/en.html" target="_blank"><b>ETH Zürich</b></a>, managing distributed optimization for continuous-time SLAM and crowd navigation with reinforcement learning. I have also developed an autonomous car and quadcopter through student clubs and participated in the international competition. I co-organized a non-profit organization for AI education, <a href="https://www.youtube.com/channel/UCfmSTxHQ6Y43XtHsQ7l_H3Q" target="_blank">AI Tech Play</a>, and hosted a nationwide AI camp with an autonomous race car competition for students.
 
@@ -40,11 +40,18 @@ I was a project intern at <a href="https://ethz.ch/en.html" target="_blank"><b>E
 <li style="width: 100%">
   <div class="three">
     <div class="bibtwo" style="float: left; box-sizing: border-box; width: 80%">
+      <div style="font-size: 18px;"><strong>Stanford University</strong></div>
+      <span><i>Incoming M.S. student in Aeronautics and Astronautics</i></span>
+    </div>
+    <div class="col proj_year" style="width: 20%;">Starting from Sept. 2025</div>
+  </div>
+  <div class="three">
+    <div class="bibtwo" style="float: left; box-sizing: border-box; width: 80%">
       <div style="font-size: 18px;"><strong>Seoul National University (SNU)</strong></div>
-      <span><i>B.Sc. in Aerospace Engineering, summa cum laude (expected)</i></span>
+      <span><i>B.S. in Aerospace Engineering, summa cum laude (expected)</i></span>
       <span>GPA: <b>4.00/4.00(Major)</b>, 3.91/4.00(Overall)</span>
     </div>
-    <div class="col proj_year" style="width: 20%;">Mar. 2019 - Present</div>
+    <div class="col proj_year" style="width: 20%;">Mar. 2019 - Jun. 2025</div>
   </div>
   <div class="three">
     <div class="bibtwo" style="float: left; box-sizing: border-box; width: 80%; margin-top: 10px;">
