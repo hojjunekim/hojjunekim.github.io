@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Hojune Kim</title>
+  <title>Hojune Kim | Crowd Navigation with LiDAR via Reinforcement Learning</title>
   <meta name="description" content="Roboticist, Researcher, and Developer
 ">
 
   <link rel="shortcut icon" href="/assets/img/favicon.jpg">
 
   <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="canonical" href="/blog/">
+  <link rel="canonical" href="/projects/ab_PLR/">
 </head>
 
 
@@ -71,28 +71,36 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <!-- <div class="header-bar">
-  <h1></h1>
-  <h2></h2>
-</div> -->
+        <div class="post">
 
-<ul class="post-list">
-  
-    <li>
-      <h2><a class="post-title" href="/blog/2017/ros-tips/">Useful Tips for ROS Users</a></h2>
-      <p class="post-meta">November 7, 2017</p>
-      <p>Getting past a beginner's understanding of ROS quickly and properly.</p>
-    </li>
-  
-    <li>
-      <h2><a class="post-title" href="/blog/2017/robotics-club/">Robotics Club: Why it exists?</a></h2>
-      <p class="post-meta">September 12, 2017</p>
-      <p>A few important reasons why student community groups help in moulding a scientific mind.</p>
-    </li>
-  
-</ul>
+  <header class="post-header">
+    <div class="two col">
+      <h1 class="post-title">Crowd Navigation with LiDAR via Reinforcement Learning</h1>
+      <h5 class="post-description">Teacher-Student RL, LiDAR Encoding</h5>
+    </div>
+    <div>
+      <span class="contacticon_profile center">
+        <a href="mailto:hojune@stanford.edu"><i class="fa fa-envelope-square"></i></a>
+        <a href="https://scholar.google.com/citations?user=C6-Y7OcAAAAJ" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar-square"></i></a>
+        <a href="https://github.com/hojjunekim" target="_blank" title="GitHub"><i class="fa fa-github-square"></i></a>
+        <a href="https://www.linkedin.com/in/hojjunekim" target="_blank" title="LinkedIn"><i class="fa fa-linkedin-square"></i></a>
+        <!-- <a href="https://twitter.com/morak212" target="_blank" title="Twitter"><i class="fa fa-twitter-square"></i></a> -->
+      </span>
+    
+      <div class="col three caption">
+        
+      </div>
+    </div>
+  </header>
 
+  <article class="post-content Crowd Navigation with LiDAR via Reinforcement Learning clearfix">
+    <p>Navigating around dynamic obstacles such as human crowds poses a significant challenge for mobile robots. This project introduces a pipeline to train a hierarchical, LiDAR based perception-navigation policy end-to-end with reinforcement learning. The planner utilizes an encoding of a LiDAR point cloud to predict velocity commands that are passed to a low-level policy. Utilizing the student-teacher approach, we first train a teacher policy using privileged observations, which include the velocities of the obstacles and a sparse 2D point cloud. A LiDAR encoder, trained using self-supervision, embeds the raw point-cloud data for the student policy. To enable the planner to reason about the motion of the obstacles and prevent it from getting stuck in local minima, we include a gated recurrent unit in our policy network. We evaluate the teacher policy in both static and dynamic environments, demonstrating that observing the velocities of the obstacles enhances performance in dynamic scenarios. Additionally, our results reveal that the current implementation of the recurrent unit in combination with recurrent PPO does not improve the performance in the static case, necessitating further research.</p>
 
+  </article>
+
+  
+
+</div>
 
       </div>
     </div>

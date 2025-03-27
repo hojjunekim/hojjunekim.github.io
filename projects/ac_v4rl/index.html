@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Hojune Kim</title>
+  <title>Hojune Kim | Distributed Optimization with Gaussian Belief Propagation for Continuous-time SLAM</title>
   <meta name="description" content="Roboticist, Researcher, and Developer
 ">
 
   <link rel="shortcut icon" href="/assets/img/favicon.jpg">
 
   <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="canonical" href="/blog/">
+  <link rel="canonical" href="/projects/ac_v4rl/">
 </head>
 
 
@@ -71,28 +71,37 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <!-- <div class="header-bar">
-  <h1></h1>
-  <h2></h2>
-</div> -->
+        <div class="post">
 
-<ul class="post-list">
-  
-    <li>
-      <h2><a class="post-title" href="/blog/2017/ros-tips/">Useful Tips for ROS Users</a></h2>
-      <p class="post-meta">November 7, 2017</p>
-      <p>Getting past a beginner's understanding of ROS quickly and properly.</p>
-    </li>
-  
-    <li>
-      <h2><a class="post-title" href="/blog/2017/robotics-club/">Robotics Club: Why it exists?</a></h2>
-      <p class="post-meta">September 12, 2017</p>
-      <p>A few important reasons why student community groups help in moulding a scientific mind.</p>
-    </li>
-  
-</ul>
+  <header class="post-header">
+    <div class="two col">
+      <h1 class="post-title">Distributed Optimization with Gaussian Belief Propagation for Continuous-time SLAM</h1>
+      <h5 class="post-description">Distributed Optimization, Continuous Time SLAM</h5>
+    </div>
+    <div>
+      <span class="contacticon_profile center">
+        <a href="mailto:hojune@stanford.edu"><i class="fa fa-envelope-square"></i></a>
+        <a href="https://scholar.google.com/citations?user=C6-Y7OcAAAAJ" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar-square"></i></a>
+        <a href="https://github.com/hojjunekim" target="_blank" title="GitHub"><i class="fa fa-github-square"></i></a>
+        <a href="https://www.linkedin.com/in/hojjunekim" target="_blank" title="LinkedIn"><i class="fa fa-linkedin-square"></i></a>
+        <!-- <a href="https://twitter.com/morak212" target="_blank" title="Twitter"><i class="fa fa-twitter-square"></i></a> -->
+      </span>
+    
+      <div class="col three caption">
+        
+      </div>
+    </div>
+  </header>
 
+  <article class="post-content Distributed Optimization with Gaussian Belief Propagation for Continuous-time SLAM clearfix">
+    <p>Conventional Simultaneous Localization and Mapping (SLAM) methods, typically based on discrete-time formulations, have demonstrated significant utility in various robotics applications. These methods, however, face challenges such as quantization errors and inefficiencies in handling asynchronous data from multiple sensors. Continuous-time SLAM approaches, utilizing splines to represent motion, o↵er a promising alternative by more naturally integrating sensor data captured at irregular intervals. Despite their potential, many continuous-time SLAM methods rely on centralized Non-Linear Least Squares (NLLS) solvers, which can be computationally expensive and inefficient for asynchronous data processing.
+This project addresses challenges in SLAM by integrating the decentralized solver Gaussian Belief Propagation (GBP) with a continuous-time formulation, specifically utilizing Z-splines. The approach aims to enhance robustness and efficiency in multirobot systems. The method is validated using a real-world dataset and compared against traditional NLLS solvers. Results demonstrate that GBP with continuous time representation outperforms NLLS in handling perturbations, providing more stable and efficient optimization.</p>
 
+  </article>
+
+  
+
+</div>
 
       </div>
     </div>
