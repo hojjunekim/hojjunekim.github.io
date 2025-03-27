@@ -46,7 +46,7 @@ As a project intern at <a href="https://ethz.ch/en.html" target="_blank"><b>ETH 
     <div class="col proj_year" style="width: 20%;">Sept. 2025 - </div>
   </div>
   <div class="three">
-    <div class="bibtwo" style="float: left; box-sizing: border-box; width: 80%">
+    <div class="bibtwo" style="float: left; box-sizing: border-box; width: 80%; margin-top: 10px;">
       <div style="font-size: 18px;"><strong>Seoul National University (SNU)</strong></div>
       <span><i>B.S. in Aerospace Engineering, summa cum laude (expected)</i></span>
       <span>GPA: <b>4.00/4.00(Major)</b>, 3.91/4.00(Overall)</span>
