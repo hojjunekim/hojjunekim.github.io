@@ -1,5 +1,6 @@
 ---
 layout: page
+published: false # hidden from site; set true to show again
 title: Thermal camera & Lidar Direct SLAM 
 affiliation: Robust Perception and Mobile Robotics Lab. SNU
 position: Undergraduate Researcher

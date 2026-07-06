@@ -1,5 +1,6 @@
 ---
 layout: page
+published: false # hidden from site; set true to show again
 title: Real-time Flood Monitoring System by SAR Satellite Image
 affiliation: Satellite Geophysics Lab. SNU
 position: Undergraduate Researcher

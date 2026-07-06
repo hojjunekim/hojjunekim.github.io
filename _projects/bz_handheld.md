@@ -1,5 +1,6 @@
 ---
 layout: page
+published: false # hidden from site; set true to show again
 title: Modeling and Making Multimodal Sensor system
 affiliation: Robust Perception and Mobile Robotics Lab. SNU
 position: Undergraduate Researcher

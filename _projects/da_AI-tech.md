@@ -1,14 +1,14 @@
 ---
 layout: page
 title: Organized AI Camp and Autonomous Race Car Competition for 200+ Nationwide Students
-affiliation: AI Tech Play, non-profit organization for AI education
+affiliation: AI Tech Play
 position: Co-organizer, Hardware Team Leader
 description: Design and Manufacture, Motor Control, Software Integration
 project_year: Feb. 2021 - Aug. 2021
 img: /assets/img/projects/AI-tech/car.png
 youtube: https://www.youtube.com/channel/UCfmSTxHQ6Y43XtHsQ7l_H3Q
 html: https://outta.ai/en
-category: club
+category: volunteer
 ---
 
 A group of engineering enthusiasts, driven by a sincere passion for the field, came together to establish the AI TechPlay organization. The objective was to share engineering knowledge widely among students. With the aim of creating an avenue for firsthand experiences in engineering, we designed a program targeting middle school students nationwide. This program aimed to offer them a free opportunity to experience autonomous driving technology and coding, culminating in a linked coding competition. Inspired by the autonomous driving RC-car competition held annually at MIT, we sought to provide students with the opportunity to code autonomous driving algorithms, simulate them, and run the code on an actual RC-car, offering a real-world testing platform.
