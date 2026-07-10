@@ -19,6 +19,7 @@ years: [2026, 2024]
       <a href="https://scholar.google.com/citations?user={{ site.scholar_authorid }}" target="_blank">Google Scholar</a> |<br>
       | <a href="https://github.com/{{ site.github_username }}" target="_blank">Github</a> |
       <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank">LinkedIn</a> |
+      <a href="https://x.com/HojuneKim" target="_blank">X</a> |
     </p>
   </div>
   <div class="topbio">
