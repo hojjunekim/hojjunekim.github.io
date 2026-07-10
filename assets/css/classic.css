@@ -1,0 +1,149 @@
+/* -----------------------------------------------------------------------------
+   Classic academic homepage style (inspired by Tairan He / Jon Barron template)
+   Loaded only on pages with `layout: classic`, after main.css, to override
+   al-folio defaults.
+-------------------------------------------------------------------------------*/
+
+body.classic {
+  font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #222;
+  background-color: #fff;
+}
+
+.classic-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 35px 25px 60px;
+  line-height: 1.5;
+}
+
+.classic-page,
+.classic-page p,
+.classic-page span,
+.classic-page div,
+.classic-page li {
+  font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+}
+
+.classic-page p {
+  color: #222;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* Links: blue, orange on hover (Tairan / Barron palette) */
+.classic-page a {
+  color: #1772d0;
+  text-decoration: none;
+  font-weight: 400;
+}
+.classic-page a:hover,
+.classic-page a:focus {
+  color: #f09228;
+  text-decoration: none;
+}
+
+/* Name heading at the very top */
+.classic-page .pageheading {
+  font-size: 38px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 0 18px;
+  line-height: 1.2;
+}
+.classic-page .pageheading strong { font-weight: 600; }
+
+/* Top block: photo + links on the left, bio on the right */
+.toprow {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 8px;
+}
+.topphoto {
+  flex: 0 0 30%;
+  max-width: 30%;
+  text-align: center;
+}
+.topphoto img {
+  width: 100%;
+  border-radius: 15px;
+  max-width: 100%;
+}
+.topphoto .toplinks {
+  text-align: center;
+  margin: 10px 0 0;
+  font-size: 15px;
+  line-height: 1.7;
+}
+.topbio {
+  flex: 1 1 auto;
+  text-align: justify;
+}
+.topbio p { margin: 0 0 12px; }
+.topbio p:last-child { margin-bottom: 0; }
+
+/* Gradient horizontal rules between sections */
+.classic-page hr {
+  border: 0;
+  height: 1px;
+  margin: 26px 0 18px;
+  background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+
+/* Section headings (### __Title__ -> h3) */
+.classic-page h1,
+.classic-page h2,
+.classic-page h3,
+.classic-page h4,
+.classic-page h5,
+.classic-page h6 {
+  font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+  color: #222;
+}
+.classic-page h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 6px 0 12px;
+}
+.classic-page h3 strong { font-weight: 600; }
+.classic-page h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 4px 0 8px;
+}
+
+/* Keep the existing list layouts (project_list / three / proj_year) readable */
+.classic-page .project_list { padding-left: 0; }
+.classic-page .proj_year { color: #999; }
+
+/* Bibliography tweaks to match the palette */
+.classic-page .bibliography .author a { border-bottom-color: #1772d0; }
+.classic-page .bibliography li .title { font-weight: 600; }
+
+/* Footer: minimal, centered, and NOT fixed (al-folio defaults to position:fixed) */
+body.classic footer {
+  position: static;
+  left: auto;
+  bottom: auto;
+  width: 100%;
+  border-top: 1px solid #eee;
+  background: none;
+  color: #999;
+  font-size: 12px;
+  padding: 20px 0 30px;
+  margin-top: 30px;
+}
+body.classic footer a { color: #1772d0; }
+body.classic footer a:hover { color: #f09228; }
+
+/* Responsive: stack the top block on small screens */
+@media (max-width: 600px) {
+  .toprow { flex-direction: column; align-items: center; }
+  .topphoto { flex-basis: auto; max-width: 60%; margin-bottom: 16px; }
+  .topbio { text-align: left; }
+  .classic-page { padding: 20px 16px 40px; }
+  .classic-page .pageheading { font-size: 30px; }
+}

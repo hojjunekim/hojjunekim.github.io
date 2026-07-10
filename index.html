@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Hojune Kim</title>
+  <meta name="description" content="Roboticist, Researcher, and Developer
+">
+
+  <link rel="shortcut icon" href="/assets/img/favicon.jpg">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/assets/css/classic.css">
+  
+  <link rel="canonical" href="/">
+</head>
+
+
+  <body class="classic">
+
+    <div class="classic-page">
+      <p class="pageheading"><strong>Hojune</strong> Kim</p>
+
+<div class="toprow">
+  <div class="topphoto">
+    <img src="/assets/img/profile.JPG" alt="Hojune Kim" />
+    <p class="toplinks">
+      | <a href="/assets/documents/CV_HJ.pdf" target="_blank">CV</a> |
+      <a href="mailto:hojune@stanford.edu">Email</a> |
+      <a href="https://scholar.google.com/citations?user=C6-Y7OcAAAAJ" target="_blank">Google Scholar</a> |<br />
+      | <a href="https://github.com/hojjunekim" target="_blank">Github</a> |
+      <a href="https://www.linkedin.com/in/hojjunekim" target="_blank">LinkedIn</a> |
+      <a href="https://x.com/HojuneKim" target="_blank">X</a> |
+    </p>
+  </div>
+  <div class="topbio">
+    <p>I am a Master's student in Aeronautics and Astronautics at <a href="https://www.stanford.edu/" target="_blank"><b>Stanford University</b></a>, advised by <a href="https://profiles.stanford.edu/mac-schwager" target="_blank">Prof. Mac Schwager</a> in the <a href="https://msl.stanford.edu/" target="_blank">Multi-Robot Systems Lab (MSL)</a>. Previously, I was a guest researcher on the humanoid TORO team at the <a href="https://www.dlr.de/en/rm" target="_blank"><b>German Aerospace Center (DLR)</b></a> and a visiting student at <a href="https://ethz.ch/en.html" target="_blank"><b>ETH Zürich</b></a>. I received my B.S. in Aerospace Engineering from <a href="https://www.snu.ac.kr" target="_blank"><b>Seoul National University</b></a>, advised by <a href="https://rpm.snu.ac.kr" target="_blank">Prof. Ayoung Kim</a>.</p>
+    <p>My research bridges model-based knowledge with data-driven learning to overcome data scarcity for robot autonomy.</p>
+    <p>Email: hojune [AT] stanford.edu</p>
+  </div>
+</div>
+
+<hr id="publications" />
+
+<h3 id="publication"><strong>Publication</strong></h3>
+
+<!-- #### __International Conference__ -->
+
+<ol class="bibliography"><li><div id="kim2026legs" class="col three ">
+  <div style="clear: both;">
+    <div style="">
+        <img class="col bibone first" src="/assets/img/teasers/legs.gif" />
+    </div>
+  </div>
+  <div class="col bibtwo last" style="width: 65%;">
+    
+      <span class="title">LEGS: Fine-Tuning Teleop-Free VLAs for Humanoid Loco-manipulation in an Embodied Gaussian Splatting World</span>
+      <span class="author">
+        
+          
+            
+              
+                <em><b>Hojune Kim</b></em>,
+              
+            
+          
+        
+          
+            
+              
+                Timothy Chen,
+              
+            
+          
+        
+          
+            
+              
+                Jiankai Sun,
+              
+            
+          
+        
+          
+            
+              
+                Lars W. Osterberg,
+              
+            
+          
+        
+          
+            
+              
+                Qianzhong Chen,
+              
+            
+          
+        
+          
+            
+              
+                Ke Wang,
+              
+            
+          
+        
+          
+            
+              
+                and Mac Schwager
+              
+            
+          
+        
+      </span>
+
+      <span class="periodical">
+      
+        <em>arXiv</em>
+      
+      
+        
+          2026
+        
+      
+      </span>
+    
+
+    <span class="links">
+    
+      [<a class="abstract">Abstract</a>]
+    
+    
+      [<a href="http://arxiv.org/abs/2606.01458" target="_blank">arXiv</a>]
+    
+    
+    
+      [<a href="https://legsvla.github.io/" target="_blank">Website</a>]
+    
+    
+    
+    
+    
+    
+    </span>
+
+    <!-- Hidden abstract block -->
+    
+    <span class="abstract hidden">
+      <p>Training vision-language-action (VLA) policies for humanoid loco-manipulation is constrained by the high cost and complexity of collecting human teleoperation demonstrations. VLA policies fine-tuned in simulators have, until now, failed to transfer effectively in humanoid loco-manipulation tasks. We present LEGS (Loco-manipulation via Embodied Gaussian Splatting), a hybrid simulator that composites a mesh foreground (robot, objects, props) over a photorealistic 3D Gaussian Splatting (3DGS) background reconstructed from a handheld scene capture. LEGS uses a procedural motion-primitive generator to synthesize labeled demonstrations at scale without human teleoperation, and a deterministic two-stage color calibration to align the rendered 3DGS image to the robot’s deployment camera. On a Unitree G1 humanoid robot, across three pick-and-place tasks of increasing whole-body difficulty and three VLA backbones, a policy trained purely on LEGS data matches or exceeds one trained on human teleoperation demos on every experiment. It also outperforms a mesh-only simulation baseline that ablates the effect of the 3DGS background, showing that photorealistic rendering is a key enabler for synthetic data transfer. Humanoid motion is recorded independently of scene appearance in LEGS, allowing the same auto-generated demonstrations to be re-rendered under new backgrounds and object meshes–covering a new scene at more than 15x lower cost than teleoperation–to augment training data for robustness to scene variations.</p>
+    </span>
+    
+  </div>
+</div>
+</li></ol>
+
+<ol class="bibliography"><li><div id="kim20242d" class="col three ">
+  <div style="clear: both;">
+    <div style="">
+        <img class="col bibone first" src="/assets/img/teasers/mmwave.png" />
+    </div>
+  </div>
+  <div class="col bibtwo last" style="width: 65%;">
+    
+      <span class="title">2D Ego-Motion with Yaw Estimation using Only mmWave Radars via Two-Way weighted ICP</span>
+      <span class="author">
+        
+          
+            
+              
+                <em><b>Hojune Kim</b></em>,
+              
+            
+          
+        
+          
+            
+              
+                Hyesu Jang,
+              
+            
+          
+        
+          
+            
+              
+                and Ayoung Kim
+              
+            
+          
+        
+      </span>
+
+      <span class="periodical">
+      
+        <em>ICRA Workshop Radar in Robotics</em>
+      
+      
+        
+          2024
+        
+      
+      </span>
+    
+
+    <span class="links">
+    
+      [<a class="abstract">Abstract</a>]
+    
+    
+      [<a href="http://arxiv.org/abs/2404.00830" target="_blank">arXiv</a>]
+    
+    
+    
+    
+    
+    
+      [<a href="/assets/documents//poster/ICRA2024.pdf" target="_blank">Poster</a>]
+    
+    
+    
+    </span>
+
+    <!-- Hidden abstract block -->
+    
+    <span class="abstract hidden">
+      <p>The interest in single-chip mmWave Radar is driven by their compact form factor, cost-effectiveness, and robustness under harsh environmental conditions. Despite its promising attributes, the principal limitation of mmWave radar lies in its capacity for autonomous yaw rate estimation. Conventional solutions have often resorted to integrating inertial measurement unit (IMU) or deploying multiple radar units to circumvent this shortcoming. This paper introduces an innovative methodology for two-dimensional ego-motion estimation, focusing on yaw rate deduction, utilizing solely mmWave radar sensors. By applying a weighted Iterated Closest Point (ICP) algorithm to register processed points derived from heatmap data, our method facilitates 2D ego-motion estimation devoid of prior information. Through experimental validation, we verified the effectiveness and promise of our technique for ego-motion estimation using exclusively radar data.</p>
+    </span>
+    
+  </div>
+</div>
+</li></ol>
+
+<div style="clear: both;"></div>
+
+<hr />
+<h3 id="education"><strong>Education</strong></h3>
+
+<ol class="project_list">
+<li style="width: 100%">
+  <div class="three">
+    <div class="bibtwo" style="float: left; box-sizing: border-box; width: 80%">
+      <div style="font-size: 18px;"><strong>Stanford University</strong></div>
+      <span><i>M.S. in Aeronautics and Astronautics</i></span>
+      <span>GPA: <b>4.00/4.00</b></span>
+    </div>
+    <div class="col proj_year" style="width: 20%;">Sept. 2025 - Present</div>
+  </div>
+  <div class="three">
+    <div class="bibtwo" style="float: left; box-sizing: border-box; width: 80%; margin-top: 10px;">
+      <div style="font-size: 18px;"><strong>Seoul National University (SNU)</strong></div>
+      <span><i>B.S. in Aerospace Engineering, summa cum laude</i></span>
+      <span>GPA: <b>4.00/4.00(Major)</b>, 3.91/4.00(Overall)</span>
+    </div>
+    <div class="col proj_year" style="width: 20%;">Mar. 2019 - Jun. 2025</div>
+  </div>
+  <div class="three">
+    <div class="bibtwo" style="float: left; box-sizing: border-box; width: 80%; margin-top: 10px;">
+      <div style="font-size: 18px;"><strong>ETH Zürich</strong></div>
+      <span><i>Visiting Student in Mechanical Engineering</i></span>
+    </div>
+    <div class="col proj_year" style="width: 20%;">Feb. 2024 - Aug. 2024</div>
+  </div>
+  <div class="three">
+    <div class="bibtwo" style="float: left; box-sizing: border-box; width: 80%; margin-top: 10px;">
+      <div style="font-size: 18px;"><strong>Gyeonggi Science High School for the Gifted</strong></div>
+      <span>1-year early admission</span>
+    </div>
+    <div class="col proj_year" style="width: 20%;">Mar. 2016 - Feb. 2019</div>
+  </div>
+</li>
+</ol>
+
+<hr id="projects" />
+
+<h3 id="projects"><strong>Projects</strong></h3>
+
+<ol class="project_list">
+<li>
+ 
+<div class="col three ">
+  <div style="clear: both;">
+    <div style="">
+        <img class="col bibone first" src="/assets/img/projects/toro/TORO.gif" />
+    </div>
+  </div>
+  <div class="col bibtwo last">
+      <span class="title">Knowledge-enabled Adaptive Locomotion Using Semantic SLAM with Active Learning</span>
+      <span class="affiliation">German Aerospace Center (DLR)</span>
+      <span class="position">Guest Student Researcher</span>
+      <span class="links">
+      
+      
+      
+        [<a href="https://www.dlr.de/en/rm/latest/news/2024/humanoids-2024-rm-at-the-international-conference-on-humanoid-robotics-in-nancy" target="_blank">News</a>]
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      </span>
+      <span class="description">Recursive Estimation, Active Learning, Semantic SLAM</span>
+  </div>
+  <div class="col proj_year">Sept. 2024 - Feb. 2025</div>
+</div>
+
+ 
+<div class="col three ">
+  <div style="clear: both;">
+    <div style="">
+        <img class="col bibone first" src="/assets/img/projects/plr/plr.gif" />
+    </div>
+  </div>
+  <div class="col bibtwo last">
+      <span class="title">Crowd Navigation with LiDAR via Reinforcement Learning</span>
+      <span class="affiliation">Robotic Systems Lab, ETH Zürich</span>
+      <span class="position"></span>
+      <span class="links">
+      
+      
+        [<a href="https://youtu.be/vwoVTW57BS4" target="_blank">Video</a>]
+      
+      
+      
+      
+      
+      
+        [<a href="/assets//img/projects/plr/paper.pdf" target="_blank">PDF</a>]
+      
+      
+      
+      
+      
+      </span>
+      <span class="description">Teacher-Student RL, LiDAR Encoding</span>
+  </div>
+  <div class="col proj_year">Mar. 2024 - Jun. 2024</div>
+</div>
+
+ 
+<div class="col three ">
+  <div style="clear: both;">
+    <div style="">
+        <img class="col bibone first" src="/assets/img/projects/v4rl/gbp.gif" />
+    </div>
+  </div>
+  <div class="col bibtwo last">
+      <span class="title">Distributed Optimization with Gaussian Belief Propagation for Continuous-time SLAM</span>
+      <span class="affiliation">Vision for Robotics Lab. ETH Zürich</span>
+      <span class="position">Undergraduate Researcher</span>
+      <span class="links">
+      
+      
+      
+      
+      
+      
+      
+        [<a href="/assets//img/projects/v4rl/report.pdf" target="_blank">PDF</a>]
+      
+      
+      
+      
+        [<a href="/assets/img/projects/v4rl/slides.pdf" target="_blank">Slides</a>]
+      
+      
+        [<a href="https://github.com/VIS4ROB-lab/hyperion" target="_blank">Code</a>]
+      
+      </span>
+      <span class="description">Distributed Optimization, Continuous Time SLAM</span>
+  </div>
+  <div class="col proj_year">Feb. 2024 - Aug. 2024</div>
+</div>
+
+ 
+<div class="col three ">
+  <div style="clear: both;">
+    <div style="">
+        <img class="col bibone first" src="/assets/img/projects/ARcube/ARcube.gif" />
+    </div>
+  </div>
+  <div class="col bibtwo last">
+      <span class="title">Display Virtual Cubes on Your Desk!</span>
+      <span class="affiliation">Computer Vision course project, SNU</span>
+      <span class="position"></span>
+      <span class="links">
+      
+      
+        [<a href="https://youtu.be/uXtX-wH2clQ" target="_blank">Video</a>]
+      
+      
+      
+      
+      
+      
+        [<a href="/assets//img/projects/ARcube/paper.pdf" target="_blank">PDF</a>]
+      
+      
+      
+      
+      
+        [<a href="https://github.com/jjihwan/AR_stereo_vision" target="_blank">Code</a>]
+      
+      </span>
+      <span class="description">3D Vision, Optical Flow</span>
+  </div>
+  <div class="col proj_year">Mar. 2023 - Jun. 2023</div>
+</div>
+
+ 
+<div class="col three ">
+  <div style="clear: both;">
+    <div style="">
+        <img class="col bibone first" src="/assets/img/projects/landing/landing.gif" />
+    </div>
+  </div>
+  <div class="col bibtwo last">
+      <span class="title">Autonomous Flight Landing in Quadrotor system</span>
+      <span class="affiliation">Bulnabi, autonomous flight drone club</span>
+      <span class="position"></span>
+      <span class="links">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        [<a href="https://github.com/Bulnabi-SNU/auto_landing" target="_blank">Code</a>]
+      
+      </span>
+      <span class="description">Motion Planning, PX4-Autopilot</span>
+  </div>
+  <div class="col proj_year">Jul. 2023 - Aug. 2023</div>
+</div>
+
+ 
+<div class="col three ">
+  <div style="clear: both;">
+    <div style="">
+        <img class="col bibone first" src="/assets/img/projects/FTC/thumb.png" />
+    </div>
+  </div>
+  <div class="col bibtwo last">
+      <span class="title">Fault Tolerant Control of Quadcopter</span>
+      <span class="affiliation">Decision Making graduate course project, SNU</span>
+      <span class="position"></span>
+      <span class="links">
+      
+      
+      
+      
+      
+      
+      
+        [<a href="/assets//img/projects/FTC/FTCpaper.pdf" target="_blank">PDF</a>]
+      
+      
+      
+      
+      
+      </span>
+      <span class="description">Sliding Mode Control, Backstepping Control, Feedback Linearization</span>
+  </div>
+  <div class="col proj_year">May. 2023 - Jun. 2023</div>
+</div>
+
+
+
+</li>
+</ol>
+
+<hr id="awards_honors" />
+
+<h3 id="awards"><strong>Awards</strong></h3>
+
+<ol class="project_list">
+<li>
+ 
+<div class="col three ">
+  <div style="clear: both;">
+    <div style="">
+        <img class="col bibone first" src="/assets/img/projects/humanoids2024/competition.gif" />
+    </div>
+  </div>
+  <div class="col bibtwo last">
+      <span class="title">1st Place, IEEE Humanoids 2024 Adult-sized Biped Walk Competition</span>
+      <span class="affiliation">German Aerospace Center (DLR)</span>
+      <span class="position">Humanoid TORO Team</span>
+      <span class="links">
+      
+      
+        [<a href="https://youtu.be/fjWAu4-EGEQ?t=16" target="_blank">Video</a>]
+      
+      
+      
+        [<a href="https://2024.ieee-humanoids.org/competition/robotics-competition/" target="_blank">Website</a>]
+      
+      
+      
+      
+      
+      
+      
+      
+      </span>
+      <span class="description">Torque Control, Motion Planning, Divergent Component of Motion</span>
+  </div>
+  <div class="col proj_year">Nov. 2024</div>
+</div>
+
+ 
+<div class="col three ">
+  <div style="clear: both;">
+    <div style="">
+        <img class="col bibone first" src="/assets/img/projects/addit/addit.gif" />
+    </div>
+  </div>
+  <div class="col bibtwo last">
+      <span class="title">Minister of National Defense Award, Minister of Defense Startup Competition</span>
+      <span class="affiliation">Addit, Start-up</span>
+      <span class="position">Co-Founder</span>
+      <span class="links">
+      
+      
+        [<a href="https://youtu.be/0Zh1Y5PTz4g" target="_blank">Video</a>]
+      
+      
+        [<a href="https://www.shinailbo.co.kr/news/articleView.html?idxno=1631059" target="_blank">News</a>]
+      
+      
+      
+      
+        [<a href="https://chromewebstore.google.com/detail/addit애딧-블로그-·-커뮤니티를-위한-사이/pmibcdohhlbplkedgkapoodgfaejcbcp?hl=en" target="_blank">Extension</a>]
+      
+      
+      
+      
+      
+      
+      </span>
+      <span class="description">Web Programming, UI/UX Design, Enterprise</span>
+  </div>
+  <div class="col proj_year">Feb. 2022</div>
+</div>
+
+ 
+<div class="col three ">
+  <div style="clear: both;">
+    <div style="">
+        <img class="col bibone first" src="/assets/img/projects/snuzero/snuzero.gif" />
+    </div>
+  </div>
+  <div class="col bibtwo last">
+      <span class="title">Gold Prize, International Student Car Competition Autonomous Driving Sector</span>
+      <span class="affiliation">SNU ZERO, autonomous driving car club</span>
+      <span class="position">Sensor Technician</span>
+      <span class="links">
+      
+      
+        [<a href="https://www.youtube.com/watch?v=o3ppXvRwUdw&amp;t=3977s" target="_blank">Video</a>]
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      </span>
+      <span class="description">EKF-SLAM, LiDAR-Camera Fusion, Clustering</span>
+  </div>
+  <div class="col proj_year">Oct. 2021</div>
+</div>
+
+
+</li>
+</ol>
+
+<hr />
+
+<h3 id="scholarship"><strong>Scholarship</strong></h3>
+
+<ol class="project_list">
+<li style="width: 100%">
+  <div class="three ">
+    <div class="bibtwo" style="float: left; box-sizing: border-box;">
+      <strong>Chungsoo Overseas Scholarship</strong>
+      <span style="padding-bottom: 3px;"><i>Chungsoo Scholarship Foundation</i></span>
+    </div>
+    <div class="col proj_year" style="width: 45%; color: #ccc; text-align: right;">2025 - 2027</div>
+  </div>
+  <div class="three ">
+    <div class="bibtwo" style="float: left; box-sizing: border-box;">
+      <strong>Korea-Germany Junior Research Fellowship Support</strong>
+      <span style="padding-bottom: 3px;"><i>Max Planck POSTECH/KOREA</i></span>
+    </div>
+    <div class="col proj_year" style="width: 45%; color: #ccc; text-align: right;">Sept. 2024</div>
+  </div>
+  <div class="three ">
+    <div class="bibtwo" style="float: left; box-sizing: border-box;">
+      <strong>Global Leadership Program Scholarship</strong>
+      <span style="padding-bottom: 3px;"><i>Seoul National University</i></span>
+    </div>
+    <div class="col proj_year" style="width: 45%; color: #ccc; text-align: right;">Feb. 2024</div>
+  </div>
+  <div class="three ">
+    <div class="bibtwo" style="float: left; box-sizing: border-box;">
+      <strong>Kwanjeong Undergraduate Scholarship</strong>
+      <span style="padding-bottom: 3px;"><i>Kwanjeong Educational Foundation</i></span>
+    </div>
+    <div class="col proj_year" style="width: 45%; color: #ccc; text-align: right;">Mar. 2021</div>
+  </div>
+  <div class="three ">
+    <div class="bibtwo" style="float: left; box-sizing: border-box;">
+      <strong>Undergraduate Research Internship Scholarship</strong>
+      <span style="padding-bottom: 3px;"><i>Seoul National University</i></span>
+    </div>
+    <div class="col proj_year" style="width: 45%; color: #ccc; text-align: right;">Mar. 2021</div>
+  </div>
+</li>
+</ol>
+
+<hr />
+
+<h3 id="patent"><strong>Patent</strong></h3>
+<ol class="project_list" id="activities">
+<li style="width: 100%">
+  <div class="three ">
+    <div class="bibtwo" style="width: 80%; float: left; box-sizing: border-box;">
+      <strong>Parking Location Tracking System</strong>
+      [<a href="https://patents.google.com/patent/KR102291377B1/en" target="_blank">KR102291377B1</a>]
+      <span><b><u>Hojune Kim</u></b>, Taekin Kim, Jinhwan Na, Jaeyoung Lee, Seunghwan Jeong</span>
+    </div>
+    <div class="col proj_year" style="width: 20%; color: #ccc; text-align: right;">2021</div>
+  </div>
+  <div class="three ">
+    <div class="bibtwo" style="width: 80%; float: left; box-sizing: border-box;">
+      <strong>Document editing system supporting online document creation with search function</strong>
+      [KR100143446]
+      <span><b><u>Hojune Kim</u></b>, Jinsu Choi</span>
+    </div>
+    <div class="col proj_year" style="width: 20%; color: #ccc; text-align: right;">2022</div>
+  </div>
+</li>
+</ol>
+
+<hr />
+
+<h3 id="fun-facts"><strong>Fun Facts</strong></h3>
+
+<ol class="project_list">
+<li>
+
+<div id="Participated in Largest Forest Fire Mission in Korean History" class="col three ">
+  <div style="clear: both;">
+    <div style="">
+        <img class="col bibone first" src="/assets/img/life/ch47/ch47fire.png" />
+    </div>
+  </div>
+  <div class="col bibtwo last">
+      <span class="title">CH-47D Helicopter Flight Attendant</span>
+      <span class="affiliation">Republic of Korea Army</span>
+      <span class="position"></span>
+      <span class="links">
+      
+      
+        [<a href="https://www.donga.com/news/Society/article/all/20220308/112230105/1" target="_blank">News</a>]
+      
+      </span>
+      <span class="description">Wild Fire Extinguishment, Helicopter Maintenance, Tactical missions</span>
+  </div>
+  <div class="col proj_year">2021 - 2023</div>
+</div>
+
+
+<div class="col three ">
+  <div style="clear: both;">
+    <div style="">
+        <img class="col bibone first" src="/assets/img/life/locking/locking.jpg" />
+    </div>
+  </div>
+  <div class="col bibtwo last">
+      <span class="title">Street Dancer</span>
+      <span class="affiliation">Hoofers in SNU(H.I.S.)</span>
+      <span class="position"></span>
+      <span class="links">
+      
+      
+      </span>
+      <span class="description">Locking, Popping Dance</span>
+  </div>
+  <div class="col proj_year">2019 - 2021</div>
+</div>
+
+
+</li>
+</ol>
+
+<hr />
+
+<h3 id="volunteer"><strong>Volunteer</strong></h3>
+
+<ol class="project_list">
+<li>
+
+<div class="col three ">
+  <div style="clear: both;">
+    <div style="">
+        <img class="col bibone first" src="/assets/img/projects/AI-tech/car.png" />
+    </div>
+  </div>
+  <div class="col bibtwo last">
+      <span class="title">Organized AI Camp and Autonomous Race Car Competition for 200+ Nationwide Students</span>
+      <span class="affiliation">AI Tech Play</span>
+      <span class="position">Co-organizer, Hardware Team Leader</span>
+      <span class="links">
+      
+      
+        [<a href="https://outta.ai/en" target="_blank">Website</a>]
+      
+      
+        [<a href="https://www.youtube.com/channel/UCfmSTxHQ6Y43XtHsQ7l_H3Q" target="_blank">Youtube</a>]
+      
+      </span>
+      <span class="description"></span>
+  </div>
+  <div class="col proj_year">Feb. 2021 - Aug. 2021</div>
+</div>
+
+</li>
+</ol>
+
+    </div>
+
+    <footer>
+
+  <div class="wrapper">
+    <center>
+      &copy; Copyright 2026 Hojune Kim.
+      Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+
+      
+          Last updated: Mar, 2025.
+      
+    </center>
+  </div>
+
+</footer>
+
+
+    <!-- Load jQuery -->
+<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+
+<!-- Load KaTeX -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js"></script>
+<script src="/assets/js/katex.js"></script>
+
+
+
+
+<!-- Include custom icon fonts -->
+<link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css">
+
+<!-- Google Analytics -->
+<!-- <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'G-041D8490HF', 'auto');
+  ga('send', 'pageview');
+</script> -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-041D8490HF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ window.dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-041D8490HF');
+  </script>
+
+  </body>
+
+</html>
