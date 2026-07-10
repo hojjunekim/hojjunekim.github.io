@@ -106,14 +106,14 @@ years: [2026, 2024]
       {% if project.video %}
         [<a href="{{ project.video }}" target="_blank">Video</a>]
       {% endif %}
+      {% if project.news %}
+        [<a href="{{ project.news }}" target="_blank">News</a>]
+      {% endif %}
       {% if project.html %}
         [<a href="{{ project.html }}" target="_blank">Website</a>]
       {% endif %}
       {% if project.youtube %}
         [<a href="{{ project.youtube }}" target="_blank">Youtube</a>]
-      {% endif %}
-      {% if project.news %}
-        [<a href="{{ project.news }}" target="_blank">News</a>]
       {% endif %}
       {% if project.extension %}
         [<a href="{{ project.extension }}" target="_blank">Extension</a>]
@@ -168,14 +168,14 @@ years: [2026, 2024]
       {% if project.video %}
         [<a href="{{ project.video }}" target="_blank">Video</a>]
       {% endif %}
+      {% if project.news %}
+        [<a href="{{ project.news }}" target="_blank">News</a>]
+      {% endif %}
       {% if project.html %}
         [<a href="{{ project.html }}" target="_blank">Website</a>]
       {% endif %}
       {% if project.youtube %}
         [<a href="{{ project.youtube }}" target="_blank">Youtube</a>]
-      {% endif %}
-      {% if project.news %}
-        [<a href="{{ project.news }}" target="_blank">News</a>]
       {% endif %}
       {% if project.extension %}
         [<a href="{{ project.extension }}" target="_blank">Extension</a>]
