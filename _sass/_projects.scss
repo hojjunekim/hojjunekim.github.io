@@ -54,6 +54,53 @@
     }
 }
 
+// Tablets: 2 columns instead of 3
+@media screen and (max-width: 48em) {
+    .project {
+        width: 50%;
+    }
+}
+
+// Phones: single column, images scale to fit, overlay always visible
+@media screen and (max-width: 32em) {
+    .project {
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+
+        .thumbnail {
+            height: auto;
+
+            img {
+                display: block;
+                height: auto;
+                width: 100%;
+                max-width: 210px;
+                margin: 0 auto;
+            }
+
+            a {
+                float: none;
+                height: auto;
+
+                // :hover never fires on touch, so keep the caption visible
+                span {
+                    display: block;
+                    position: static;
+                    background: none;
+                    color: inherit;
+                    padding: 8px 0 0;
+
+                    p {
+                        color: inherit;
+                    }
+                }
+            }
+        }
+    }
+}
+
 .project_list{
     margin: 0;
     list-style: none;

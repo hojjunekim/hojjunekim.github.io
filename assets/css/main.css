@@ -527,6 +527,43 @@ figcaption { font-size: 0.875rem; }
 
 .gist, .gist .highlight .p { font-size: .75rem; }
 
+/* ----------------------------------------------------------------------------
+   Phone layout (<= 600px)
+   Stack the two-column rows (content + date) so the year/month no longer gets
+   squeezed into a 11-20% column and wraps onto 4-5 lines. !important is needed
+   to override the inline widths set in about.md.
+---------------------------------------------------------------------------- */
+@media (max-width: 600px) {
+  /* Profile photo: full width, centered, not floated to a tiny 33% */
+  .profile { float: none !important; width: 100% !important; margin-bottom: 20px; }
+  .profile img { display: block; width: 100%; max-width: 250px; margin: 0 auto; }
+
+  /* Education / experience / publication rows: stack content over date */
+  .three .bibtwo,
+  .col.bibtwo { width: 100% !important; float: none !important; }
+  .col.proj_year,
+  .proj_year {
+    width: 100% !important;
+    float: none !important;
+    text-align: left !important;
+    white-space: normal;
+    padding-top: 2px;
+    margin-bottom: 12px;
+  }
+
+  /* Project gallery: one card per row, image scales to fit */
+  .project { float: none; width: 100%; height: auto; margin-bottom: 10px; }
+  .project .thumbnail { height: auto; }
+  .project .thumbnail img { display: block; height: auto; width: 100%; max-width: 210px; margin: 0 auto; }
+  .project .thumbnail a { float: none; height: auto; }
+  /* :hover never fires on touch, so show the caption inline instead of overlaid */
+  .project .thumbnail a span { display: block; position: static; background: none; color: inherit; padding: 8px 0 0; }
+  .project .thumbnail a span p { color: inherit; }
+
+  /* Publication year divider: drop negative side margins that overflow narrow screens */
+  .year { margin-left: 0; margin-right: 0; }
+}
+
 .gist .lines { width: 100%; }
 
 a { color: #666; text-decoration: none; }

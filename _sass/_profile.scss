@@ -5,6 +5,26 @@
         width: 100%;
     }
 }
+
+// Phones: stack the profile above the text instead of floating a tiny 33% image
+@media screen and (max-width: 32em) {
+    .profile {
+        float: none !important;
+        width: 100%;
+        margin-bottom: 20px;
+
+        img {
+            display: block;
+            width: 100%;
+            max-width: 250px;
+            margin: 0 auto;
+        }
+
+        .address {
+            text-align: center;
+        }
+    }
+}
 .address {
     font-family: monospace;
 
