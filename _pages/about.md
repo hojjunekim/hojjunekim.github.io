@@ -32,7 +32,7 @@ years: [2026, 2024]
 ---
 {: #publications}
 
-### __Publication__
+### __Publications__
 
 <!-- #### __International Conference__ -->
 {% for y in page.years %}
