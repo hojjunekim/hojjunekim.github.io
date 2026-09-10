@@ -144,6 +144,30 @@ years: [2026, 2024]
 </ol>
 
 ---
+
+### __Talks__
+
+
+<ol class="project_list">
+<li style="width: 100%">
+  <div class="three">
+    <div class="bibtwo" style="float: left; box-sizing: border-box; width: 80%">
+      <div style="font-size: 18px;"><strong>Amazon Personal Robotics Group (PRG)</strong></div>
+      <span><i>Invited Talk</i></span>
+    </div>
+    <div class="col proj_year" style="width: 20%;">Sept. 2026</div>
+  </div>
+  <div class="three">
+    <div class="bibtwo" style="float: left; box-sizing: border-box; width: 80%; margin-top: 10px;">
+      <div style="font-size: 18px;"><strong>Bay K-Robotics</strong></div>
+      <span><i>Invited Talk</i></span>
+    </div>
+    <div class="col proj_year" style="width: 20%;">Aug. 2026</div>
+  </div>
+</li>
+</ol>
+
+---
 {: #awards_honors}
 
 ### __Awards__
