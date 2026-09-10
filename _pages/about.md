@@ -23,7 +23,7 @@ years: [2026, 2024]
     </p>
   </div>
   <div class="topbio">
-    <p>I am a Master's student in Aeronautics and Astronautics at <b>Stanford University</b>, advised by <a href="https://profiles.stanford.edu/mac-schwager" target="_blank">Prof. Mac Schwager</a> in the <a href="https://msl.stanford.edu/" target="_blank">Multi-Robot Systems Lab (MSL)</a>. Previously, I was a guest researcher on the humanoid TORO team at the <b>German Aerospace Center (DLR)</b> and a visiting student at <b>ETH Zürich</b>. I received my B.S. in Aerospace Engineering from <b>Seoul National University</b>, advised by <a href="https://rpm.snu.ac.kr" target="_blank">Prof. Ayoung Kim</a>.</p>
+    <p>I am a Master's student in Aeronautics and Astronautics at Stanford University, advised by <a href="https://profiles.stanford.edu/mac-schwager" target="_blank">Prof. Mac Schwager</a> in the <a href="https://msl.stanford.edu/" target="_blank">Multi-Robot Systems Lab (MSL)</a>. Previously, I was a guest researcher on the humanoid TORO team at the German Aerospace Center (DLR) and a visiting student at ETH Zürich. I received my B.S. in Aerospace Engineering from Seoul National University, advised by <a href="https://rpm.snu.ac.kr" target="_blank">Prof. Ayoung Kim</a>.</p>
     <p>My research bridges model-based knowledge with data-driven learning to overcome data scarcity for robot autonomy.</p>
     <p>Email: hojune [AT] stanford.edu</p>
   </div>
