@@ -69,13 +69,6 @@ years: [2026, 2024]
     </div>
     <div class="col proj_year" style="width: 20%;">Feb. 2024 - Aug. 2024</div>
   </div>
-  <div class="three">
-    <div class="bibtwo" style="float: left; box-sizing: border-box; width: 80%; margin-top: 10px;">
-      <div style="font-size: 18px;"><strong>Gyeonggi Science High School for the Gifted</strong></div>
-      <span>1-year early admission</span>
-    </div>
-    <div class="col proj_year" style="width: 20%;">Mar. 2016 - Feb. 2019</div>
-  </div>
 </li>
 </ol>
 
