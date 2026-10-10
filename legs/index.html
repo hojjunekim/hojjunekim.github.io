@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="LEGS: Fine-Tuning Teleop-Free VLAs for Humanoid Loco-manipulation in an Embodied Gaussian Splatting World">
+  <meta name="keywords" content="LEGS, Humanoid, Loco-manipulation, VLA, Gaussian Splatting, Teleop-Free">
+  <link rel="canonical" href="https://hojjunekim.github.io/legs/">
+  <title>LEGS: Fine-Tuning Teleop-Free VLAs for Humanoid Loco-manipulation in an Embodied Gaussian Splatting World</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css?v=6">
+</head>
+
+<body>
+
+<nav class="legs-nav">
+  <a href="#top" class="nav-brand">LEGS</a>
+  <div class="nav-links">
+    <a href="#abstract">TL;DR</a>
+    <a href="#method">Method</a>
+    <a href="#videos">Rollouts</a>
+    <a href="#results">Results</a>
+  </div>
+</nav>
+
+<section id="top" class="hero hero-video-bg">
+  <div class="hero-bg">
+    <video src="./static/videos/simulator/legs_t3_demo_cut.mp4" autoplay muted loop playsinline preload="auto"></video>
+    <video src="./static/videos/simulator/task3_cut.mp4" autoplay muted loop playsinline preload="auto"></video>
+    <span class="media-pill is-sim hero-pill-sim"><i class="fas fa-desktop"></i>&nbsp; LEGS Simulator</span>
+    <span class="media-pill is-real hero-pill-real"><i class="fas fa-robot"></i>&nbsp; Real Robot</span>
+  </div>
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">
+            <span class="legs">LEGS</span>
+            <span class="title-sub">Fine-Tuning Teleop-Free VLAs for Humanoid Loco-manipulation in an Embodied Gaussian Splatting World</span>
+          </h1>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><a href="https://hojjunekim.github.io/" target="_blank" rel="noopener">Hojune Kim</a>,</span>
+            <span class="author-block"><a href="https://msl.stanford.edu/people/timchen" target="_blank" rel="noopener">Timothy Chen</a>,</span>
+            <span class="author-block"><a href="https://web.stanford.edu/~jksun/" target="_blank" rel="noopener">Jiankai Sun</a>,</span>
+            <span class="author-block"><a href="https://msl.stanford.edu/people/larsosterberg" target="_blank" rel="noopener">Lars W. Osterberg</a>,</span>
+            <br>
+            <span class="author-block"><a href="https://qianzhong-chen.github.io/" target="_blank" rel="noopener">Qianzhong Chen</a>,</span>
+            <span class="author-block"><a href="https://kewang.ai/" target="_blank" rel="noopener">Ke Wang</a>,</span>
+            <span class="author-block"><a href="https://profiles.stanford.edu/mac-schwager" target="_blank" rel="noopener">Mac Schwager</a></span>
+          </div>
+
+          <div class="publication-affiliation">
+            Stanford University
+          </div>
+
+          <div class="publication-links">
+            <span class="link-block">
+              <a href="https://arxiv.org/abs/2606.01458" class="external-link button is-normal is-rounded" target="_blank" rel="noopener noreferrer">
+                <span class="icon"><i class="ai ai-arxiv"></i></span>
+                <span>arXiv</span>
+              </a>
+            </span>
+            <span class="link-block">
+              <a href="https://arxiv.org/pdf/2606.01458" class="external-link button is-normal is-rounded" target="_blank" rel="noopener noreferrer">
+                <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                <span>Paper</span>
+              </a>
+            </span>
+            <span class="link-block">
+              <span class="button is-normal is-rounded is-disabled" title="Code coming soon">
+                <span class="icon"><i class="fab fa-github"></i></span>
+                <span>Code (Coming Soon)</span>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TL;DR stat strip -->
+<section class="section" style="padding-top: 0;">
+  <div class="container is-max-desktop">
+    <div class="stat-strip">
+      <div class="stat-tile">
+        <span class="stat-value">0</span>
+        <span class="stat-label">teleoperation demos needed</span>
+      </div>
+      <div class="stat-tile">
+        <span class="stat-value">1,110</span>
+        <span class="stat-label">real-robot trials on a Unitree&nbsp;G1</span>
+      </div>
+      <div class="stat-tile">
+        <span class="stat-value">9/9</span>
+        <span class="stat-label">experiments match or beat human teleop</span>
+      </div>
+      <div class="stat-tile">
+        <span class="stat-value">~15&times;</span>
+        <span class="stat-label">cheaper adaptation to new scenes &amp; objects</span>
+      </div>
+    </div>
+    <p class="detail-note">
+      Three pick-and-place tasks of increasing whole-body difficulty &times; three VLA backbones
+      (&psi;<sub>0</sub>, &pi;<sub>0.5</sub>, GR00T&nbsp;N1.6).
+    </p>
+  </div>
+</section>
+
+<!-- TL;DR (replaces the abstract) -->
+<section id="abstract" class="section" style="padding-top: 1.5rem;">
+  <div class="container is-max-desktop">
+    <div class="tldr-block">
+      <p>
+        Collecting teleoperation demonstrations for humanoids is slow and expensive &mdash; and
+        simulator-trained VLA policies have, until now, failed to transfer to real humanoid
+        loco-manipulation. <b><i>What if a phone scan is all you need?</i></b>
+        <span class="legs-inline">LEGS</span> composites the robot and objects over a photorealistic
+        3D Gaussian Splatting background inside MuJoCo, and procedurally generates labeled
+        demonstrations &mdash; <b>no teleoperation, no seed demos, no human video</b>. We find that LEGS:
+      </p>
+      <ul>
+        <li><b>Matches or beats human teleoperation</b> on all nine (backbone, task) experiments &mdash; zero-shot on a real Unitree&nbsp;G1, across &psi;<sub>0</sub>, &pi;<sub>0.5</sub>, and GR00T&nbsp;N1.6.</li>
+        <li><b>Owes the gain to photorealism</b> &mdash; end-task success improves 1.6&times;&ndash;3.25&times; over mesh-only simulation (across backbones), not dataset size.</li>
+        <li><b>Re-renders one motion dataset</b> to new scenes, objects, and prompts at ~15&times; lower cost than re-teleoperating &mdash; retaining success under appearance shifts where every default-only baseline collapses to 0&ndash;1/10.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Method / Pipeline -->
+<section id="method" class="section">
+  <div class="container is-max-video">
+    <div class="columns is-centered">
+      <div class="column is-full-width has-text-centered">
+        <h2 class="title is-3">Method</h2>
+        <p class="section-tagline">A phone scan in. A humanoid skill out. Everything in between is synthesized.</p>
+
+        <div class="method-duo stepped">
+          <div class="method-stages-col">
+            <div class="mstep is-active" data-step="1">
+              <span class="mstep-num">1</span>
+              <div class="mstep-body">
+                <span class="mstep-name">Capture</span>
+                <span class="mstep-sub">Handheld scene video + one photo per object</span>
+              </div>
+            </div>
+            <div class="mstep" data-step="2">
+              <span class="mstep-num">2</span>
+              <div class="mstep-body">
+                <span class="mstep-name">Reconstruct</span>
+                <span class="mstep-sub">3DGS background + SAM3D object meshes</span>
+              </div>
+            </div>
+            <div class="mstep" data-step="3">
+              <span class="mstep-num">3</span>
+              <div class="mstep-body">
+                <span class="mstep-name">Simulate &amp; Generate</span>
+                <span class="mstep-sub">Procedural demos in MuJoCo physics &oplus; calibrated 3DGS render</span>
+              </div>
+            </div>
+            <div class="mstep" data-step="4">
+              <span class="mstep-num">4</span>
+              <div class="mstep-body">
+                <span class="mstep-name">Deploy</span>
+                <span class="mstep-sub">Fine-tune a VLA &rarr; zero-shot on Unitree G1</span>
+              </div>
+            </div>
+          </div>
+          <div class="method-fig">
+            <img src="./static/images/pipeline_v2_web.png" alt="LEGS pipeline">
+            <div class="fig-dim dim-inputs"></div>
+            <div class="fig-dim dim-simulator"></div>
+            <div class="fig-dim dim-datagen"></div>
+            <div class="fig-dim dim-procgen"></div>
+            <div class="fig-dim dim-traindeploy"></div>
+            <p class="fig-hint-line">hover a step &mdash; or a part of the pipeline &mdash; to highlight it</p>
+          </div>
+        </div>
+
+
+        <h3 class="subsection-title">Two-stage color calibration</h3>
+        <p class="section-subtitle has-text-centered" style="margin-bottom: 0.25rem;">
+          A deterministic two-stage calibration aligns the render to the robot's deployment
+          camera &mdash; the first stage calibrates the object mesh, and the second is applied to
+          both the mesh and the 3DGS background.
+        </p>
+        <div class="tab-bar" data-tab-group="calib">
+          <button class="active" data-tab="wood">Wooden table &middot; orange &rarr; plate</button>
+          <button data-tab="blue">Blue table &middot; apple &rarr; box</button>
+        </div>
+        <div class="tab-panel active" data-tab-group="calib" data-panel="wood">
+          <div class="columns is-centered is-vcentered calib-duo">
+            <div class="column is-half">
+              <div class="calib-compare">
+                <div class="cal-after">
+                  <img src="./static/images/calib_cond4.jpg" alt="Mesh + 3DGS calibrated render">
+                </div>
+                <div class="cal-before">
+                  <div class="cal-before-inset">
+                    <img src="./static/images/calib_cond2.jpg" alt="">
+                  </div>
+                </div>
+                <div class="cal-before">
+                  <div class="cal-before-inset">
+                    <img src="./static/images/calib_cond3.jpg" alt="">
+                  </div>
+                </div>
+                <div class="cal-handle"></div>
+                <div class="cal-handle"></div>
+                <div class="cal-label">raw 3DGS + mesh</div>
+                <div class="cal-label">mesh calibrated</div>
+                <div class="cal-label">mesh + 3DGS calibrated</div>
+              </div>
+            </div>
+            <div class="column is-half">
+              <div class="calib-gt">
+                <img src="./static/images/calib_gt.png" alt="Real robot camera image">
+                <div class="cal-label lbl-static">real camera</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-panel" data-tab-group="calib" data-panel="blue">
+          <div class="columns is-centered is-vcentered calib-duo">
+            <div class="column is-half">
+              <div class="calib-compare">
+                <div class="cal-after">
+                  <img src="./static/images/calib_blue_cond4.jpg" alt="Mesh + 3DGS calibrated render">
+                </div>
+                <div class="cal-before">
+                  <div class="cal-before-inset">
+                    <img src="./static/images/calib_blue_cond2.jpg" alt="">
+                  </div>
+                </div>
+                <div class="cal-before">
+                  <div class="cal-before-inset">
+                    <img src="./static/images/calib_blue_cond3.jpg" alt="">
+                  </div>
+                </div>
+                <div class="cal-handle"></div>
+                <div class="cal-handle"></div>
+                <div class="cal-label">raw 3DGS + mesh</div>
+                <div class="cal-label">mesh calibrated</div>
+                <div class="cal-label">mesh + 3DGS calibrated</div>
+              </div>
+            </div>
+            <div class="column is-half">
+              <div class="calib-gt">
+                <img src="./static/images/calib_blue_gt.png" alt="Real robot camera image">
+                <div class="cal-label lbl-static">real camera</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="subsection-title">One episode, many appearances</h3>
+        <div class="aug-flow-h">
+          <div class="aug-node">
+            <i class="fas fa-walking"></i>
+            <span class="t">1 recorded episode</span>
+            <span class="s">motion only &mdash; independent of appearance</span>
+          </div>
+          <div class="aug-arrow">
+            <span class="aug-cost">re-render: ~0.1 GPU-hr per condition</span>
+            <span class="arrow-shaft"></span>
+          </div>
+          <div class="aug-node aug-node-out">
+            <span class="t">re-render with</span>
+            <div class="aug-out-list">
+              <span class="aug-out"><span class="swatch-chip chip-wood"></span><span class="swatch-chip chip-blue"></span><span class="swatch-chip chip-white"></span>&nbsp;new 3DGS background</span>
+              <span class="aug-out"><i class="fas fa-cube"></i>&nbsp;new objects</span>
+              <span class="aug-out"><i class="fas fa-comment-alt"></i>&nbsp;new prompts</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-bar" data-tab-group="prompts">
+          <button class="active" data-tab="OP">&ldquo;place the orange on the plate&rdquo;</button>
+          <button data-tab="AB">&ldquo;place the green apple in the box&rdquo;</button>
+          <button data-tab="RB">&ldquo;place the red apple in the bowl&rdquo;</button>
+        </div>
+        <div class="columns is-centered video-grid legsaug-compare-grid">
+          <div class="column tab-panel active" data-tab-group="prompts" data-panel="OP">
+            <div class="legsaug-compare" data-pair="OP">
+              <div class="bal-after">
+                <video src="./static/videos/legs_aug_ep2/white_OP.mp4" autoplay muted loop playsinline preload="auto"></video>
+              </div>
+              <div class="bal-before bal-mid">
+                <div class="bal-before-inset">
+                  <video src="./static/videos/legs_aug_ep2/blue_OP.mp4" autoplay muted loop playsinline preload="auto"></video>
+                </div>
+              </div>
+              <div class="bal-before bal-top">
+                <div class="bal-before-inset">
+                  <video src="./static/videos/legs_aug_ep2/wood_OP.mp4" autoplay muted loop playsinline preload="auto"></video>
+                </div>
+              </div>
+              <div class="bal-handle handle-1"></div>
+              <div class="bal-handle handle-2"></div>
+              <div class="stripe-label label-wood">wood</div>
+              <div class="stripe-label label-blue">blue</div>
+              <div class="stripe-label label-white">white</div>
+            </div>
+          </div>
+          <div class="column tab-panel" data-tab-group="prompts" data-panel="AB">
+            <div class="legsaug-compare" data-pair="AB">
+              <div class="bal-after">
+                <video src="./static/videos/legs_aug_ep2/white_AB.mp4" autoplay muted loop playsinline preload="auto"></video>
+              </div>
+              <div class="bal-before bal-mid">
+                <div class="bal-before-inset">
+                  <video src="./static/videos/legs_aug_ep2/blue_AB.mp4" autoplay muted loop playsinline preload="auto"></video>
+                </div>
+              </div>
+              <div class="bal-before bal-top">
+                <div class="bal-before-inset">
+                  <video src="./static/videos/legs_aug_ep2/wood_AB.mp4" autoplay muted loop playsinline preload="auto"></video>
+                </div>
+              </div>
+              <div class="bal-handle handle-1"></div>
+              <div class="bal-handle handle-2"></div>
+              <div class="stripe-label label-wood">wood</div>
+              <div class="stripe-label label-blue">blue</div>
+              <div class="stripe-label label-white">white</div>
+            </div>
+          </div>
+          <div class="column tab-panel" data-tab-group="prompts" data-panel="RB">
+            <div class="legsaug-compare" data-pair="RB">
+              <div class="bal-after">
+                <video src="./static/videos/legs_aug_ep2/white_RB.mp4" autoplay muted loop playsinline preload="auto"></video>
+              </div>
+              <div class="bal-before bal-mid">
+                <div class="bal-before-inset">
+                  <video src="./static/videos/legs_aug_ep2/blue_RB.mp4" autoplay muted loop playsinline preload="auto"></video>
+                </div>
+              </div>
+              <div class="bal-before bal-top">
+                <div class="bal-before-inset">
+                  <video src="./static/videos/legs_aug_ep2/wood_RB.mp4" autoplay muted loop playsinline preload="auto"></video>
+                </div>
+              </div>
+              <div class="bal-handle handle-1"></div>
+              <div class="bal-handle handle-2"></div>
+              <div class="stripe-label label-wood">wood</div>
+              <div class="stripe-label label-blue">blue</div>
+              <div class="stripe-label label-white">white</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Real-Robot Deployment (tabbed) -->
+<section id="videos" class="section">
+  <div class="container is-max-video">
+    <h2 class="title is-3 has-text-centered">Real-Robot Deployment</h2>
+    <p class="section-subtitle has-text-centered">
+      Policies fine-tuned on <span class="smallcaps">LEGS</span>-generated data, deployed
+      <b>zero-shot</b> on a Unitree&nbsp;G1.
+    </p>
+
+    <h3 class="subsection-title">Three tasks of increasing difficulty</h3>
+    <div class="columns is-centered video-grid">
+      <div class="column">
+        <video src="./static/videos/backbones/task1/t1_psi_good.mp4" autoplay muted loop playsinline controls preload="metadata"></video>
+        <p class="video-label">Task 1 &mdash; manipulation <span class="policy-tag">(&psi;<sub>0</sub>)</span></p>
+      </div>
+      <div class="column">
+        <video src="./static/videos/backbones/task2/t2_psi_good.mp4" autoplay muted loop playsinline controls preload="metadata"></video>
+        <p class="video-label">Task 2 &mdash; loco-manipulation <span class="policy-tag">(&psi;<sub>0</sub>)</span></p>
+      </div>
+      <div class="column">
+        <video src="./static/videos/backbones/task3/t3_groot_good_2x.mp4" autoplay muted loop playsinline controls preload="metadata"></video>
+        <p class="video-label">Task 3 &mdash; long-horizon <span class="policy-tag">(GR00T N1.6)</span></p>
+      </div>
+    </div>
+
+    <h3 class="subsection-title">Task 3 across three VLA backbones</h3>
+    <div class="columns is-centered video-grid">
+      <div class="column">
+        <video src="./static/videos/backbones/task3/t3_groot_good_2x.mp4" autoplay muted loop playsinline controls preload="metadata"></video>
+        <p class="video-label">GR00T N1.6</p>
+      </div>
+      <div class="column">
+        <video src="./static/videos/backbones/task3/t3_psi_good_2x.mp4" autoplay muted loop playsinline controls preload="metadata"></video>
+        <p class="video-label">&psi;<sub>0</sub></p>
+      </div>
+      <div class="column">
+        <video src="./static/videos/backbones/task3/t3_pi05_good_2x.mp4" autoplay muted loop playsinline controls preload="metadata"></video>
+        <p class="video-label">&pi;<sub>0.5</sub></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEGS vs Baselines (Egocentric) — hidden for now; restore by removing this comment wrapper
+<section id="egocentric" class="section">
+  <div class="container is-max-video">
+    <h2 class="title is-3 has-text-centered">Egocentric Comparison Across Data Sources</h2>
+    <p class="section-subtitle has-text-centered">
+      Task&nbsp;3 deployments from the same VLA backbone fine-tuned on three data conditions.
+      <span class="smallcaps">LEGS</span> matches or exceeds teleoperation and outperforms
+      the mesh-only SAM3D baseline, identifying <b>photorealistic rendering</b> as the key
+      enabler of synthetic-data transfer.
+    </p>
+    <div class="columns is-centered video-grid">
+      <div class="column">
+        <video src="./static/videos/egocentric/legs_rollout_demo.mp4" autoplay muted loop playsinline controls preload="metadata"></video>
+        <p class="video-label">LEGS rollout demo</p>
+      </div>
+      <div class="column">
+        <video src="./static/videos/egocentric/t3_legs_ep46.mp4" autoplay muted loop playsinline controls preload="metadata"></video>
+        <p class="video-label">LEGS (ours)</p>
+      </div>
+      <div class="column">
+        <video src="./static/videos/egocentric/t3_sam_ep46.mp4" autoplay muted loop playsinline controls preload="metadata"></video>
+        <p class="video-label">SAM3D</p>
+      </div>
+      <div class="column">
+        <video src="./static/videos/egocentric/t3_teleop_ep15.mp4" autoplay muted loop playsinline controls preload="metadata"></video>
+        <p class="video-label">Teleop</p>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+
+<!-- LEGS-AUG: randomization, adaptation & robustness (merged) -->
+<section id="legsaug" class="section">
+  <div class="container is-max-video">
+    <h2 class="title is-3 has-text-centered">LEGS-AUG: Appearance Randomization &amp; Robustness</h2>
+    <p class="section-subtitle has-text-centered">
+      Motion is recorded independently of appearance, so each episode re-renders under new
+      objects and backgrounds at <b>~0.1&nbsp;GPU-hr versus &gt;1.5&nbsp;operator-hr</b> for
+      re-teleoperation (&asymp;15&times; cheaper).
+    </p>
+
+
+    <h3 class="subsection-title">Without re-rendering: the default-only policy collapses</h3>
+    <p class="section-subtitle has-text-centered" style="margin-top:-0.4rem;">
+      Even on Task&nbsp;1 &mdash; the simplest, stationary pick-and-place &mdash;
+      a policy trained <em>only</em> on the default demonstrations (orange&rarr;plate on a wooden table)
+      collapses once the objects, scene, or prompt change.
+    </p>
+    <div class="columns is-centered video-grid">
+      <div class="column">
+        <div class="vidbadge"><video src="./static/videos/appearance/t1_ood_scene_2x.mp4" autoplay muted loop playsinline controls preload="metadata"></video><span class="vid-tag is-fail"><i class="fas fa-times"></i>failure</span><span class="spd">2&times;</span></div>
+        <p class="video-label">Scene shift<br><span class="prompt-line">&ldquo;place the orange on the plate&rdquo;</span></p>
+      </div>
+      <div class="column">
+        <div class="vidbadge"><video src="./static/videos/appearance/t1_ood_objects_2x.mp4" autoplay muted loop playsinline controls preload="metadata"></video><span class="vid-tag is-fail"><i class="fas fa-times"></i>failure</span><span class="spd">2&times;</span></div>
+        <p class="video-label">Object shift<br><span class="prompt-line">&ldquo;place the apple in the box&rdquo;</span></p>
+      </div>
+      <div class="column">
+        <div class="vidbadge"><video src="./static/videos/appearance/t1_ood_objects+scene_2x.mp4" autoplay muted loop playsinline controls preload="metadata"></video><span class="vid-tag is-fail"><i class="fas fa-times"></i>failure</span><span class="spd">2&times;</span></div>
+        <p class="video-label">Scene + object shift<br><span class="prompt-line">&ldquo;place the apple in the box&rdquo;</span></p>
+      </div>
+    </div>
+
+    <h3 class="subsection-title">With <span class="legs-inline">LEGS</span> re-rendering: zero-shot under appearance shift</h3>
+    <div class="columns is-centered video-grid">
+      <div class="column">
+        <div class="vidbadge"><video src="./static/videos/appearance/t3_groot_scene_good_2x.mp4" autoplay muted loop playsinline controls preload="metadata"></video><span class="vid-tag is-success"><i class="fas fa-check"></i>success</span></div>
+        <p class="video-label">Scene shift<br><span class="prompt-line">&ldquo;pick the orange, turn right, place it on the plate&rdquo;</span></p>
+      </div>
+      <div class="column">
+        <div class="vidbadge"><video src="./static/videos/appearance/t3_groot_objects_good_2x.mp4" autoplay muted loop playsinline controls preload="metadata"></video><span class="vid-tag is-success"><i class="fas fa-check"></i>success</span></div>
+        <p class="video-label">Object shift<br><span class="prompt-line">&ldquo;pick the apple, turn right, and put it in the box&rdquo;</span></p>
+      </div>
+      <div class="column">
+        <div class="vidbadge"><video src="./static/videos/appearance/t3_groot_objects+scene_good_2x.mp4" autoplay muted loop playsinline controls preload="metadata"></video><span class="vid-tag is-success"><i class="fas fa-check"></i>success</span></div>
+        <p class="video-label">Scene + object shift<br><span class="prompt-line">&ldquo;pick the apple, turn right, and put it in the box&rdquo;</span></p>
+      </div>
+    </div>
+
+    <!-- Native chart: LEGS-AUG under the hardest shift -->
+
+    <h3 class="subsection-title">Out-of-distribution object poses</h3>
+    <p class="section-subtitle has-text-centered" style="margin-bottom: 1rem;">
+      Task 3 with the orange pushed beyond the training distribution.
+    </p>
+    <div class="columns is-centered video-grid ood-pair">
+      <div class="column">
+        <video src="./static/videos/challenging/t3_groot_default_hard_left_2x.mp4" autoplay muted loop playsinline controls preload="metadata"></video>
+        <p class="video-label">Far left (out-of-distribution)</p>
+        <div class="has-text-centered"><span class="chip is-neutral"><i class="fas fa-arrows-alt-h"></i>OOD probe</span></div>
+      </div>
+      <div class="column">
+        <video src="./static/videos/challenging/t3_groot_default_hard_right_2x.mp4" autoplay muted loop playsinline controls preload="metadata"></video>
+        <p class="video-label">Far right (out-of-distribution)</p>
+        <div class="has-text-centered"><span class="chip is-neutral"><i class="fas fa-arrows-alt-h"></i>OOD probe</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Main Results -->
+<section id="results" class="section">
+  <div class="container is-max-results">
+    <h2 class="title is-3 has-text-centered">Key Results</h2>
+    <p class="section-subtitle has-text-centered">
+      Real-robot end-task success across three tasks, three VLA backbones, and four data
+      conditions &mdash; 1,110 trials total.
+    </p>
+
+    <!-- Native chart: end-task success by task and data condition -->
+    <div class="viz-root" id="chart-main" style="max-width: 1100px;">
+      <p class="viz-title">LEGS (200) is best or tied on every task and every backbone</p>
+      <p class="viz-sub">Even at the same data budget, LEGS (50) beats Teleop (50).</p>
+      <div class="viz-legend">
+        <span class="key"><span class="swatch" style="background: var(--s-teleop);"></span>Teleop (50)</span>
+        <span class="key"><span class="swatch" style="background: var(--s-sam3d);"></span>SAM3D (200)</span>
+        <span class="key"><span class="swatch" style="background: var(--s-legs50);"></span>LEGS (50)</span>
+        <span class="key"><span class="swatch" style="background: var(--s-legs200);"></span>LEGS (200) &mdash; ours</span>
+      </div>
+      <div class="viz-panels">
+        <div class="viz-panel">
+          <p class="panel-title">&psi;<sub>0</sub></p>
+          <div class="viz-plot">
+            <div class="viz-grid" style="bottom: 100%;"><span class="tick">10</span></div>
+            <div class="viz-grid" style="bottom: 50%;"><span class="tick">5</span></div>
+            <div class="viz-grid" style="bottom: 0;"><span class="tick">0</span></div>
+            <div class="viz-groups">
+              <div class="viz-group">
+                <div class="viz-bar" style="height: 80%; background: var(--s-teleop);" data-tip="&psi;<sub>0</sub> &middot; Task 1 &middot; Teleop (50): 8/10"></div>
+                <div class="viz-bar" style="height: 70%; background: var(--s-sam3d);" data-tip="&psi;<sub>0</sub> &middot; Task 1 &middot; SAM3D (200): 7/10"></div>
+                <div class="viz-bar" style="height: 80%; background: var(--s-legs50);" data-tip="&psi;<sub>0</sub> &middot; Task 1 &middot; LEGS (50): 8/10"></div>
+                <div class="viz-bar" style="height: 100%; background: var(--s-legs200);" data-tip="&psi;<sub>0</sub> &middot; Task 1 &middot; LEGS (200): 10/10"></div>
+              </div>
+              <div class="viz-group">
+                <div class="viz-bar" style="height: 60%; background: var(--s-teleop);" data-tip="&psi;<sub>0</sub> &middot; Task 2 &middot; Teleop (50): 6/10"></div>
+                <div class="viz-bar" style="height: 40%; background: var(--s-sam3d);" data-tip="&psi;<sub>0</sub> &middot; Task 2 &middot; SAM3D (200): 4/10"></div>
+                <div class="viz-bar" style="height: 80%; background: var(--s-legs50);" data-tip="&psi;<sub>0</sub> &middot; Task 2 &middot; LEGS (50): 8/10"></div>
+                <div class="viz-bar" style="height: 90%; background: var(--s-legs200);" data-tip="&psi;<sub>0</sub> &middot; Task 2 &middot; LEGS (200): 9/10"></div>
+              </div>
+              <div class="viz-group">
+                <div class="viz-bar" style="height: 0%; background: var(--s-teleop);" data-tip="&psi;<sub>0</sub> &middot; Task 3 &middot; Teleop (50): 0/10"></div>
+                <div class="viz-bar" style="height: 10%; background: var(--s-sam3d);" data-tip="&psi;<sub>0</sub> &middot; Task 3 &middot; SAM3D (200): 1/10"></div>
+                <div class="viz-bar" style="height: 30%; background: var(--s-legs50);" data-tip="&psi;<sub>0</sub> &middot; Task 3 &middot; LEGS (50): 3/10"></div>
+                <div class="viz-bar" style="height: 50%; background: var(--s-legs200);" data-tip="&psi;<sub>0</sub> &middot; Task 3 &middot; LEGS (200): 5/10"></div>
+              </div>
+            </div>
+          </div>
+          <div class="viz-xlabels"><span>T1</span><span>T2</span><span>T3</span></div>
+        </div>
+        <div class="viz-panel">
+          <p class="panel-title">GR00T N1.6</p>
+          <div class="viz-plot">
+            <div class="viz-grid" style="bottom: 100%;"><span class="tick">10</span></div>
+            <div class="viz-grid" style="bottom: 50%;"><span class="tick">5</span></div>
+            <div class="viz-grid" style="bottom: 0;"><span class="tick">0</span></div>
+            <div class="viz-groups">
+              <div class="viz-group">
+                <div class="viz-bar" style="height: 40%; background: var(--s-teleop);" data-tip="GR00T N1.6 &middot; Task 1 &middot; Teleop (50): 4/10"></div>
+                <div class="viz-bar" style="height: 60%; background: var(--s-sam3d);" data-tip="GR00T N1.6 &middot; Task 1 &middot; SAM3D (200): 6/10"></div>
+                <div class="viz-bar" style="height: 90%; background: var(--s-legs50);" data-tip="GR00T N1.6 &middot; Task 1 &middot; LEGS (50): 9/10"></div>
+                <div class="viz-bar" style="height: 90%; background: var(--s-legs200);" data-tip="GR00T N1.6 &middot; Task 1 &middot; LEGS (200): 9/10"></div>
+              </div>
+              <div class="viz-group">
+                <div class="viz-bar" style="height: 20%; background: var(--s-teleop);" data-tip="GR00T N1.6 &middot; Task 2 &middot; Teleop (50): 2/10"></div>
+                <div class="viz-bar" style="height: 50%; background: var(--s-sam3d);" data-tip="GR00T N1.6 &middot; Task 2 &middot; SAM3D (200): 5/10"></div>
+                <div class="viz-bar" style="height: 70%; background: var(--s-legs50);" data-tip="GR00T N1.6 &middot; Task 2 &middot; LEGS (50): 7/10"></div>
+                <div class="viz-bar" style="height: 80%; background: var(--s-legs200);" data-tip="GR00T N1.6 &middot; Task 2 &middot; LEGS (200): 8/10"></div>
+              </div>
+              <div class="viz-group">
+                <div class="viz-bar" style="height: 0%; background: var(--s-teleop);" data-tip="GR00T N1.6 &middot; Task 3 &middot; Teleop (50): 0/10"></div>
+                <div class="viz-bar" style="height: 30%; background: var(--s-sam3d);" data-tip="GR00T N1.6 &middot; Task 3 &middot; SAM3D (200): 3/10"></div>
+                <div class="viz-bar" style="height: 50%; background: var(--s-legs50);" data-tip="GR00T N1.6 &middot; Task 3 &middot; LEGS (50): 5/10"></div>
+                <div class="viz-bar" style="height: 60%; background: var(--s-legs200);" data-tip="GR00T N1.6 &middot; Task 3 &middot; LEGS (200): 6/10"></div>
+              </div>
+            </div>
+          </div>
+          <div class="viz-xlabels"><span>T1</span><span>T2</span><span>T3</span></div>
+        </div>
+        <div class="viz-panel">
+          <p class="panel-title">&pi;<sub>0.5</sub></p>
+          <div class="viz-plot">
+            <div class="viz-grid" style="bottom: 100%;"><span class="tick">10</span></div>
+            <div class="viz-grid" style="bottom: 50%;"><span class="tick">5</span></div>
+            <div class="viz-grid" style="bottom: 0;"><span class="tick">0</span></div>
+            <div class="viz-groups">
+              <div class="viz-group">
+                <div class="viz-bar" style="height: 20%; background: var(--s-teleop);" data-tip="&pi;<sub>0.5</sub> &middot; Task 1 &middot; Teleop (50): 2/10"></div>
+                <div class="viz-bar" style="height: 10%; background: var(--s-sam3d);" data-tip="&pi;<sub>0.5</sub> &middot; Task 1 &middot; SAM3D (200): 1/10"></div>
+                <div class="viz-bar" style="height: 50%; background: var(--s-legs50);" data-tip="&pi;<sub>0.5</sub> &middot; Task 1 &middot; LEGS (50): 5/10"></div>
+                <div class="viz-bar" style="height: 60%; background: var(--s-legs200);" data-tip="&pi;<sub>0.5</sub> &middot; Task 1 &middot; LEGS (200): 6/10"></div>
+              </div>
+              <div class="viz-group">
+                <div class="viz-bar" style="height: 0%; background: var(--s-teleop);" data-tip="&pi;<sub>0.5</sub> &middot; Task 2 &middot; Teleop (50): 0/10"></div>
+                <div class="viz-bar" style="height: 30%; background: var(--s-sam3d);" data-tip="&pi;<sub>0.5</sub> &middot; Task 2 &middot; SAM3D (200): 3/10"></div>
+                <div class="viz-bar" style="height: 40%; background: var(--s-legs50);" data-tip="&pi;<sub>0.5</sub> &middot; Task 2 &middot; LEGS (50): 4/10"></div>
+                <div class="viz-bar" style="height: 50%; background: var(--s-legs200);" data-tip="&pi;<sub>0.5</sub> &middot; Task 2 &middot; LEGS (200): 5/10"></div>
+              </div>
+              <div class="viz-group">
+                <div class="viz-bar" style="height: 0%; background: var(--s-teleop);" data-tip="&pi;<sub>0.5</sub> &middot; Task 3 &middot; Teleop (50): 0/10"></div>
+                <div class="viz-bar" style="height: 0%; background: var(--s-sam3d);" data-tip="&pi;<sub>0.5</sub> &middot; Task 3 &middot; SAM3D (200): 0/10"></div>
+                <div class="viz-bar" style="height: 10%; background: var(--s-legs50);" data-tip="&pi;<sub>0.5</sub> &middot; Task 3 &middot; LEGS (50): 1/10"></div>
+                <div class="viz-bar" style="height: 20%; background: var(--s-legs200);" data-tip="&pi;<sub>0.5</sub> &middot; Task 3 &middot; LEGS (200): 2/10"></div>
+              </div>
+            </div>
+          </div>
+          <div class="viz-xlabels"><span>T1</span><span>T2</span><span>T3</span></div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="viz-root" id="chart-aug" style="max-width: 1100px;">
+      <p class="viz-title">Under the hardest shift (objects + scene), re-rendering wins</p>
+
+      <div class="aug-panels">
+      <div class="aug-panel">
+      <p class="viz-panel-label">(a) Photorealism beats mesh-only</p>
+      <div class="viz-legend">
+        <span class="key"><span class="swatch" style="background: var(--s-sam3d);"></span>SAM3D-aug (200)</span>
+        <span class="key"><span class="swatch" style="background: var(--s-legs200);"></span>LEGS-aug (200) &mdash; ours</span>
+      </div>
+      <div class="hbar-chart">
+        <div class="hbar-group">
+          <span class="hbar-task">Task 1</span>
+          <div class="hbar-bars">
+            <div class="hbar-track"><div class="hbar" style="width: 60%; background: var(--s-sam3d);" data-tip="Task 1 &middot; SAM3D-aug (200): 60%"><span class="hbar-val">60%</span></div></div>
+            <div class="hbar-track"><div class="hbar" style="width: 100%; background: var(--s-legs200);" data-tip="Task 1 &middot; LEGS-aug (200): 100%"><span class="hbar-val">100%</span></div></div>
+          </div>
+        </div>
+        <div class="hbar-group">
+          <span class="hbar-task">Task 2</span>
+          <div class="hbar-bars">
+            <div class="hbar-track"><div class="hbar" style="width: 50%; background: var(--s-sam3d);" data-tip="Task 2 &middot; SAM3D-aug (200): 50%"><span class="hbar-val">50%</span></div></div>
+            <div class="hbar-track"><div class="hbar" style="width: 80%; background: var(--s-legs200);" data-tip="Task 2 &middot; LEGS-aug (200): 80%"><span class="hbar-val">80%</span></div></div>
+          </div>
+        </div>
+        <div class="hbar-group">
+          <span class="hbar-task">Task 3</span>
+          <div class="hbar-bars">
+            <div class="hbar-track"><div class="hbar" style="width: 20%; background: var(--s-sam3d);" data-tip="Task 3 &middot; SAM3D-aug (200): 20%"><span class="hbar-val">20%</span></div></div>
+            <div class="hbar-track"><div class="hbar" style="width: 40%; background: var(--s-legs200);" data-tip="Task 3 &middot; LEGS-aug (200): 40%"><span class="hbar-val">40%</span></div></div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+      <div class="aug-panel">
+      <p class="viz-panel-label">(b) Augmentation beats scale</p>
+      <div class="viz-legend">
+        <span class="key"><span class="swatch" style="background: var(--s-legs50);"></span>LEGS (200), default-only</span>
+        <span class="key"><span class="swatch" style="background: var(--s-legs200);"></span>LEGS-aug (50)</span>
+      </div>
+      <div class="hbar-chart">
+        <div class="hbar-group">
+          <span class="hbar-task">Task 1</span>
+          <div class="hbar-bars">
+            <div class="hbar-track"><div class="hbar" style="width: 10%; background: var(--s-legs50);" data-tip="Task 1 &middot; LEGS (200) default-only: 10%"><span class="hbar-val">10%</span></div></div>
+            <div class="hbar-track"><div class="hbar" style="width: 50%; background: var(--s-legs200);" data-tip="Task 1 &middot; LEGS-aug (50): 50%"><span class="hbar-val">50%</span></div></div>
+          </div>
+        </div>
+        <div class="hbar-group">
+          <span class="hbar-task">Task 2</span>
+          <div class="hbar-bars">
+            <div class="hbar-track"><div class="hbar" style="width: 10%; background: var(--s-legs50);" data-tip="Task 2 &middot; LEGS (200) default-only: 10%"><span class="hbar-val">10%</span></div></div>
+            <div class="hbar-track"><div class="hbar" style="width: 40%; background: var(--s-legs200);" data-tip="Task 2 &middot; LEGS-aug (50): 40%"><span class="hbar-val">40%</span></div></div>
+          </div>
+        </div>
+        <div class="hbar-group">
+          <span class="hbar-task">Task 3</span>
+          <div class="hbar-bars">
+            <div class="hbar-track"><div class="hbar" style="width: 10%; background: var(--s-legs50);" data-tip="Task 3 &middot; LEGS (200) default-only: 10%"><span class="hbar-val">10%</span></div></div>
+            <div class="hbar-track"><div class="hbar" style="width: 30%; background: var(--s-legs200);" data-tip="Task 3 &middot; LEGS-aug (50): 30%"><span class="hbar-val">30%</span></div></div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+    <div class="highlights">
+      <div class="columns is-multiline">
+        <div class="column is-half">
+          <div class="highlight-block">
+            <p class="highlight-q">
+              <span class="q-label">Q1</span>Can teleoperation-free synthetic data match human teleoperation for VLA fine-tuning?
+            </p>
+            <p class="highlight-a">
+              <b>Yes &mdash; on every (backbone, task) cell.</b>
+              <span class="smallcaps">LEGS</span>&nbsp;(200) matches or exceeds Teleop&nbsp;(50)
+              across all nine experiments. On the long-horizon Task&nbsp;3, teleoperation
+              collapses to <b>0/10</b> across all three backbones, whereas
+              <span class="smallcaps">LEGS</span> achieves up to 6/10.
+            </p>
+          </div>
+        </div>
+        <div class="column is-half">
+          <div class="highlight-block">
+            <p class="highlight-q">
+              <span class="q-label">Q2</span>Is the improvement attributable to dataset size?
+            </p>
+            <p class="highlight-a">
+              <b>No.</b> At a budget-matched 50 demonstrations,
+              <span class="smallcaps">LEGS</span>&nbsp;(50) still matches or surpasses
+              Teleop&nbsp;(50) on every experiment, isolating the gain to the
+              <i>data pipeline</i> rather than its scale.
+            </p>
+          </div>
+        </div>
+        <div class="column is-half">
+          <div class="highlight-block">
+            <p class="highlight-q">
+              <span class="q-label">Q3</span>Does photorealistic rendering matter, or does mesh-only synthesis suffice?
+            </p>
+            <p class="highlight-a">
+              <b>Photorealism improves end-task success by 1.6&times;&ndash;3.25&times; across the three VLA backbones.</b>
+              Holding the pipeline fixed, <span class="smallcaps">LEGS</span>&nbsp;(200) beats the
+              mesh-only SAM3D&nbsp;(200) baseline on all nine (backbone,&nbsp;task) experiments.
+            </p>
+          </div>
+        </div>
+        <div class="column is-half">
+          <div class="highlight-block">
+            <p class="highlight-q">
+              <span class="q-label">Q4</span>How efficiently can <span class="smallcaps">LEGS</span> adapt to new appearance conditions?
+            </p>
+            <p class="highlight-a">
+              <b>~15&times; cheaper than teleoperation, with task success retained.</b>
+              Each new appearance condition requires ~0.1&nbsp;GPU-hr to re-render versus
+              &gt;1.5&nbsp;operator-hr to re-teleoperate. Under the hardest object-and-scene shift,
+              <span class="smallcaps">LEGS-AUG</span> reaches
+              <b>100&thinsp;/&thinsp;80&thinsp;/&thinsp;40%</b> on Tasks&nbsp;1&ndash;3,
+              while both teleoperation and unaugmented <span class="smallcaps">LEGS</span> fail (0&ndash;10%).
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BibTeX -->
+<section id="bibtex" class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">BibTeX</h2>
+    <div class="bibtex-wrapper">
+      <button class="bibtex-copy" type="button">Copy</button>
+      <pre id="bibtex-entry">@article{kim2026legs,
+  title   = {LEGS: Fine-Tuning Teleop-Free VLAs for Humanoid Loco-manipulation in an Embodied Gaussian Splatting World},
+  author  = {Kim, Hojune and Chen, Timothy and Sun, Jiankai and Osterberg, Lars W. and Chen, Qianzhong and Wang, Ke and Schwager, Mac},
+  journal = {arXiv preprint arXiv:2606.01458},
+  year    = {2026}
+}</pre>
+    </div>
+  </div>
+</section>
+
+
+<script>
+(function() {
+  const widgets = Array.from(document.querySelectorAll('.legsaug-compare'));
+  if (!widgets.length) return;
+
+  // Shared stripe layout (percent): wood = [0, p1), blue = [p1, p2), white = [p2, 100].
+  let p1 = 33.33;
+  let p2 = 66.67;
+  const MIN_GAP = 6;
+  let dragging = null;  // { widget, which } | null
+
+  function applyLayout() {
+    widgets.forEach(w => {
+      const cw = w.offsetWidth;
+      const top = w.querySelector('.bal-top');
+      const mid = w.querySelector('.bal-mid');
+      const insetTop = w.querySelector('.bal-top .bal-before-inset');
+      const insetMid = w.querySelector('.bal-mid .bal-before-inset');
+      top.style.width = p1 + '%';
+      mid.style.width = p2 + '%';
+      insetTop.style.width = cw + 'px';
+      insetMid.style.width = cw + 'px';
+      w.querySelector('.handle-1').style.left = p1 + '%';
+      w.querySelector('.handle-2').style.left = p2 + '%';
+      w.querySelector('.label-wood').style.left  = (p1 / 2) + '%';
+      w.querySelector('.label-blue').style.left  = ((p1 + p2) / 2) + '%';
+      w.querySelector('.label-white').style.left = ((p2 + 100) / 2) + '%';
+    });
+  }
+
+  function pickHandle(widget, clientX) {
+    const rect = widget.getBoundingClientRect();
+    const x1 = rect.left + rect.width * p1 / 100;
+    const x2 = rect.left + rect.width * p2 / 100;
+    return Math.abs(clientX - x1) < Math.abs(clientX - x2) ? 1 : 2;
+  }
+
+  function onMove(e) {
+    if (!dragging) return;
+    e.preventDefault();
+    const {widget, which} = dragging;
+    const rect = widget.getBoundingClientRect();
+    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+    const x = Math.max(0, Math.min(100, ((clientX - rect.left) / rect.width) * 100));
+    if (which === 1) {
+      p1 = Math.max(0, Math.min(x, p2 - MIN_GAP));
+    } else {
+      p2 = Math.min(100, Math.max(x, p1 + MIN_GAP));
+    }
+    applyLayout();
+  }
+
+  function onDown(widget, e) {
+    // desktop shows a static 3-up row (no wipe) — ignore drag there
+    if (window.matchMedia('(min-width: 769px)').matches) return;
+    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+    dragging = { widget, which: pickHandle(widget, clientX) };
+    e.preventDefault();
+    onMove(e);
+  }
+
+  function onUp() { dragging = null; }
+
+  widgets.forEach(w => {
+    w.addEventListener('mousedown',  e => onDown(w, e));
+    w.addEventListener('touchstart', e => onDown(w, e), {passive: false});
+  });
+  document.addEventListener('mousemove', onMove);
+  document.addEventListener('touchmove', onMove, {passive: false});
+  document.addEventListener('mouseup', onUp);
+  document.addEventListener('touchend', onUp);
+  window.addEventListener('resize', applyLayout);
+
+  // Apply once after each widget's base ('white') video reports a height.
+  widgets.forEach(w => {
+    const v = w.querySelector('.bal-after video');
+    if (v.readyState >= 1) { applyLayout(); }
+    else v.addEventListener('loadedmetadata', applyLayout);
+  });
+  applyLayout();
+  // Expose a re-layout hook so tab-switch can fix stripes (hidden panels have 0 width on load).
+  widgets.forEach(w => { w._balLayout = function () { requestAnimationFrame(applyLayout); }; });
+
+  // Sync all 9 videos to the OP wood master.
+  const master = document.querySelector('.legsaug-compare .bal-top video');
+  const allVideos = document.querySelectorAll('.legsaug-compare video');
+  if (master) {
+    // smooth sync: nudge playbackRate to catch up (no stutter); hard-seek only on a big jump (loop wrap)
+    master.addEventListener('timeupdate', () => {
+      const t = master.currentTime;
+      allVideos.forEach(v => {
+        if (v === master) return;
+        const drift = v.currentTime - t;                 // + ahead of master, - behind
+        const ad = Math.abs(drift);
+        if (ad > 0.5) { v.currentTime = t; v.playbackRate = 1; }          // loop/large drift: resync once
+        else if (ad > 0.06) { v.playbackRate = drift > 0 ? 0.94 : 1.06; } // gentle catch-up
+        else { v.playbackRate = 1; }                                      // locked
+      });
+    });
+  }
+})();
+</script>
+
+<script>
+(function () {
+  // BibTeX copy button
+  var btn = document.querySelector('.bibtex-copy');
+  var pre = document.getElementById('bibtex-entry');
+  if (btn && pre) {
+    btn.addEventListener('click', function () {
+      var text = pre.innerText;
+      var done = function () { btn.textContent = 'Copied!'; setTimeout(function () { btn.textContent = 'Copy'; }, 1500); };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(done, done);
+      } else {
+        var r = document.createRange(); r.selectNode(pre);
+        var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(r);
+        try { document.execCommand('copy'); } catch (e) {}
+        sel.removeAllRanges(); done();
+      }
+    });
+  }
+
+  // Scroll-in reveal
+  var targets = document.querySelectorAll('.section .title.is-3, .method-step, .highlight-block, .video-grid, .results-wrapper, .viz-root, .stat-tile');
+  targets.forEach(function (el) { el.classList.add('reveal'); });
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12 });
+    targets.forEach(function (el) { io.observe(el); });
+    // Safety net: never leave content hidden (slow JS, anchor jumps, odd browsers).
+    setTimeout(function () {
+      targets.forEach(function (el) { el.classList.add('is-visible'); });
+    }, 1500);
+  } else {
+    targets.forEach(function (el) { el.classList.add('is-visible'); });
+  }
+
+  // Scrollspy: highlight the nav link of the section in view
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('.legs-nav .nav-links a[href^="#"]'));
+  var spied = navLinks.map(function (a) { return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
+  function updateSpy() {
+    var y = window.scrollY + 110;
+    var current = null;
+    spied.forEach(function (sec) { if (sec.offsetTop <= y) current = sec; });
+    navLinks.forEach(function (a) {
+      a.classList.toggle('active', !!current && a.getAttribute('href') === '#' + current.id);
+    });
+  }
+  window.addEventListener('scroll', updateSpy, { passive: true });
+  updateSpy();
+
+  // Tabs: switch panels within a group; pause hidden videos, play visible ones
+  document.querySelectorAll('.tab-bar').forEach(function (bar) {
+    var group = bar.getAttribute('data-tab-group');
+    var panels = document.querySelectorAll('.tab-panel[data-tab-group="' + group + '"]');
+    bar.querySelectorAll('button').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        bar.querySelectorAll('button').forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        panels.forEach(function (p) {
+          var on = p.getAttribute('data-panel') === btn.getAttribute('data-tab');
+          p.classList.toggle('active', on);
+          p.querySelectorAll('video').forEach(function (v) {
+            if (on) { v.play().catch(function () {}); } else { v.pause(); }
+          });
+          if (on) {
+            p.querySelectorAll('.calib-compare').forEach(function (c) { if (c._calLayout) c._calLayout(); });
+            p.querySelectorAll('.legsaug-compare').forEach(function (c) { if (c._balLayout) c._balLayout(); });
+          }
+        });
+      });
+    });
+  });
+
+  // In-view video management: play when visible, pause off-screen (perf)
+  var vids = document.querySelectorAll('video');
+  if ('IntersectionObserver' in window) {
+    var vio = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        var v = e.target;
+        var hiddenPanel = v.closest('.tab-panel') && !v.closest('.tab-panel').classList.contains('active');
+        if (e.isIntersecting && !hiddenPanel) { v.play().catch(function () {}); }
+        else { v.pause(); }
+      });
+    }, { threshold: 0.15 });
+    vids.forEach(function (v) { vio.observe(v); });
+  }
+
+  // Hero background pair: real clip at 1.866x so both loop in 17.85s, nudged into lockstep
+  var heroVids = document.querySelectorAll('.hero-bg video');
+  if (heroVids.length === 2) {
+    var hSim = heroVids[0], hReal = heroVids[1], HR = 1.866;
+    var hRate = function () { hReal.playbackRate = HR; };
+    hRate(); hReal.addEventListener('loadedmetadata', hRate); hReal.addEventListener('play', hRate);
+    hSim.addEventListener('timeupdate', function () {
+      if (!hReal.duration) return;
+      var want = (hSim.currentTime * HR) % hReal.duration;
+      if (Math.abs(hReal.currentTime - want) > 0.4) { try { hReal.currentTime = want; } catch (e) {} }
+    });
+  }
+
+  // Play all Task 3 videos at 2x (re-applied on load/play since some browsers reset the rate)
+  document.querySelectorAll('video').forEach(function (v) {
+    var s = v.getAttribute('src') || (v.querySelector('source') ? v.querySelector('source').getAttribute('src') : '') || '';
+    if (/t3_|task3|legs_t3/i.test(s) && !v.closest('#egocentric') && !v.closest('.hero-bg')) {
+      var rate = 2, badgeText = '2\u00d7';
+      if (/_2x\.|legs_t3_demo_cut/.test(s)) { rate = 1; }              // file already rendered at 2x
+      if (/task3_cut/.test(s)) { rate = 1.866; badgeText = '1.9\u00d7'; }  // sync loop with the sim clip
+      var setRate = function () { v.playbackRate = rate; };
+      setRate();
+      v.addEventListener('loadedmetadata', setRate);
+      v.addEventListener('play', setRate);
+      // "2x" badge anchored to the video frame itself (wrap the video so the
+      // badge tracks the video edges, not the padded parent column)
+      if (!v.parentElement.classList.contains('video-wrap')) {
+        var pill = (v.previousElementSibling && v.previousElementSibling.classList.contains('media-pill')) ? v.previousElementSibling : null;
+        var wrap = document.createElement('div');
+        wrap.className = 'video-wrap';
+        v.parentElement.insertBefore(wrap, v);
+        wrap.appendChild(v);
+        if (pill) { wrap.appendChild(pill); }
+        var badge = document.createElement('span');
+        badge.className = 'speed-badge';
+        badge.textContent = badgeText;
+        wrap.appendChild(badge);
+      }
+    }
+  });
+
+  // Method steps: emphasize the matching part of the pipeline figure
+  var duo = document.querySelector('.method-duo');
+  if (duo) {
+    var steps = duo.querySelectorAll('.mstep');
+    // regions dimmed per active step (all others stay bright)
+    var dimMap = {
+      '1': ['dim-simulator', 'dim-datagen', 'dim-procgen', 'dim-traindeploy'],
+      '2': ['dim-inputs', 'dim-datagen', 'dim-procgen', 'dim-traindeploy'],
+      '3': ['dim-inputs', 'dim-simulator', 'dim-traindeploy'],
+      '4': ['dim-inputs', 'dim-simulator', 'dim-datagen', 'dim-procgen']
+    };
+    var dims = duo.querySelectorAll('.fig-dim');
+    var setStep = function (n) {
+      steps.forEach(function (s) { s.classList.toggle('is-active', s.getAttribute('data-step') === n); });
+      dims.forEach(function (d) {
+        var on = dimMap[n].some(function (cls) { return d.classList.contains(cls); });
+        d.style.opacity = on ? 1 : 0;
+      });
+    };
+    steps.forEach(function (s) {
+      var n = s.getAttribute('data-step');
+      s.addEventListener('mouseenter', function () { setStep(n); });
+      s.addEventListener('click', function () { setStep(n); });
+    });
+    // reverse: hovering a region of the pipeline figure highlights it AND its left block
+    var regionStep = { 'dim-inputs': '1', 'dim-simulator': '2', 'dim-datagen': '3', 'dim-procgen': '3', 'dim-traindeploy': '4' };
+    dims.forEach(function (d) {
+      var n = null;
+      for (var cls in regionStep) { if (d.classList.contains(cls)) n = regionStep[cls]; }
+      if (n) {
+        d.style.pointerEvents = 'auto';
+        d.style.cursor = 'pointer';
+        d.addEventListener('mouseenter', (function (nn) { return function () { setStep(nn); }; })(n));
+      }
+    });
+    setStep('1');
+  }
+
+  // Chart tooltips (shared floating tip)
+  var tip = document.createElement('div');
+  tip.className = 'viz-tip';
+  document.body.appendChild(tip);
+  document.querySelectorAll('[data-tip]').forEach(function (bar) {
+    bar.addEventListener('mouseenter', function () {
+      tip.innerHTML = bar.getAttribute('data-tip');
+      tip.classList.add('show');
+    });
+    bar.addEventListener('mousemove', function (e) {
+      tip.style.left = (e.clientX + 14) + 'px';
+      tip.style.top = (e.clientY - 12) + 'px';
+    });
+    bar.addEventListener('mouseleave', function () { tip.classList.remove('show'); });
+  });
+
+  // Calibration sliders: generic N-stripe compare (leftmost overlay first, base = rightmost)
+  var cals = Array.prototype.slice.call(document.querySelectorAll('.calib-compare'));
+  var calActive = null; // { c, overlays, handles, labels, pos, idx }
+  var calWidgets = []; // all sliders, so drags stay synchronized across conditions
+  function calSetup(c) {
+    var overlays = Array.prototype.slice.call(c.querySelectorAll('.cal-before'));
+    var handles = Array.prototype.slice.call(c.querySelectorAll('.cal-handle'));
+    var labels = Array.prototype.slice.call(c.querySelectorAll('.cal-label'));
+    var n = overlays.length;
+    // default handle positions at 2/5 and 3/5 (raw 0-40, mesh-calibrated 40-60, fully calibrated 60-100)
+    var pos = (n === 2) ? [40, 60] : [];
+    if (!pos.length) { for (var i = 1; i <= n; i++) pos.push(i * 100 / (n + 1)); }
+    var GAP = 5;
+    function layout() {
+      var cw = c.offsetWidth;
+      if (!cw) return;
+      overlays.forEach(function (o, i) {
+        o.style.width = pos[i] + '%';
+        o.style.zIndex = 2 + (n - i);
+        o.querySelector('.cal-before-inset').style.width = cw + 'px';
+      });
+      handles.forEach(function (h, i) { h.style.left = pos[i] + '%'; });
+      labels.forEach(function (L, j) {
+        var a = j === 0 ? 0 : pos[j - 1];
+        var b = j === n ? 100 : pos[j];
+        L.style.left = ((a + b) / 2) + '%';
+      });
+    }
+    function pick(clientX) {
+      var rect = c.getBoundingClientRect(), best = 0, bd = 1e9;
+      pos.forEach(function (pct, i) {
+        var d = Math.abs(clientX - (rect.left + rect.width * pct / 100));
+        if (d < bd) { bd = d; best = i; }
+      });
+      return best;
+    }
+    function move(clientX) {
+      var rect = c.getBoundingClientRect();
+      var x = Math.max(0, Math.min(100, ((clientX - rect.left) / rect.width) * 100));
+      var i = calActive.idx;
+      var lo = i === 0 ? 0 : pos[i - 1] + GAP;
+      var hi = i === pos.length - 1 ? 100 : pos[i + 1] - GAP;
+      pos[i] = Math.max(lo, Math.min(hi, x));
+      calWidgets.forEach(function (w) { if (w.pos.length === pos.length) { w.pos[i] = pos[i]; w.layout(); } });
+    }
+    c.addEventListener('mousedown', function (e) { calActive = { move: move, idx: pick(e.clientX) }; move(e.clientX); e.preventDefault(); });
+    c.addEventListener('touchstart', function (e) { calActive = { move: move, idx: pick(e.touches[0].clientX) }; move(e.touches[0].clientX); e.preventDefault(); }, { passive: false });
+    var baseImg = c.querySelector('.cal-after img');
+    if (baseImg.complete) layout(); else baseImg.addEventListener('load', layout);
+    window.addEventListener('resize', layout);
+    c._calLayout = layout;
+    calWidgets.push({ pos: pos, layout: layout });
+    layout();
+  }
+  cals.forEach(calSetup);
+  document.addEventListener('mousemove', function (e) { if (calActive) calActive.move(e.clientX); });
+  document.addEventListener('touchmove', function (e) { if (calActive) calActive.move(e.touches[0].clientX); }, { passive: false });
+  document.addEventListener('mouseup', function () { calActive = null; });
+  document.addEventListener('touchend', function () { calActive = null; });
+})();
+</script>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content has-text-centered">
+          <p>
+            Website template borrowed from
+            <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> /
+            <a href="https://github.com/eliahuhorwitz/Academic-project-page-template">Academic Project Page Template</a>,
+            licensed under
+            <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
