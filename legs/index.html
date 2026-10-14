@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="./static/css/index.css?v=6">
+  <link rel="stylesheet" href="./static/css/index.css?v=7">
 </head>
 
 <body>
@@ -58,6 +58,10 @@
             Stanford University
           </div>
 
+          <div class="publication-venue">
+            CoRL 2026 &middot; Austin, TX, USA
+          </div>
+
           <div class="publication-links">
             <span class="link-block">
               <a href="https://arxiv.org/abs/2606.01458" class="external-link button is-normal is-rounded" target="_blank" rel="noopener noreferrer">
@@ -101,7 +105,7 @@
         <span class="stat-label">experiments match or beat human teleop</span>
       </div>
       <div class="stat-tile">
-        <span class="stat-value">~15&times;</span>
+        <span class="stat-value">&gt;15&times;</span>
         <span class="stat-label">cheaper adaptation to new scenes &amp; objects</span>
       </div>
     </div>
@@ -118,7 +122,7 @@
     <div class="tldr-block">
       <p>
         Collecting teleoperation demonstrations for humanoids is slow and expensive &mdash; and
-        simulator-trained VLA policies have, until now, failed to transfer to real humanoid
+        simulator-trained VLA policies have so far transferred poorly to real humanoid
         loco-manipulation. <b><i>What if a phone scan is all you need?</i></b>
         <span class="legs-inline">LEGS</span> composites the robot and objects over a photorealistic
         3D Gaussian Splatting background inside MuJoCo, and procedurally generates labeled
@@ -126,8 +130,8 @@
       </p>
       <ul>
         <li><b>Matches or beats human teleoperation</b> on all nine (backbone, task) experiments &mdash; zero-shot on a real Unitree&nbsp;G1, across &psi;<sub>0</sub>, &pi;<sub>0.5</sub>, and GR00T&nbsp;N1.6.</li>
-        <li><b>Owes the gain to photorealism</b> &mdash; end-task success improves 1.6&times;&ndash;3.25&times; over mesh-only simulation (across backbones), not dataset size.</li>
-        <li><b>Re-renders one motion dataset</b> to new scenes, objects, and prompts at ~15&times; lower cost than re-teleoperating &mdash; retaining success under appearance shifts where every default-only baseline collapses to 0&ndash;1/10.</li>
+        <li><b>Owes the gain to the calibrated 3DGS frontend</b> &mdash; end-task success improves 1.6&times;&ndash;3.25&times; over a mesh-only baseline trained on the same motions (across backbones), not dataset size.</li>
+        <li><b>Re-renders one motion dataset</b> for new target scenes, objects, and prompts at over 15&times; lower cost than re-teleoperating &mdash; retaining success under the combined object-and-scene shift, where every default-only baseline collapses to 0&ndash;1/10.</li>
       </ul>
     </div>
   </div>
@@ -408,8 +412,7 @@
     <p class="section-subtitle has-text-centered">
       Task&nbsp;3 deployments from the same VLA backbone fine-tuned on three data conditions.
       <span class="smallcaps">LEGS</span> matches or exceeds teleoperation and outperforms
-      the mesh-only SAM3D baseline, identifying <b>photorealistic rendering</b> as the key
-      enabler of synthetic-data transfer.
+      the mesh-only SAM3D baseline, which lacks the calibrated 3DGS frontend.
     </p>
     <div class="columns is-centered video-grid">
       <div class="column">
@@ -436,11 +439,11 @@
 <!-- LEGS-AUG: randomization, adaptation & robustness (merged) -->
 <section id="legsaug" class="section">
   <div class="container is-max-video">
-    <h2 class="title is-3 has-text-centered">LEGS-AUG: Appearance Randomization &amp; Robustness</h2>
+    <h2 class="title is-3 has-text-centered">LEGS-AUG: Low-Labor Adaptation to Target Appearances</h2>
     <p class="section-subtitle has-text-centered">
-      Motion is recorded independently of appearance, so each episode re-renders under new
-      objects and backgrounds at <b>~0.1&nbsp;GPU-hr versus &gt;1.5&nbsp;operator-hr</b> for
-      re-teleoperation (&asymp;15&times; cheaper).
+      Motion is recorded independently of appearance, so one recorded dataset re-renders for new
+      target objects and backgrounds. Each new appearance condition (50 episodes) costs
+      <b>~0.1&nbsp;GPU-hr versus &gt;1.5&nbsp;operator-hr</b> for re-teleoperation (over 15&times; cheaper).
     </p>
 
 
@@ -448,7 +451,7 @@
     <p class="section-subtitle has-text-centered" style="margin-top:-0.4rem;">
       Even on Task&nbsp;1 &mdash; the simplest, stationary pick-and-place &mdash;
       a policy trained <em>only</em> on the default demonstrations (orange&rarr;plate on a wooden table)
-      collapses once the objects, scene, or prompt change.
+      collapses once the objects and prompt change, and loses success even when only the table changes.
     </p>
     <div class="columns is-centered video-grid">
       <div class="column">
@@ -457,19 +460,24 @@
       </div>
       <div class="column">
         <div class="vidbadge"><video src="./static/videos/appearance/t1_ood_objects_2x.mp4" autoplay muted loop playsinline controls preload="metadata"></video><span class="vid-tag is-fail"><i class="fas fa-times"></i>failure</span><span class="spd">2&times;</span></div>
-        <p class="video-label">Object shift<br><span class="prompt-line">&ldquo;place the apple in the box&rdquo;</span></p>
+        <p class="video-label">Object shift<br><span class="prompt-line">&ldquo;put the apple in the box&rdquo;</span></p>
       </div>
       <div class="column">
         <div class="vidbadge"><video src="./static/videos/appearance/t1_ood_objects+scene_2x.mp4" autoplay muted loop playsinline controls preload="metadata"></video><span class="vid-tag is-fail"><i class="fas fa-times"></i>failure</span><span class="spd">2&times;</span></div>
-        <p class="video-label">Scene + object shift<br><span class="prompt-line">&ldquo;place the apple in the box&rdquo;</span></p>
+        <p class="video-label">Scene + object shift<br><span class="prompt-line">&ldquo;put the apple in the box&rdquo;</span></p>
       </div>
     </div>
 
-    <h3 class="subsection-title">With <span class="legs-inline">LEGS</span> re-rendering: zero-shot under appearance shift</h3>
+    <h3 class="subsection-title">With <span class="legs-inline">LEGS</span> re-rendering: adapted to each target appearance</h3>
+    <p class="section-subtitle has-text-centered" style="margin-top:-0.4rem;">
+      <span class="smallcaps">LEGS-AUG</span> re-renders the recorded motions with the target objects, table, and prompt,
+      so its training set contains the evaluation appearance: this is target-specific adaptation, not
+      generalization to unseen assets.
+    </p>
     <div class="columns is-centered video-grid">
       <div class="column">
         <div class="vidbadge"><video src="./static/videos/appearance/t3_groot_scene_good_2x.mp4" autoplay muted loop playsinline controls preload="metadata"></video><span class="vid-tag is-success"><i class="fas fa-check"></i>success</span></div>
-        <p class="video-label">Scene shift<br><span class="prompt-line">&ldquo;pick the orange, turn right, place it on the plate&rdquo;</span></p>
+        <p class="video-label">Scene shift<br><span class="prompt-line">&ldquo;pick the orange, turn right, and place it on the plate&rdquo;</span></p>
       </div>
       <div class="column">
         <div class="vidbadge"><video src="./static/videos/appearance/t3_groot_objects_good_2x.mp4" autoplay muted loop playsinline controls preload="metadata"></video><span class="vid-tag is-success"><i class="fas fa-check"></i>success</span></div>
@@ -508,13 +516,13 @@
     <h2 class="title is-3 has-text-centered">Key Results</h2>
     <p class="section-subtitle has-text-centered">
       Real-robot end-task success across three tasks, three VLA backbones, and four data
-      conditions &mdash; 1,110 trials total.
+      conditions &mdash; 1,110 trials, plus 240 matched-camera trials.
     </p>
 
     <!-- Native chart: end-task success by task and data condition -->
     <div class="viz-root" id="chart-main" style="max-width: 1100px;">
       <p class="viz-title">LEGS (200) is best or tied on every task and every backbone</p>
-      <p class="viz-sub">Even at the same data budget, LEGS (50) beats Teleop (50).</p>
+      <p class="viz-sub">Even at the same data budget, LEGS (50) matches or beats Teleop (50).</p>
       <div class="viz-legend">
         <span class="key"><span class="swatch" style="background: var(--s-teleop);"></span>Teleop (50)</span>
         <span class="key"><span class="swatch" style="background: var(--s-sam3d);"></span>SAM3D (200)</span>
@@ -618,7 +626,7 @@
 
       <div class="aug-panels">
       <div class="aug-panel">
-      <p class="viz-panel-label">(a) Photorealism beats mesh-only</p>
+      <p class="viz-panel-label">(a) Calibrated 3DGS beats mesh-only</p>
       <div class="viz-legend">
         <span class="key"><span class="swatch" style="background: var(--s-sam3d);"></span>SAM3D-aug (200)</span>
         <span class="key"><span class="swatch" style="background: var(--s-legs200);"></span>LEGS-aug (200) &mdash; ours</span>
@@ -712,12 +720,14 @@
         <div class="column is-half">
           <div class="highlight-block">
             <p class="highlight-q">
-              <span class="q-label">Q3</span>Does photorealistic rendering matter, or does mesh-only synthesis suffice?
+              <span class="q-label">Q3</span>Does the rendering frontend matter, or does mesh-only synthesis suffice?
             </p>
             <p class="highlight-a">
-              <b>Photorealism improves end-task success by 1.6&times;&ndash;3.25&times; across the three VLA backbones.</b>
-              Holding the pipeline fixed, <span class="smallcaps">LEGS</span>&nbsp;(200) beats the
-              mesh-only SAM3D&nbsp;(200) baseline on all nine (backbone,&nbsp;task) experiments.
+              <b>The calibrated 3DGS frontend improves end-task success by 1.6&times;&ndash;3.25&times; across the three VLA backbones.</b>
+              With the same motion data, <span class="smallcaps">LEGS</span>&nbsp;(200) beats the
+              mesh-only SAM3D&nbsp;(200) baseline on all nine (backbone,&nbsp;task) experiments, and it
+              still leads with the camera in the same automatic mode as the baselines
+              (Task&nbsp;3: 18/60 vs 6/60).
             </p>
           </div>
         </div>
@@ -727,8 +737,8 @@
               <span class="q-label">Q4</span>How efficiently can <span class="smallcaps">LEGS</span> adapt to new appearance conditions?
             </p>
             <p class="highlight-a">
-              <b>~15&times; cheaper than teleoperation, with task success retained.</b>
-              Each new appearance condition requires ~0.1&nbsp;GPU-hr to re-render versus
+              <b>Over 15&times; cheaper than teleoperation, with task success retained.</b>
+              Each new appearance condition (50 episodes) requires ~0.1&nbsp;GPU-hr to re-render versus
               &gt;1.5&nbsp;operator-hr to re-teleoperate. Under the hardest object-and-scene shift,
               <span class="smallcaps">LEGS-AUG</span> reaches
               <b>100&thinsp;/&thinsp;80&thinsp;/&thinsp;40%</b> on Tasks&nbsp;1&ndash;3,
