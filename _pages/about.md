@@ -50,7 +50,7 @@ years: [2026, 2024]
     <div class="bibtwo" style="float: left; box-sizing: border-box; width: 80%">
       <div style="font-size: 18px;"><strong>Stanford University</strong></div>
       <span><i>M.S. in Aeronautics and Astronautics</i></span>
-      <span>GPA: <b>4.00/4.00</b></span>
+      <span>GPA: <b>4.17/4.30</b></span>
     </div>
     <div class="col proj_year" style="width: 20%;">Sept. 2025 - Present</div>
   </div>
@@ -58,7 +58,7 @@ years: [2026, 2024]
     <div class="bibtwo" style="float: left; box-sizing: border-box; width: 80%; margin-top: 10px;">
       <div style="font-size: 18px;"><strong>Seoul National University (SNU)</strong></div>
       <span><i>B.S. in Aerospace Engineering, summa cum laude</i></span>
-      <span>GPA: <b>4.00/4.00(Major)</b>, 3.91/4.00(Overall)</span>
+      <span>GPA: <b>4.21/4.30(Major)</b>, 4.07/4.30(Overall)</span>
     </div>
     <div class="col proj_year" style="width: 20%;">Mar. 2019 - Jun. 2025</div>
   </div>
