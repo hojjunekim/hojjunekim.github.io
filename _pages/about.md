@@ -12,7 +12,7 @@ years: [2026, 2024]
 
 <div class="toprow">
   <div class="topphoto">
-    <img src="{{ '/assets/img/profile.JPG' | prepend: site.baseurl | prepend: site.url }}" alt="Hojune Kim">
+    <img src="{{ '/assets/img/profile.JPG' | prepend: site.baseurl | prepend: site.url }}?v=2" alt="Hojune Kim">
     <p class="toplinks">
       | <a href="{{ '/assets/documents/CV_HJ.pdf' | prepend: site.baseurl | prepend: site.url }}" target="_blank">CV</a> |
       <a href="mailto:{{ site.email }}">Email</a> |
