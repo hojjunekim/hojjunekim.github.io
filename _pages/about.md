@@ -23,9 +23,15 @@ years: [2026, 2024]
     </p>
   </div>
   <div class="topbio">
-    <p>I am a Ph.D. student in Aeronautics and Astronautics at Stanford University, advised by <a href="https://profiles.stanford.edu/mac-schwager" target="_blank">Prof. Mac Schwager</a> in the <a href="https://msl.stanford.edu/" target="_blank">Multi-Robot Systems Lab (MSL)</a>. Previously, I was a guest researcher on the humanoid TORO team at the German Aerospace Center (DLR) and a visiting student at ETH Zürich. I received my B.S. in Aerospace Engineering from Seoul National University, advised by <a href="https://rpm.snu.ac.kr" target="_blank">Prof. Ayoung Kim</a>.</p>
+    <p>I am a Ph.D. student in Aeronautics and Astronautics at Stanford University, advised by <a href="https://profiles.stanford.edu/mac-schwager" target="_blank">Mac Schwager</a> in the <a href="https://msl.stanford.edu/" target="_blank">Multi-Robot Systems Lab (MSL)</a>. Previously, I was a guest researcher on the humanoid TORO team at the German Aerospace Center (DLR), advised by <a href="https://rmc.dlr.de/rm/en/staff/jinoh.lee/" target="_blank">Jinoh Lee</a>, and a visiting student at ETH Zürich. I received my B.S. in Aerospace Engineering from Seoul National University, advised by <a href="https://rpm.snu.ac.kr" target="_blank">Ayoung Kim</a>.</p>
     <p>My research bridges model-based knowledge with data-driven learning to overcome data scarcity for robot autonomy.</p>
     <p>Email: hojune [AT] stanford.edu</p>
+    <div class="toplogos">
+      <img src="{{ '/assets/img/logos/stanford.png' | prepend: site.baseurl | prepend: site.url }}" class="logo-stanford" alt="Stanford University">
+      <img src="{{ '/assets/img/logos/dlr.png' | prepend: site.baseurl | prepend: site.url }}" class="logo-dlr" alt="DLR">
+      <img src="{{ '/assets/img/logos/eth.png' | prepend: site.baseurl | prepend: site.url }}" class="logo-eth" alt="ETH Zürich">
+      <img src="{{ '/assets/img/logos/snu.png' | prepend: site.baseurl | prepend: site.url }}" class="logo-snu" alt="Seoul National University">
+    </div>
   </div>
 </div>
 
